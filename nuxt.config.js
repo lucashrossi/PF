@@ -36,7 +36,8 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    '@/plugins/vuetify'
+    '@/plugins/vuetify',
+    '~plugins/core-components.js'
   ],
 
   /*
@@ -78,5 +79,8 @@ module.exports = {
         ]
       }
     }
+  },
+  env: {
+    baseUrl: process.env.BASE_URL || 'https://DBB.firebaseio.com'
   }
 }
