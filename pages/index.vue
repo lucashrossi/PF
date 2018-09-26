@@ -7,42 +7,38 @@
       temporary
     >
       <v-list >
-        <v-list-tile v-for="D in DD" :key="D.title">
+        <v-list-tile v-for="DDD in DDDD" :key="DDD.title">
           <v-list-tile-action>
-            <v-icon>{{D.icon}}</v-icon>
+            <v-icon>{{DDD.icon}}</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
-            <v-list-tile-title>{{D.title}}</v-list-tile-title>
+            <v-list-tile-title>{{DDD.title}}</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        
       </v-list>
+
     </v-navigation-drawer>
 
     <v-toolbar color="blue-grey darken-3" dark fixed app>
-      <v-toolbar-side-icon @click.stop="drawer = !drawer" class="hidden-sm-and-up"></v-toolbar-side-icon>
+      <v-toolbar-side-icon @click.stop="drawer = !drawer" ></v-toolbar-side-icon> <!--class="hidden-sm-and-up"></v-toolbar-side-icon>-->
       <v-toolbar-title>
          <v-btn flat>
-            <v-icon left>home</v-icon>
+            <v-icon left>dashboard</v-icon>
             DashBoard
         </v-btn>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-toolbar-items class="hidden-xs-only">
-        <v-btn flat>
-            <v-icon left>trending_up</v-icon>
-            Performance
-        </v-btn>
-         <v-btn flat>
-            <v-icon left>schedule</v-icon>
-            Candidatas
+      <v-toolbar-items class="hidden-md-and-down">
+        <v-btn flat v-for="D in DD" :key="D.title">
+            <v-icon left>{{D.icon}}</v-icon>
+            {{D.title}}
         </v-btn>
       </v-toolbar-items>
       <v-spacer></v-spacer> 
-      <v-toolbar-items class="hidden-xs-only">
-        <v-btn flat>
-            <v-icon left>invert_colors</v-icon>
-            Color
+      <v-toolbar-items class="hidden-md-and-down">
+        <v-btn flat v-for="DD in DDD" :key="DD.title">
+            <v-icon left>{{DD.icon}}</v-icon>
+            {{DD.title}}
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -68,9 +64,22 @@
     data: () => ({
       drawer: false,
       DD: [
-          {icon: 'home', title: 'Dashboard'},
-          {icon: 'trending_up', title: 'Performance'},
-          {icon: 'schedule', title: 'Candidatas'}
+          {icon: 'trending_up', title: 'Ventas'},
+          {icon: 'attach_money', title: 'Regalias'},
+          {icon: 'schedule', title: 'Lineas'},
+          {icon: 'web', title: 'Buck'}
+          ],
+      DDD: [
+          {icon: 'volume_up', title: 'Sonido'},
+          {icon: 'invert_colors', title: 'Color'}
+          ],
+      DDDD: [
+          {icon: 'trending_up', title: 'Ventas'},
+          {icon: 'attach_money', title: 'Regalias'},
+          {icon: 'schedule', title: 'Lineas'},
+          {icon: 'web', title: 'Buck'},
+          {icon: 'volume_up', title: 'Sonido'},
+          {icon: 'invert_colors', title: 'Color'}
           ]
     }),
     props: {
