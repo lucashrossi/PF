@@ -65,20 +65,22 @@
       drawer: false,
       DD: [
           {icon: 'trending_up', title: 'Ventas'},
+          {icon: 'business', title: 'Fiscalizacion'},
           {icon: 'attach_money', title: 'Regalias'},
-          {icon: 'schedule', title: 'Lineas'},
-          {icon: 'web', title: 'Buck'}
+          {icon: 'format_list_bulleted', title: 'Variedades'},
+          {icon: 'link', title: 'Buck'}
           ],
       DDD: [
-          {icon: 'volume_up', title: 'Sonido'},
+          {icon: 'volume_off', title: 'Sonido'},
           {icon: 'invert_colors', title: 'Color'}
           ],
       DDDD: [
           {icon: 'trending_up', title: 'Ventas'},
+          {icon: 'business', title: 'Fiscalizacion'},
           {icon: 'attach_money', title: 'Regalias'},
-          {icon: 'schedule', title: 'Lineas'},
-          {icon: 'web', title: 'Buck'},
-          {icon: 'volume_up', title: 'Sonido'},
+          {icon: 'format_list_bulleted', title: 'Variedades'},
+          {icon: 'link', title: 'Buck'},
+          {icon: 'volume_off', title: 'Sonido'},
           {icon: 'invert_colors', title: 'Color'}
           ]
     }),
