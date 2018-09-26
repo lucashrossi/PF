@@ -46,24 +46,27 @@
           </v-toolbar-items>
         </v-toolbar>
 
-        <!-- <v-content>
-          <v-container fluid fill-height>
-            <v-layout
-              justify-center
-              align-center
-            >
+        <v-content>
+          <nuxt/>
+          <!-- <v-container fluid fill-height>
+            <v-layout justify-center align-center>
+
+            <nuxt/>
+
             </v-layout>
-          </v-container>
-        </v-content> -->
+          </v-container> -->
+        </v-content>
 
         <!-- <v-footer color="blue-grey darken-1" app>
           <span class="white--text">&copy; 2018</span>
         </v-footer> -->
+
+       
         
       </v-app>
     <!-- </div> -->
 
-    <nuxt/>
+    <!-- <nuxt/> -->
 
     <v-app>
         <v-footer color="blue-grey darken-1" app>
@@ -83,7 +86,7 @@
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion'},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias'},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades'},
-          {icon: 'link', title: 'Buck', link: '/Buck'},
+          {icon: 'link', title: 'Buck', link: '/'},
           ],
       DDD: [
           {icon: 'volume_off', title: 'Sonido'},
@@ -94,7 +97,7 @@
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion'},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias'},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades'},
-          {icon: 'link', title: 'Buck', link: '/Buck'},
+          {icon: 'link', title: 'Buck', link: '/'},
           {icon: 'volume_off', title: 'Sonido'},
           {icon: 'invert_colors', title: 'Color'}
           ]
