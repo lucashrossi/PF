@@ -19,9 +19,9 @@
                 <v-list-tile-title>{{DDD.title}}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
-            <v-list-tile>
+            <v-list-tile @click="play">
               <v-list-tile-action>
-                <v-icon>volume_off</v-icon>
+                <v-icon>{{this.snd}}</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>Sonido</v-list-tile-title>
@@ -65,8 +65,10 @@
             </v-btn> -->
             <!-- <v-btn flat @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"> -->
             <v-btn flat v-on:click="play">
-            <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio>
-                <v-icon left>{{this.sndd}}</v-icon>
+            <!-- <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio> -->
+            <audio ref="audioElm" src="Yael Naim - Intr.mp3" loop></audio>
+                <v-icon left >{{this.snd}}</v-icon>
+                <!-- <v-icon left >volume_up</v-icon> -->
                 Sonido
             </v-btn>
             <v-btn flat @click="dark = !dark">
@@ -114,14 +116,15 @@
 </template>
 
 <script>
-  import VuetifyAudio from 'vuetify-audio'
+  // import VuetifyAudio from 'vuetify-audio'
 
   export default {
     data: () => ({
       // file: 'http://www.noiseaddicts.com/samples_1w72b820/290.mp3',
       drawer: false,
       dark: false,
-      // snd: "volume_off",
+      snd: "volume_off",
+      // disi: false,
       DD: [
           {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
@@ -151,11 +154,11 @@
           ]
     }),
     props: {
-      sndd: 'volume_off'
+      // sndd: "volume_off"
     },
-    components: {
-			'vuetify-audio': VuetifyAudio
-    },
+    // components: {
+		// 	'vuetify-audio': VuetifyAudio
+    // },
     methods: {
       // playSound (sound) {
       //   if(sound) {
@@ -166,22 +169,26 @@
       play: function(event) {
         var a = this.$refs.audioElm
         if (a.paused) {
+          // console.log(this.snd)
           a.play()
+          // this.disi = true
+          this.snd="volume_up"
+          // console.log(this.snd)
         } else {
+          // console.log(this.snd)
           a.pause()
+          // this.disi = false
+          this.snd="volume_off"
+          // console.log(this.snd)
         }
-        playy()
+
       }
     },
     computed: {
-      playy: () => {
-        if (this.sndd="volume_off") {
-          this.sndd="volume_on"
-        } else {
-          this.sndd="volume_off"
-        }
-      }
-        
+
     }
+        
+        
   }
+
 </script>

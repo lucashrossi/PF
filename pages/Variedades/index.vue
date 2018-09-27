@@ -1,15 +1,15 @@
 <template>
+  
   <v-tabs
     centered
     color="#542a25"
     dark
-    
-  
+
     height="40"
   >
     <v-tabs-slider color="green"></v-tabs-slider>
 
-    <v-tab prev-icon href="#tab-1">
+    <v-tab href="#tab-1">
       <v-icon left >check</v-icon>
   
        Catalogo
@@ -28,21 +28,47 @@
       
     </v-tab>
 
-    <v-tab-item
-      v-for="i in 3"
-      :id="'tab-' + i"
-      :key="i"
-    >
-      <v-card flat>
+    <!-- <v-tab-item v-for="i in 3" :id="'tab-' + i" :key="i"> -->
+    <v-tab-item id='tab-1'>
+
+      <!-- <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
-      </v-card>
+      </v-card> -->
+
+      <!-- <pdf v-for="i in numPages" :key="i" :src="src" :page="i" ></pdf> -->
+      <pdf src="Catalogo Buck 2018.pdf" :page="1" ></pdf>
+      <pdf src="Catalogo Buck 2018.pdf" :page="2" ></pdf>
+      <pdf src="Catalogo Buck 2018.pdf" :page="3" ></pdf>
+      <pdf src="Catalogo Buck 2018.pdf" :page="4" ></pdf>
+
     </v-tab-item>
   </v-tabs>
+ 
 </template>
 
 
 <script>
+// import pdf from 'vue-pdf'
+// var loadingTask = pdf.createLoadingTask('Catalogo Buck 2018.pdf')
+
 export default {
-  layout: 'DBB'
+  // components: {
+  //   pdf
+  // },
+  layout: 'DBB',
+  // data() {
+  //       return {
+  //           src: loadingTask,
+  //           numPages: undefined,
+  //       }
+  //   },
+    // mounted() {
+
+    //     this.src.then(pdf => {
+
+    //         this.numPages = pdf.numPages
+    //     })
+    // },
+
 }
 </script>
