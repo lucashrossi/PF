@@ -66,7 +66,7 @@
             <!-- <v-btn flat @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"> -->
             <v-btn flat v-on:click="play">
             <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio>
-                <v-icon left>{{snd}}</v-icon>
+                <v-icon left>{{this.sndd}}</v-icon>
                 Sonido
             </v-btn>
             <v-btn flat @click="dark = !dark">
@@ -121,7 +121,7 @@
       // file: 'http://www.noiseaddicts.com/samples_1w72b820/290.mp3',
       drawer: false,
       dark: false,
-      snd: "volume_off",
+      // snd: "volume_off",
       DD: [
           {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
@@ -150,6 +150,9 @@
           {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/'},
           ]
     }),
+    props: {
+      sndd: 'volume_off'
+    },
     components: {
 			'vuetify-audio': VuetifyAudio
     },
@@ -167,12 +170,18 @@
         } else {
           a.pause()
         }
-        if (snd="volume_off") {
-          snd="volume_on"
+        playy()
+      }
+    },
+    computed: {
+      playy: () => {
+        if (this.sndd="volume_off") {
+          this.sndd="volume_on"
         } else {
-          snd="volume_off"
+          this.sndd="volume_off"
         }
       }
+        
     }
   }
 </script>
