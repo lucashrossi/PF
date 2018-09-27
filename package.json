@@ -17,7 +17,8 @@
     "chart.js": "^2.7.2",
     "nuxt": "^1.0.0",
     "vue-chartjs": "^3.4.0",
-    "vuetify": "^1.0.19"
+    "vuetify": "^1.0.19",
+    "vuetify-audio": "0.0.8"
   },
   "devDependencies": {
     "cross-env": "^5.0.1",

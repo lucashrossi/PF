@@ -2,7 +2,8 @@
   <div>
     
     <!-- <div> -->
-      <v-app>
+      <v-app :dark="dark" >
+
         <v-navigation-drawer
           v-model="drawer"
           fixed
@@ -10,12 +11,28 @@
           temporary
         >
           <v-list >
-            <v-list-tile v-for="DDD in DDDD" :key="DDD.title" router :to="DDD.link">
+            <v-list-tile v-for="DDD in DDDD" :key="DDD.title" :to="DDD.link" :href="DDD.ref">
               <v-list-tile-action>
                 <v-icon>{{DDD.icon}}</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
                 <v-list-tile-title>{{DDD.title}}</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+            <v-list-tile>
+              <v-list-tile-action>
+                <v-icon>volume_off</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>Sonido</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
+            <v-list-tile @click="dark = !dark">
+              <v-list-tile-action>
+                <v-icon>invert_colors</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>Color</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -32,21 +49,40 @@
           </v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items class="hidden-md-and-down">
-            <v-btn flat v-for="D in DD" :key="D.title" router :to="D.link">
-                <v-icon left>{{D.icon}}</v-icon>
-                {{D.title}}
-            </v-btn>
+            <v-tooltip bottom>
+              <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" slot="activator">
+                  <v-icon left>{{D.icon}}</v-icon>
+                  {{D.title}}
+                  <span>{{D.tool}}</span>
+              </v-btn>
+            </v-tooltip>
           </v-toolbar-items>
           <v-spacer></v-spacer> 
           <v-toolbar-items class="hidden-md-and-down">
-            <v-btn flat v-for="DD in DDD" :key="DD.title" router :to="DD.link">
+            <!-- <v-btn flat v-for="DD in DDD" :key="DD.title">
                 <v-icon left>{{DD.icon}}</v-icon>
                 {{DD.title}}
+            </v-btn> -->
+            <!-- <v-btn flat @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"> -->
+            <v-btn flat v-on:click="play">
+            <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio>
+                <v-icon left>{{snd}}</v-icon>
+                Sonido
+            </v-btn>
+            <v-btn flat @click="dark = !dark">
+                <v-icon left>invert_colors</v-icon>
+                Color
             </v-btn>
           </v-toolbar-items>
         </v-toolbar>
 
         <v-content>
+          <!-- <vuetify-audio :file="file" :ended="audioFinish"></vuetify-audio> -->
+
+          
+          
+
+
           <nuxt/>
           <!-- <v-container fluid fill-height>
             <v-layout justify-center align-center>
@@ -78,29 +114,65 @@
 </template>
 
 <script>
+  import VuetifyAudio from 'vuetify-audio'
+
   export default {
     data: () => ({
+      // file: 'http://www.noiseaddicts.com/samples_1w72b820/290.mp3',
       drawer: false,
+      dark: false,
+      snd: "volume_off",
       DD: [
-          {icon: 'trending_up', title: 'Ventas', link: '/Ventas'},
-          {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion'},
-          {icon: 'attach_money', title: 'Regalias', link: '/Regalias'},
-          {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades'},
-          {icon: 'link', title: 'Buck', link: '/'},
+          {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
+          {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
+          {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
+          {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
+          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/'}
           ],
-      DDD: [
-          {icon: 'volume_off', title: 'Sonido'},
-          {icon: 'invert_colors', title: 'Color'}
-          ],
+      // DDD: [
+      //     {icon: 'volume_off', title: 'Sonido'},
+      //     {icon: 'invert_colors', title: 'Color'}
+      //     ],
+      // DDDD: [
+      //     {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
+      //     {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
+      //     {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
+      //     {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
+      //     {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/'},
+      //     {icon: 'volume_off', title: 'Sonido'},
+      //     {icon: 'invert_colors', title: 'Color'}
+      //     ],
       DDDD: [
-          {icon: 'trending_up', title: 'Ventas', link: '/Ventas'},
-          {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion'},
-          {icon: 'attach_money', title: 'Regalias', link: '/Regalias'},
-          {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades'},
-          {icon: 'link', title: 'Buck', link: '/'},
-          {icon: 'volume_off', title: 'Sonido'},
-          {icon: 'invert_colors', title: 'Color'}
+          {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
+          {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
+          {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
+          {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
+          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/'},
           ]
-    })
+    }),
+    components: {
+			'vuetify-audio': VuetifyAudio
+    },
+    methods: {
+      // playSound (sound) {
+      //   if(sound) {
+      //     var audio = new Audio(sound)
+      //     audio.play()
+      //   }
+      // },
+      play: function(event) {
+        var a = this.$refs.audioElm
+        if (a.paused) {
+          a.play()
+        } else {
+          a.pause()
+        }
+        if (snd="volume_off") {
+          snd="volume_on"
+        } else {
+          snd="volume_off"
+        }
+      }
+    }
   }
 </script>
