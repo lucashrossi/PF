@@ -36,10 +36,19 @@
       </v-card> -->
 
       <!-- <pdf v-for="i in numPages" :key="i" :src="src" :page="i" ></pdf> -->
-      <pdf src="Catalogo Buck 2018.pdf" :page="1" ></pdf>
+
+      <!-- <pdf src="Catalogo Buck 2018.pdf" :page="1" ></pdf>
       <pdf src="Catalogo Buck 2018.pdf" :page="2" ></pdf>
       <pdf src="Catalogo Buck 2018.pdf" :page="3" ></pdf>
-      <pdf src="Catalogo Buck 2018.pdf" :page="4" ></pdf>
+      <pdf src="Catalogo Buck 2018.pdf" :page="4" ></pdf> -->
+
+      <!-- <vue-pdf-viewer height="500px" url="Catalogo Buck 2018.pdf"></vue-pdf-viewer> -->
+    
+
+      <!-- <pdf src="./static/Catalogo Buck 2018.pdf" :page="3" ></pdf> -->
+      <!-- <pdf src="Catalogo Buck 2018.pdf"></pdf> -->
+
+      <!-- <pdfshower pdfurl="Catalogo Buck 2018.pdf" scale=1.2 ></pdfshower> -->
 
     </v-tab-item>
   </v-tabs>
@@ -62,13 +71,13 @@ export default {
   //           numPages: undefined,
   //       }
   //   },
-    // mounted() {
+  //   mounted() {
 
-    //     this.src.then(pdf => {
+  //       this.src.then(pdf => {
 
-    //         this.numPages = pdf.numPages
-    //     })
-    // },
+  //           this.numPages = pdf.numPages
+  //       })
+  //   },
 
 }
 </script>

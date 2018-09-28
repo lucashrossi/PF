@@ -11,7 +11,7 @@
           temporary
         >
           <v-list >
-            <v-list-tile v-for="DDD in DDDD" :key="DDD.title" :to="DDD.link" :href="DDD.ref">
+            <v-list-tile v-for="DDD in DDDD" :key="DDD.title" :to="DDD.link" :href="DDD.ref" :target="DDD.tar">
               <v-list-tile-action>
                 <v-icon>{{DDD.icon}}</v-icon>
               </v-list-tile-action>
@@ -50,7 +50,7 @@
           <v-spacer></v-spacer>
           <v-toolbar-items class="hidden-md-and-down">
             <v-tooltip bottom>
-              <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" slot="activator">
+              <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar" slot="activator">
                   <v-icon left>{{D.icon}}</v-icon>
                   {{D.title}}
                   <span>{{D.tool}}</span>
@@ -130,7 +130,7 @@
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
-          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/'}
+          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'}
           ],
       // DDD: [
       //     {icon: 'volume_off', title: 'Sonido'},
@@ -150,7 +150,7 @@
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
-          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/'},
+          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'},
           ]
     }),
     props: {
