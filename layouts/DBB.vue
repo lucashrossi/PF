@@ -99,18 +99,20 @@
           <span class="white--text">&copy; 2018</span>
         </v-footer> -->
 
-       
+        <v-footer color="blue-grey darken-1" app>
+          <span class="white--text">&copy; 2018</span>
+        </v-footer>
         
       </v-app>
     <!-- </div> -->
 
     <!-- <nuxt/> -->
 
-    <v-app>
+    <!-- <v-app :dark="dark">
         <v-footer color="blue-grey darken-1" app>
           <span class="white--text">&copy; 2018</span>
         </v-footer>
-    </v-app>
+    </v-app> -->
 
   </div>
 </template>
