@@ -66,7 +66,10 @@
             <!-- <v-btn flat @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"> -->
             <v-btn flat v-on:click="play">
             <!-- <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio> -->
-            <audio ref="audioElm" src="Yael Naim - Intr.mp3" loop></audio>
+            <!-- <audio ref="audioElm" src="Yael Naim - Intr.mp3" loop></audio> -->
+            <audio ref="audioElm" src="https://firebasestorage.googleapis.com/v0/b/ppff-94bd3.appspot.com/o/Yael%20Naim%20-%20Intr.mp3?alt=media&token=9f10b04a-cf6e-4bf5-87ea-e66ec7939130" loop></audio>
+            <!-- <audio ref="audioElm" src="gs://ppff-94bd3.appspot.com/Yael Naim - Intr.mp3" loop></audio> -->
+
                 <v-icon left >{{this.snd}}</v-icon>
                 <!-- <v-icon left >volume_up</v-icon> -->
                 Sonido
