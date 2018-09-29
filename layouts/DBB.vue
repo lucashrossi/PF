@@ -137,7 +137,7 @@
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
           // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'}
-          {icon: 'web', title: 'Analitics', link: '/Buck', tool: ''}
+          {icon: 'web', title: 'Analitics', link: '/Analitics', tool: ''}
           ],
       // DDD: [
       //     {icon: 'volume_off', title: 'Sonido'},
@@ -158,7 +158,7 @@
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
           // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'},
-          {icon: 'web', title: 'Analitics', link: '/Buck', tool: ''}
+          {icon: 'web', title: 'Analitics', link: '/Analitics', tool: ''}
           ]
     }),
     props: {
