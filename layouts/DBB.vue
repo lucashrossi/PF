@@ -191,18 +191,21 @@
       },
       colorr: function() {
         this.seen = !this.seen
-        
+        console.log(this.button.text)
         this.button.text = this.seen ? 'light' : 'dark'
-        // if (this.color="light") {
-        //   console.log(this.color)
+        console.log(this.button.text)
+
+
+        // if (this.button.text="light") {
+        //   console.log(this.button.text)
           
-        //   this.color="dark"
-        //   console.log(this.color)
+        //   this.button.text="dark"
+        //   console.log(this.button.text)
         // } else {
-        //   console.log(this.color)
+        //   console.log(this.button.text)
           
-        //   this.color="light"
-        //   console.log(this.color)
+        //   this.button.text="light"
+        //   console.log(this.button.text)
         // }
       }
     },
