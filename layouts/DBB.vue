@@ -27,12 +27,12 @@
                 <v-list-tile-title>Sonido</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
-            <v-list-tile @click="dark = !dark">
+            <v-list-tile @click="dark = !dark; colorr()">
               <v-list-tile-action>
                 <v-icon>invert_colors</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>Color</v-list-tile-title>
+                <v-list-tile-title>{{button.text}}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -128,7 +128,7 @@
       snd: "volume_off",
       // disi: false,
       button: {
-        text: 'light'
+        text: 'Light'
       },
       seen: true,
       DD: [
@@ -136,7 +136,8 @@
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
-          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'}
+          // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'}
+          {icon: 'web', title: 'Analitics', link: '/Buck', tool: ''}
           ],
       // DDD: [
       //     {icon: 'volume_off', title: 'Sonido'},
@@ -156,7 +157,8 @@
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
           {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
-          {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'},
+          // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'},
+          {icon: 'web', title: 'Analitics', link: '/Buck', tool: ''}
           ]
     }),
     props: {
@@ -192,7 +194,7 @@
       colorr: function() {
         this.seen = !this.seen
         console.log(this.button.text)
-        this.button.text = this.seen ? 'light' : 'dark'
+        this.button.text = this.seen ? 'Light' : 'Dark'
         console.log(this.button.text)
 
 
