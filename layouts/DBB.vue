@@ -71,9 +71,9 @@
                 <!-- <v-icon left >volume_up</v-icon> -->
                 Sonido
             </v-btn>
-            <v-btn flat @click="dark = !dark">
+            <v-btn flat @click="dark = !dark; colorr()" >
                 <v-icon left>invert_colors</v-icon>
-                Color
+                {{button.text}}
             </v-btn>
           </v-toolbar-items>
         </v-toolbar>
@@ -127,6 +127,10 @@
       dark: false,
       snd: "volume_off",
       // disi: false,
+      button: {
+        text: 'light'
+      },
+      seen: true,
       DD: [
           {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
           {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
@@ -156,6 +160,7 @@
           ]
     }),
     props: {
+      
       // sndd: "volume_off"
     },
     // components: {
@@ -183,11 +188,26 @@
           this.snd="volume_off"
           // console.log(this.snd)
         }
-
+      },
+      colorr: function() {
+        this.seen = !this.seen
+        
+        this.button.text = this.seen ? 'light' : 'dark'
+        // if (this.color="light") {
+        //   console.log(this.color)
+          
+        //   this.color="dark"
+        //   console.log(this.color)
+        // } else {
+        //   console.log(this.color)
+          
+        //   this.color="light"
+        //   console.log(this.color)
+        // }
       }
     },
     computed: {
-
+      
     }
         
         
