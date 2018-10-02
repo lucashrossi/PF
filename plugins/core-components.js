@@ -14,6 +14,9 @@ import Polar from '~/components/Polar.vue'
 import DN from '~/components/DN.vue'
 import BU from '~/components/BU.vue'
 import PI from '~/components/PI.vue'
+import MIX from '~/components/MIX.vue'
+import DEJ from '~/components/DEJ.vue'
+import HOR from '~/components/HOR.vue'
 
 Vue.component('NC', NC)
 Vue.component('NCC', NCC)
@@ -28,3 +31,6 @@ Vue.component('Polar', Polar)
 Vue.component('DN', DN)
 Vue.component('BU', BU)
 Vue.component('PI', PI)
+Vue.component('MIX', MIX)
+Vue.component('DEJ', DEJ)
+Vue.component('HOR', HOR)

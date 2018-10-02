@@ -21,11 +21,11 @@
 
       <v-layout row wrap>
         <v-flex xs5> <!--class="text-xs-center">-->
-          <Radar/>
+          <Polar/>
         </v-flex>
         <v-spacer></v-spacer> 
         <v-flex xs5> <!--class="text-xs-center">-->
-          <Polar/>
+          <PI/>
         </v-flex>
       </v-layout>
 
@@ -34,13 +34,14 @@
       <br>
       <br>
 
+      
       <v-layout row wrap>
         <v-flex xs5> <!--class="text-xs-center">-->
-          <DN/>
+          <Radar/>
         </v-flex>
         <v-spacer></v-spacer> 
         <v-flex xs5> <!--class="text-xs-center">-->
-          <PI/>
+          <HOR/>
         </v-flex>
       </v-layout>
 
@@ -55,7 +56,22 @@
         </v-flex>
         <v-spacer></v-spacer> 
         <v-flex xs5> <!--class="text-xs-center">-->
-          
+          <MIX/>
+        </v-flex>
+      </v-layout>
+
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <v-layout row wrap>
+        <v-flex xs5> <!--class="text-xs-center">-->
+          <DEJ/>
+        </v-flex>
+        <v-spacer></v-spacer> 
+        <v-flex xs5> <!--class="text-xs-center">-->
+          <DN/>
         </v-flex>
       </v-layout>
 

@@ -1,53 +1,53 @@
 <script>
-import { Bar } from 'vue-chartjs'
+import { HorizontalBar } from 'vue-chartjs'
 
 export default {
-    extends: Bar,
+    extends: HorizontalBar,
 
     data () {
         return {
         datacollection: {
-            labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+            labels: ["2018"],
             datasets: [
             {
-                label: 'Otros',
+                label: 'Algarrobo',
                 backgroundColor: '#f87979',
-                data: [39245, 58079, 47809, 47919, 106962, 121544, 145511, 165823, 197830]
+                data: [566060]
             },
             {
-                label: 'Nidera',
+                label: 'Ceibo',
                 backgroundColor: '#7979f8',
-                data: [1864133, 2190943, 1097654, 878456, 1487360, 743713, 660973, 336322, 292911]
+                data: [443338]
             },
             {
-                label: 'Klein',
+                label: 'ACA 360',
                 backgroundColor: '#79f879',
-                data: [734059, 837279, 648943, 569879, 816646, 588624, 857017, 913199, 782067]
+                data: [196320]
             },
             {
-                label: 'ACA',
+                label: 'Basilio',
                 backgroundColor: '#f8f379',
-                data: [543339, 742907, 570678, 455346, 649381, 691692, 684656, 884110, 623875]
+                data: [194986]
             },
             {
-                label: 'Don Mario',
+                label: 'Baguette 750',
                 backgroundColor: '#65645a',
-                data: [547580, 465974, 254175, 159182, 252097, 241308, 844549, 1145083, 1135824]
+                data: [144401]
             },
             {
-                label: 'Buck',
+                label: 'Klein Serpiente',
                 backgroundColor: '#f87979',
-                data: [159183, 442202, 394354, 465320, 990274, 509433, 472121, 431950, 442742]
+                data: [127973]
             },
             {
-                label: 'Sursem',
+                label: 'ACA 303 Plus',
                 backgroundColor: '#f01313',
-                data: [339630, 594849, 582008, 253843, 348794, 164663, 139093, 148232, 135284]
+                data: [120775]
             },
             {
-                label: 'Bioceres',
+                label: 'Klein Tauro',
                 backgroundColor: '#f01313',
-                data: [265431, 465293, 298950, 175687, 380487, 224061, 161632, 162907, 252811]
+                data: [106771]
             }
             ]
         },

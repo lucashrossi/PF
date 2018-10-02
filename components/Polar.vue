@@ -8,9 +8,9 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ["Spring","Summer","Fall","Winter"],
+            labels: ['ALGARROBO', 'CEIBO', 'ACA 360', 'BASILIO', 'BAGUETTE 750', 'KLEIN SERPIENTE', 'ACA 303 PLUS', 'KLEIN TAURO'],
             datasets: [{
-                data: [1200, 1700, 800, 200],
+                data: [566060, 443338, 196320, 194986, 144401, 127973, 120775, 106771],
                 backgroundColor: [
                 "rgba(255, 0, 0, 0.5)",
                 "rgba(100, 255, 0, 0.5)",

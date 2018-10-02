@@ -1,8 +1,8 @@
 <script>
-import { Pie } from 'vue-chartjs'
+import { Line } from 'vue-chartjs'
 
 export default {
-    extends: Pie,
+    extends: Line,
 
     data () {
         return {
@@ -14,7 +14,7 @@ export default {
             datasets: [            
             {
                 label: 'Buck',
-                backgroundColor: ['#7979f8', '#f01313', '#65645a','#f87979', "#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                backgroundColor: ['#7979f8'],
                 data: [159183, 442202, 394354, 465320, 990274, 509433, 472121, 431950, 442742]
             },
             // {

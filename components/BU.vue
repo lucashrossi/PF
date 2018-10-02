@@ -52,7 +52,8 @@ export default {
             title: {
                 display: true,
                 text: 'Predicted world population (millions) in 2050'
-            }, scales: {
+            }, 
+            scales: {
                 yAxes: [{ 
                 scaleLabel: {
                     display: true,
@@ -65,7 +66,9 @@ export default {
                     labelString: "GDP (PPP)"
                 }
                 }]
-            }
+            },
+            responsive: true,
+            maintainAspectRatio: false
         }
         }
     },
