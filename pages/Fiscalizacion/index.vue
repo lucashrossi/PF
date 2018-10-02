@@ -37,11 +37,11 @@
       
       <v-layout row wrap>
         <v-flex xs5> <!--class="text-xs-center">-->
-          <Radar/>
+          
         </v-flex>
         <v-spacer></v-spacer> 
         <v-flex xs5> <!--class="text-xs-center">-->
-          <HOR/>
+          
         </v-flex>
       </v-layout>
 
@@ -71,7 +71,7 @@
         </v-flex>
         <v-spacer></v-spacer> 
         <v-flex xs5> <!--class="text-xs-center">-->
-          <DN/>
+          
         </v-flex>
       </v-layout>
 

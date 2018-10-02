@@ -7,47 +7,97 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ["2018"],
+            labels: ['SUDESTE', 'SUDOESTE', 'NORTE'],
             datasets: [
             {
-                label: 'Algarrobo',
+                label: '75 ANIVERSARIO',
                 backgroundColor: '#f87979',
-                data: [566060]
+                data: [71, 0, 0]
             },
             {
-                label: 'Ceibo',
+                label: 'BAQUEANO',
                 backgroundColor: '#7979f8',
-                data: [443338]
+                data: [108, 286, 0]
             },
             {
-                label: 'ACA 360',
+                label: 'CHACARERO',
                 backgroundColor: '#79f879',
-                data: [196320]
+                data: [30, 0, 0]
             },
             {
-                label: 'Basilio',
+                label: 'MALEVO',
                 backgroundColor: '#f8f379',
-                data: [194986]
+                data: [158, 1240, 0]
             },
             {
-                label: 'Baguette 750',
+                label: 'METEORO',
                 backgroundColor: '#65645a',
-                data: [144401]
+                data: [17160, 12741, 1264]
             },
             {
-                label: 'Klein Serpiente',
+                label: 'PLENO',
                 backgroundColor: '#f87979',
-                data: [127973]
+                data: [1110, 307, 1143]
             },
             {
-                label: 'ACA 303 Plus',
+                label: 'RANQUEL',
                 backgroundColor: '#f01313',
-                data: [120775]
+                data: [225, 3029, 0]
             },
             {
-                label: 'Klein Tauro',
+                label: 'BELLACO',
                 backgroundColor: '#f01313',
-                data: [106771]
+                data: [0, 52, 0]
+            },
+            {
+                label: 'SAETA',
+                backgroundColor: '#f8f379',
+                data: [0, 90, 0]
+            },
+            {
+                label: '55 CL2',
+                backgroundColor: '#65645a',
+                data: [0, 1027, 0]
+            },
+            {
+                label: 'TILCARA',
+                backgroundColor: '#f87979',
+                data: [200, 0, 0]
+            },
+            {
+                label: 'TAITA',
+                backgroundColor: '#f01313',
+                data: [10, 0, 338]
+            },
+            {
+                label: 'SY 100',
+                backgroundColor: '#f01313',
+                data: [8108, 4589, 4203]
+            },
+            {
+                label: 'SY 110',
+                backgroundColor: '#f8f379',
+                data: [2770, 560, 576]
+            },
+            {
+                label: 'SY 200',
+                backgroundColor: '#65645a',
+                data: [4771, 603, 1306]
+            },
+            {
+                label: 'SY 300',
+                backgroundColor: '#f87979',
+                data: [2802, 430, 7199]
+            },
+            {
+                label: 'SY 330',
+                backgroundColor: '#f01313',
+                data: [0, 0, 110]
+            },
+            {
+                label: 'SY 015',
+                backgroundColor: '#f01313',
+                data: [150, 215, 0]
             }
             ]
         },

@@ -17,6 +17,34 @@
 
     <br>
     <br>
+    <v-container>
+    <v-layout row wrap>
+      <v-flex xs5>
+        <Radar/>
+      </v-flex>
+      <v-spacer></v-spacer> 
+      <v-flex xs5> <!--class="text-xs-center">-->
+        <DN/>
+      </v-flex>
+    </v-layout>
+    </v-container>
+
+    <br>
+    <br>
+    <v-container>
+    <v-layout row wrap>
+      <v-flex xs5>
+        <HOR/>
+      </v-flex>
+      <v-spacer></v-spacer> 
+      <v-flex xs5> <!--class="text-xs-center">-->
+        
+      </v-flex>
+    </v-layout>
+    </v-container>
+
+    <br>
+    <br>
     <br>
     <br>
   
