@@ -10,6 +10,10 @@ import tabla from '~/components/tabla.vue'
 import FISC from '~/components/FISC.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
+import Polar from '~/components/Polar.vue'
+import DN from '~/components/DN.vue'
+import BU from '~/components/BU.vue'
+import PI from '~/components/PI.vue'
 
 Vue.component('NC', NC)
 Vue.component('NCC', NCC)
@@ -20,3 +24,7 @@ Vue.component('tabla', tabla)
 Vue.component('FISC', FISC)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)
+Vue.component('Polar', Polar)
+Vue.component('DN', DN)
+Vue.component('BU', BU)
+Vue.component('PI', PI)
