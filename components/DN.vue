@@ -12,7 +12,9 @@ export default {
                 {
                 label: 'Buck',
                 data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
-                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','#3cba9f','#e8c3b9','#c45850'],
+                // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
+                borderWidth: [0,0,0,0,0,0,0,0,0,0,0]
                 },
                 // {
                 // label: 'N',

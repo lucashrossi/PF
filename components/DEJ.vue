@@ -29,14 +29,63 @@ export default {
                     id: 'left-y-axis',
                     type: 'linear',
                     position: 'left'
+    
                 }, {
                     id: 'right-y-axis',
                     type: 'linear',
                     position: 'right'
                 }]
             },
+    
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            pan: {
+                // Boolean to enable panning
+                enabled: true,
+
+                // Panning directions. Remove the appropriate direction to disable 
+                // Eg. 'y' would only allow panning in the y direction
+                mode: 'xy',
+                rangeMin: {
+                    // Format of min pan range depends on scale type
+                    x: null,
+                    y: null
+                },
+                rangeMax: {
+                    // Format of max pan range depends on scale type
+                    x: null,
+                    y: null
+                },
+                // Function called once panning is completed
+                // Useful for dynamic data loading
+                // onPan: funtion() { console.log('I was panned!!!'); }
+            },
+
+            // Container for zoom options
+            zoom: {
+                // Boolean to enable zooming
+                enabled: true,
+
+                // Enable drag-to-zoom behavior
+                drag: true,
+
+                // Zooming directions. Remove the appropriate direction to disable 
+                // Eg. 'y' would only allow zooming in the y direction
+                mode: 'xy',
+                rangeMin: {
+                    // Format of min zoom range depends on scale type
+                    x: null,
+                    y: null
+                },
+                rangeMax: {
+                    // Format of max zoom range depends on scale type
+                    x: null,
+                    y: null
+                },
+                // Function called once zooming is completed
+                // Useful for dynamic data loading
+                // onZoom: funtion() { console.log('I was zoomed!!!'); }
+            }
         }
         }
     },

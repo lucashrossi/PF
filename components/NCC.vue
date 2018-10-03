@@ -15,12 +15,14 @@ export default {
                 data: [145482, 115304, 165650, 172013]
             }
             ]
-        }
+        },
+        
         }
     },
     mounted () {
         // this.renderChart(data, options)  
         this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        // this.renderChart(this.datacollection, this.options)
     }
 
 
