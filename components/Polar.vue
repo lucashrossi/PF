@@ -21,11 +21,25 @@ export default {
             }],
             label: 'My dataset'
         },
+        options: {
+            scale: {
+                
+                // display: false
+                
+                ticks: {
+                    backdropColor: "rgba(0,0,0,0)" 
+                }
+            },
+            
+            responsive: true,
+            maintainAspectRatio: false
+        }
         }
     },
     mounted () {
         // this.renderChart(data, options)  
-        this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        // this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        this.renderChart(this.datacollection, this.options)
     }
 
 
