@@ -136,9 +136,9 @@
       seen: true,
       DD: [
           {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
-          {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
+          {icon: 'book', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
           {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
-          {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
+          {icon: 'domain', title: 'Criadero', link: '/Criadero', tool: '', ref:''},
           // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'}
           {icon: 'web', title: 'Analitics', link: '/Analitics', tool: ''}
           ],

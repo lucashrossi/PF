@@ -18,7 +18,7 @@
 
     <v-tab href="#tab-2">
       <v-icon left>schedule</v-icon>
-      Candidatas
+      Variedades Candidatas
       
     </v-tab>
 
