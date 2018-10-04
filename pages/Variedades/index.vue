@@ -10,7 +10,7 @@
     <v-tabs-slider color="green"></v-tabs-slider>
 
     <v-tab href="#tab-1">
-      <v-icon left >check</v-icon>
+      <v-icon left >note</v-icon>
   
        Catalogo
       
@@ -25,6 +25,12 @@
     <v-tab href="#tab-3">
       <v-icon left>location_city</v-icon>
       INASE
+      
+    </v-tab>
+
+    <v-tab href="#tab-4">
+      <v-icon left>map</v-icon>
+      Campo Experimental
       
     </v-tab>
 
