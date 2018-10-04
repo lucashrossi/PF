@@ -11,12 +11,12 @@
           temporary
         >
           <v-list >
-            <v-list-tile v-for="DDD in DDDD" :key="DDD.title" :to="DDD.link" :href="DDD.ref" :target="DDD.tar">
+            <v-list-tile v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar">
               <v-list-tile-action>
-                <v-icon>{{DDD.icon}}</v-icon>
+                <v-icon>{{D.icon}}</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>{{DDD.title}}</v-list-tile-title>
+                <v-list-tile-title>{{D.title}}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
             <v-list-tile @click="play">
@@ -155,14 +155,14 @@
       //     {icon: 'volume_off', title: 'Sonido'},
       //     {icon: 'invert_colors', title: 'Color'}
       //     ],
-      DDDD: [
-          {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
-          {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
-          {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
-          {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
-          // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'},
-          {icon: 'web', title: 'Analitics', link: '/Analitics', tool: ''}
-          ]
+      // DDDD: [
+      //     {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
+      //     {icon: 'business', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
+      //     {icon: 'attach_money', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
+      //     {icon: 'format_list_bulleted', title: 'Variedades', link: '/Variedades', tool: '', ref:''},
+      //     // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'},
+      //     {icon: 'web', title: 'Analitics', link: '/Analitics', tool: ''}
+      //     ]
     }),
     props: {
       
