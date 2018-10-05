@@ -24,8 +24,16 @@ export default {
             labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
         },
         options: {
+            title: {
+                display: true,
+                text: ''
+            }, 
             scales: {
                 yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
                     id: 'left-y-axis',
                     type: 'linear',
                     position: 'left'
@@ -34,6 +42,12 @@ export default {
                     id: 'right-y-axis',
                     type: 'linear',
                     position: 'right'
+                }],
+                xAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
                 }]
             },
     

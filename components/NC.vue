@@ -45,12 +45,35 @@ export default {
                 data: [74880, 20000, 138239, 360366]
             }
             ]
+        },
+        options: {
+            title: {
+                display: true,
+                text: ''
+            },
+            scales: {
+                yAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
+                }],
+                xAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
+                }]
+            },
+            responsive: true,
+            maintainAspectRatio: false
         }
         }
     },
     mounted () {
         // this.renderChart(data, options)  
-        this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        // this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        this.renderChart(this.datacollection, this.options)
     }
 
 

@@ -51,19 +51,19 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Predicted world population (millions) in 2050'
+                text: ''
             }, 
             scales: {
                 yAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: "Happiness"
+                    labelString: ""
                 }
                 }],
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: "GDP (PPP)"
+                    labelString: ""
                 }
                 }]
             },

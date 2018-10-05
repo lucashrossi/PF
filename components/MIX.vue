@@ -22,20 +22,34 @@ export default {
                 }],
             labels: ['January', 'February', 'March', 'April']
         },
-        // options: {
-        //     title: {
-        //         display: true,
-        //         text: 'Predicted world population (millions) in 2050'
-        //     },
-        //     responsive: true,
-        //     maintainAspectRatio: false
-        // }
+        options: {
+            title: {
+                display: true,
+                text: ''
+            },
+            scales: {
+                yAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
+                }],
+                xAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
+                }]
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        }
         }
     },
     mounted () {
         // this.renderChart(data, options)  
-        this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
-        // this.renderChart(this.datacollection, this.options)
+        // this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        this.renderChart(this.datacollection, this.options)
     }
 
 

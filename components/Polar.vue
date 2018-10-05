@@ -22,9 +22,24 @@ export default {
             label: 'My dataset'
         },
         options: {
+            title: {
+                display: true,
+                text: ''
+            },
             scale: {
-                
-                // display: false
+                yAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
+                }],
+                xAxes: [{ 
+                scaleLabel: {
+                    display: true,
+                    labelString: ""
+                }
+                }],
+                // display: false,
                 
                 ticks: {
                     backdropColor: "rgba(0,0,0,0)" 

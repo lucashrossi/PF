@@ -102,11 +102,23 @@ export default {
             ]
         },
         options: {
+            title: {
+                display: true,
+                text: ''
+            },
             scales: {
                 xAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
                     stacked: true
                 }],
                 yAxes: [{
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
                     stacked: true
                 }]
             },

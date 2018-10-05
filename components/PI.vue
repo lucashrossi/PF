@@ -18,8 +18,22 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Variedades Buck 2018'
+                text: ''
             },
+            // scales: {
+            //     yAxes: [{ 
+            //     scaleLabel: {
+            //         display: true,
+            //         labelString: ""
+            //     }
+            //     }],
+            //     xAxes: [{ 
+            //     scaleLabel: {
+            //         display: true,
+            //         labelString: ""
+            //     }
+            //     }]
+            // },
             responsive: true,
             maintainAspectRatio: false
         }
