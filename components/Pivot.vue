@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- Top row -->
-    <div v-if="showSettings" class="row grid-x flex-nowrap mb-4">
+    <div v-if="showSettings" class="row grid-x flex-nowrap mb-4 mt-3">
       <div class="col left-col">
         <button class="btn btn-outline-primary" @click="toggleShowSettings">
           {{ hideSettingsText }}
