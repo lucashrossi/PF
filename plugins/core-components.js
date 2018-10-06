@@ -16,6 +16,7 @@ import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
 import Pivot from '~/components/Pivot'
 import PivotTable from '~/components/PivotTable'
+import PivotI from '~/components/PivotI'
 
 Vue.component('NC', NC)
 Vue.component('NCC', NCC)
@@ -33,3 +34,4 @@ Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)
 Vue.component('pivot', Pivot)
 Vue.component('pivot-table', PivotTable)
+Vue.component('PivotI', PivotI)

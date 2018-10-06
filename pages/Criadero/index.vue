@@ -34,9 +34,18 @@
       
     </v-tab>
 
-    <!-- <v-tab-item v-for="i in 3" :id="'tab-' + i" :key="i"> -->
-    <v-tab-item id='tab-1'>
+    <v-tab href="#tab-5">
+      <v-icon left>map</v-icon>
+      Pivot
 
+      
+      
+    </v-tab>
+
+    <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
+    <v-tab-item id='tab-5'>
+      <PivotI/>
+    </v-tab-item>
       <!-- <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
       </v-card> -->
@@ -54,10 +63,12 @@
       <!-- <pdf src="./static/Catalogo Buck 2018.pdf" :page="3" ></pdf> -->
       <!-- <pdf src="Catalogo Buck 2018.pdf"></pdf> -->
       <!-- <pdf src="https://firebasestorage.googleapis.com/v0/b/ppff-94bd3.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=0453c75b-54be-4a2c-af88-3ed6ea313592"></pdf> -->
-
+      <!-- <v-tab-item id='tab-1'>
+        <pdf src="https://firebasestorage.googleapis.com/v0/b/ppff-94bd3.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=0453c75b-54be-4a2c-af88-3ed6ea313592"></pdf>
+      </v-tab-item> -->
       <!-- <pdfshower pdfurl="Catalogo Buck 2018.pdf" scale=1.2 ></pdfshower> -->
 
-    </v-tab-item>
+    <!-- </v-tab-item> -->
   </v-tabs>
  
 </template>

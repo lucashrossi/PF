@@ -58,7 +58,7 @@
 <script>
 // import Pivot from './Pivot'
 // import PivotTable from './PivotTable'
-import data from './data'
+import data from './data.js'
 export default {
   // name: 'app',
   // components: { Pivot, PivotTable },
