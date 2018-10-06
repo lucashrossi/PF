@@ -35,8 +35,8 @@
     </v-tab>
 
     <v-tab href="#tab-5">
-      <v-icon left>map</v-icon>
-      Pivot
+      <v-icon left>table_chart</v-icon>
+      Data
 
       
       

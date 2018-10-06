@@ -25,7 +25,7 @@
       </pivot>
     </div>
 
-    <h2 class="border-bottom pb-2 mb-4">PivotTable <small>(standalone)</small></h2>
+    <!-- <h2 class="border-bottom pb-2 mb-4">PivotTable <small>(standalone)</small></h2>
     
     <div class="mb-5">
       <pivot-table
@@ -51,7 +51,7 @@
           </div>
         </template>
       </pivot-table>
-    </div>
+    </div> -->
   </div>
 </template>
 
