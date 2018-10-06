@@ -9,7 +9,7 @@
       </div>
 
       <!-- Disabled fields -->
-      <div class="col">
+      <div class="row">
         <div class="drag-area-label">{{ availableFieldsLabelText }}</div>
         <draggable v-model="internal.fields" class="d-flex flex-row drag-area flex-wrap" :class="dragAreaClass" :options="{ group: 'fields' }" @start="start" @end="end">
           <div v-for="field in internal.fields" :key="field.key">
@@ -33,7 +33,7 @@
       <div class="col left-col"></div>
 
       <!-- Horizontal fields -->
-      <div class="col">
+      <div class="row">
         <div class="drag-area-label">{{ colsLabelText }}</div>
         <draggable v-model="internal.colFields" :options="{ group: 'fields' }" @start="start" @end="end" class="d-flex flex-row drag-area border-primary" :class="dragAreaClass">
           <div v-for="field in internal.colFields" :key="field.key">
