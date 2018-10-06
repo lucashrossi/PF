@@ -172,6 +172,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+$enable-rounded: false;
+@import '~bootstrap/scss/bootstrap.scss';
+
 /* Left column width */
 .left-col {
   min-width: 200px;

@@ -102,7 +102,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 $enable-rounded: false;
 @import '~bootstrap/scss/bootstrap.scss';
 /* FontAwesome icons */
