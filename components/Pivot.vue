@@ -77,12 +77,13 @@
 </template>
 
 <script>
-import PivotTable from './PivotTable'
+// import PivotTable from './PivotTable'
 import Draggable from 'vuedraggable'
 
 export default {
   name: 'vue-pivot',
-  components: { PivotTable, Draggable },
+  // components: { PivotTable, Draggable },
+  components: { Draggable },
   props: {
     data: {
       type: Array,

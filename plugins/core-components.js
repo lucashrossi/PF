@@ -3,7 +3,7 @@ import Vue from 'vue'
 import NC from '~/components/NC.vue'
 import NCC from '~/components/NCC.vue'
 // import pdf from 'vue-pdf'
-import tabla from '~/components/tabla.vue'
+import Tabla from '~/components/tabla.vue'
 import FISC from '~/components/FISC.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
@@ -14,12 +14,13 @@ import PI from '~/components/PI.vue'
 import MIX from '~/components/MIX.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
-
+import Pivot from '~/components/Pivot'
+import PivotTable from '~/components/PivotTable'
 
 Vue.component('NC', NC)
 Vue.component('NCC', NCC)
 // Vue.component('pdf', pdf)
-Vue.component('tabla', tabla)
+Vue.component('tabla', Tabla)
 Vue.component('FISC', FISC)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)
@@ -30,4 +31,5 @@ Vue.component('PI', PI)
 Vue.component('MIX', MIX)
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)
-
+Vue.component('pivot', Pivot)
+Vue.component('pivot-table', PivotTable)

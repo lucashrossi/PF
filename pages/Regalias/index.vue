@@ -54,7 +54,7 @@
             <div slot="header" style="text-align: center">Auditorias</div>
             <v-card>
               <v-card-text></v-card-text>
-              <tabla/>
+              <Tabla/>
             </v-card>
           </v-expansion-panel-content>
         </v-expansion-panel>

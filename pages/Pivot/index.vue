@@ -1,5 +1,6 @@
 <template>
-  <div id="app" class="container mt-5">
+  <!-- <div id="app" class="container mt-5"> -->
+  <div class="container mt-5">
     <h1 class="border-bottom pb-2 mb-4">Vue pivot table demo</h1>
 
     <h2 class="border-bottom pb-2 mb-4">Pivot <small>(drag & drop UI + PivotTable)</small></h2>
@@ -55,12 +56,12 @@
 </template>
 
 <script>
-import Pivot from './Pivot'
-import PivotTable from './PivotTable'
+// import Pivot from './Pivot'
+// import PivotTable from './PivotTable'
 import data from './data'
 export default {
-  name: 'app',
-  components: { Pivot, PivotTable },
+  // name: 'app',
+  // components: { Pivot, PivotTable },
   data: () => {
     return {
       data: data,
