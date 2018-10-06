@@ -141,7 +141,7 @@
           {icon: 'domain', title: 'Criadero', link: '/Criadero', tool: '', ref:''},
           // {icon: 'link', title: 'Buck', link: '', tool: 'Pagina', ref:'http://semillasbuck.com.ar/', tar: '_blank'}
           {icon: 'web', title: 'Analitics', link: '/Analitics', tool: ''},
-          {icon: 'web', title: 'Pivot', link: '/Pivot', tool: ''}
+          // {icon: 'web', title: 'Pivot', link: '/Pivot', tool: ''}
 
           ],
       // DDD: [
