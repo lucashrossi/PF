@@ -22,7 +22,7 @@
       </div>
     </div>
 
-    <div class="mb-4" v-else>
+    <div class="mb-4 mt-3" v-else>
       <button class="btn btn-outline-primary" @click="toggleShowSettings">
         {{ showSettingsText }}
       </button>
