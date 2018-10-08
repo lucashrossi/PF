@@ -9,6 +9,7 @@
           fixed
           app
           temporary
+          width=170
         >
           <v-list >
             <v-list-tile v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar">
