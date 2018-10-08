@@ -104,7 +104,7 @@
         </v-footer> -->
 
         <v-footer height=25 color="blue-grey darken-1" app>
-          <span class="white--text">&copy; 2018</span>
+          <span class="white--text caption" >&copy; 2018</span>
         </v-footer>
         
       </v-app>
