@@ -52,7 +52,7 @@
           <v-toolbar-items class="hidden-md-and-down">
             <v-tooltip bottom>
               <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar" slot="activator">
-                  <v-icon left>{{D.icon}}</v-icon>
+                  <v-icon class="mr-1">{{D.icon}}</v-icon>
                   {{D.title}}
                   <span>{{D.tool}}</span>
               </v-btn>
@@ -71,12 +71,12 @@
             <audio ref="audioElm" src="https://firebasestorage.googleapis.com/v0/b/ppff-94bd3.appspot.com/o/Yael%20Naim%20-%20Intr.mp3?alt=media&token=9f10b04a-cf6e-4bf5-87ea-e66ec7939130" loop></audio>
             <!-- <audio ref="audioElm" src="gs://ppff-94bd3.appspot.com/Yael Naim - Intr.mp3" loop></audio> -->
 
-                <v-icon left >{{this.snd}}</v-icon>
+                <v-icon class="mr-1" >{{this.snd}}</v-icon>
                 <!-- <v-icon left >volume_up</v-icon> -->
                 Sonido
             </v-btn>
             <v-btn flat @click="dark = !dark; colorr()" >
-                <v-icon left>invert_colors</v-icon>
+                <v-icon class="mr-1">invert_colors</v-icon>
                 {{button.text}}
             </v-btn>
           </v-toolbar-items>
