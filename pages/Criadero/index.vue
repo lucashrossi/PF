@@ -4,43 +4,34 @@
     centered
     color="#542a25"
     dark
-
     height="30"
     
   >
     <v-tabs-slider color="green"></v-tabs-slider>
 
     <v-tab href="#tab-1" class="caption">
-      <v-icon left >note</v-icon>
-  
+      <v-icon>note</v-icon>
        Catalogo
-      
     </v-tab>
 
     <v-tab href="#tab-2" class="caption">
-      <v-icon left>schedule</v-icon>
+      <v-icon>schedule</v-icon>
       Variedades Candidatas
-      
     </v-tab>
 
     <v-tab href="#tab-3" class="caption">
-      <v-icon left>location_city</v-icon>
+      <v-icon>location_city</v-icon>
       INASE
-      
     </v-tab>
 
     <v-tab href="#tab-4" class="caption">
-      <v-icon left>map</v-icon>
+      <v-icon>map</v-icon>
       Campo Experimental
-      
     </v-tab>
 
     <v-tab href="#tab-5" class="caption">
-      <v-icon left>table_chart</v-icon>
+      <v-icon>table_chart</v-icon>
       Data
-
-      
-      
     </v-tab>
 
     <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
