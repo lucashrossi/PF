@@ -50,13 +50,13 @@
           </v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items class="hidden-md-and-down">
-            <v-tooltip bottom>
+            <!-- <v-tooltip bottom> -->
               <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar" slot="activator">
                   <v-icon class="mr-1">{{D.icon}}</v-icon>
                   {{D.title}}
-                  <span>{{D.tool}}</span>
+                  <!-- <span>{{D.tool}}</span> -->
               </v-btn>
-            </v-tooltip>
+            <!-- </v-tooltip> -->
           </v-toolbar-items>
           <v-spacer></v-spacer> 
           <v-toolbar-items class="hidden-md-and-down">
