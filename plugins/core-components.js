@@ -3,7 +3,7 @@ import Vue from 'vue'
 import NC from '~/components/NC.vue'
 import NCC from '~/components/NCC.vue'
 // import pdf from 'vue-pdf'
-import Tabla from '~/components/tabla.vue'
+import Tabla from '~/components/Tabla.vue'
 import FISC from '~/components/FISC.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
@@ -21,7 +21,7 @@ import PivotI from '~/components/PivotI'
 Vue.component('NC', NC)
 Vue.component('NCC', NCC)
 // Vue.component('pdf', pdf)
-Vue.component('tabla', Tabla)
+Vue.component('Tabla', Tabla)
 Vue.component('FISC', FISC)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)
