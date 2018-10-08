@@ -10,27 +10,27 @@
     <v-tabs-slider color="green"></v-tabs-slider>
 
     <v-tab href="#tab-1" class="caption">
-      <v-icon>note</v-icon>
+      <v-icon class="mr-1">note</v-icon>
        Catalogo
     </v-tab>
 
     <v-tab href="#tab-2" class="caption">
-      <v-icon>schedule</v-icon>
+      <v-icon class="mr-1">schedule</v-icon>
       Variedades Candidatas
     </v-tab>
 
     <v-tab href="#tab-3" class="caption">
-      <v-icon>location_city</v-icon>
+      <v-icon class="mr-1">location_city</v-icon>
       INASE
     </v-tab>
 
     <v-tab href="#tab-4" class="caption">
-      <v-icon>map</v-icon>
+      <v-icon class="mr-1">map</v-icon>
       Campo Experimental
     </v-tab>
 
     <v-tab href="#tab-5" class="caption">
-      <v-icon>table_chart</v-icon>
+      <v-icon class="mr-1">table_chart</v-icon>
       Data
     </v-tab>
 
