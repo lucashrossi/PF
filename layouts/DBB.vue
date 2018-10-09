@@ -68,7 +68,7 @@
             <v-btn flat v-on:click="play">
             <!-- <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio> -->
             <!-- <audio ref="audioElm" src="Yael Naim - Intr.mp3" loop></audio> -->
-            <audio ref="audioElm" src="https://firebasestorage.googleapis.com/v0/b/ppff-94bd3.appspot.com/o/Yael%20Naim%20-%20Intr.mp3?alt=media&token=9f10b04a-cf6e-4bf5-87ea-e66ec7939130" loop></audio>
+            <audio ref="audioElm" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Yael%20Naim%20-%20Intr.mp3?alt=media&token=2758de44-05c3-4c1a-8bd1-661da9dfa84e" loop></audio>
             <!-- <audio ref="audioElm" src="gs://ppff-94bd3.appspot.com/Yael Naim - Intr.mp3" loop></audio> -->
 
                 <v-icon class="mr-1" >{{this.snd}}</v-icon>
