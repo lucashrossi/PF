@@ -83,4 +83,7 @@ module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || 'https://DBB.firebaseio.com'
   }
+  // router: {
+  //   middleware: 'auth'
+  // }
 }

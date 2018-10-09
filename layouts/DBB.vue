@@ -43,7 +43,7 @@
         <v-toolbar height=50 color="blue-grey darken-3" dark fixed app>
           <v-toolbar-side-icon @click.stop="drawer = !drawer" ></v-toolbar-side-icon> <!--class="hidden-sm-and-up"></v-toolbar-side-icon>-->
           <v-toolbar-title>
-            <v-btn flat router to='/'>
+            <v-btn flat router to='/DashB'>
                 <v-icon left>dashboard</v-icon>
                 DashBoard
             </v-btn>
@@ -125,6 +125,7 @@
   // import VuetifyAudio from 'vuetify-audio'
 
   export default {
+    middleware: 'auth',
     data: () => ({
       // file: 'http://www.noiseaddicts.com/samples_1w72b820/290.mp3',
       drawer: false,
@@ -220,8 +221,6 @@
     computed: {
       
     }
-        
-        
   }
 
 </script>
