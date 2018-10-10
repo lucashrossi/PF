@@ -9,10 +9,11 @@ const createStore = () => {
     mutations: {
       setToken (state, token) {
         state.token = token
+      },
+      clearToken (state) {
+        state.token = null
+        console.log('mutation clearToken')
       }
-      // clearToken (state) {
-      //   state.token = null
-      // }
     },
     actions: {
       authenticateUser (vuexContext, authData) {
@@ -38,6 +39,10 @@ const createStore = () => {
             // )
           })
           .catch(e => console.log(e))
+      },
+      CeTo (vuexContext) {
+        vuexContext.commit('clearToken')
+        console.log('action CeTo')
       }
       // initAuth (vuexContext, req) {
       //   let token

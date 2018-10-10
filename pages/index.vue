@@ -56,6 +56,7 @@
 
 <script>
   export default {
+    middleware: 'login',
     data () {
       return {
         email: '',
@@ -88,6 +89,10 @@
       })
       
     }
+    },
+    created() {
+      this.$store.dispatch('CeTo')
+      console.log('dispatch CeTo')
     }
   }
 </script>
