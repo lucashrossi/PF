@@ -43,6 +43,15 @@
     </div>
 </template>
 
+<script>
+export default {
+    created() {
+      this.$store.dispatch('CeTo')
+      console.log('dispatch CeTo')
+    }
+}
+</script>
+
 
 
 <style>
