@@ -56,7 +56,7 @@
 
 <script>
   export default {
-    middleware: 'login',
+    // middleware: 'login',
     data () {
       return {
         email: '',

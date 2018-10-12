@@ -45,6 +45,7 @@
 
 <script>
 export default {
+    // middleware: 'login',
     created() {
       this.$store.dispatch('CeTo')
       console.log('dispatch CeTo')
