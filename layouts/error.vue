@@ -49,6 +49,16 @@ export default {
     created() {
       this.$store.dispatch('CeTo')
       console.log('dispatch CeTo')
+
+      if (this.$route.path !== "/") {
+        this.$router.push("/")
+        console.log('error if')
+      }
+
+      // if (context.route.path != '/') {
+      //   context.redirect('/')
+      //   console.log('error ifif')
+      // }
     }
 }
 </script>
