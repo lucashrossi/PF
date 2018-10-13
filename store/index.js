@@ -4,7 +4,8 @@ import Vuex from 'vuex'
 const createStore = () => {
   return new Vuex.Store({
     state: {   
-      token: null
+      token: null,
+      alert: false
     },
     mutations: {
       setToken (state, token) {
@@ -13,6 +14,14 @@ const createStore = () => {
       clearToken (state) {
         state.token = null
         console.log('mutation clearToken')
+      },
+      alertTr (state) {
+        state.alert = true
+        console.log('mutation alertTr')
+      },
+      alertFa (state) {
+        state.alert = false
+        console.log('mutation alertFa')
       }
     },
     actions: {
@@ -27,6 +36,13 @@ const createStore = () => {
           .then(result => {
             vuexContext.commit('setToken', result.idToken)
             console.log('store settoken')
+
+            vuexContext.commit('alertFa')
+            console.log('store alertFa')
+
+            this.$router.push('/DashB')
+            console.log('onsignin rout')
+
             // localStorage.setItem('token', result.idToken)
             // localStorage.setItem(
             //   'tokenExpiration',
@@ -38,7 +54,12 @@ const createStore = () => {
             //   new Date().getTime() + Number.parseInt(result.expiresIn) * 1000
             // )
           })
-          .catch(e => console.log(e))
+          .catch(e => {
+            console.log(e)
+            vuexContext.commit('alertTr')
+            console.log('store alertTr')
+            console.log(this.getters.alertG)
+          })
       },
       CeTo (vuexContext) {
         vuexContext.commit('clearToken')
@@ -78,6 +99,10 @@ const createStore = () => {
       isAuthenticated (state) {
         console.log('getter isAuthenticated')
         return state.token != null
+      },
+      alertG (state) {
+        console.log('getter alert')
+        return state.alert
       }
     }
   })

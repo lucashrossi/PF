@@ -42,7 +42,20 @@
                 <v-layout row>
                   <v-flex xs12>
                     <!-- <v-btn type="submit">Sign up</v-btn> -->
-                    <v-btn type="submit">Sign in</v-btn>
+                    <!-- <v-btn  type="submit" v-if="!alert" @click="alert=true">Sign in</v-btn> -->
+                    <!-- <v-btn  type="submit" v-if="!alert" @click="alertS">Sign in</v-btn> -->
+                    <v-btn  type="submit" v-if="!alert" @click="alertS">Sign in</v-btn>
+                    <v-alert
+                      v-model="alert"
+                      dismissible
+                      type="warning"
+                      color='rgba(200,100,50)'
+                      icon="priority_high"
+                      outline
+                      :value="true"
+                    >
+                      Error de credenciales!
+                    </v-alert>
                   </v-flex>
                 </v-layout>
               </form>
@@ -59,6 +72,9 @@
     // middleware: 'login',
     data () {
       return {
+        // alert: false,
+        // alert: this.$store.alert,
+        alert: this.$store.getters.alertG,
         email: '',
         password: '',
         // confirmPassword: ''
@@ -83,12 +99,29 @@
       onSignin () {
         console.log('onsignin dispatch')
         this.$store.dispatch('authenticateUser', {email: this.email, password: this.password})
+          // .then(() => {
+          //   if (!this.$store.getters.isAuthenticated) {
+          //     alert = true
+          //     console.log('alert true')
+          //   }
+          // })
           .then(() => {
-            this.$router.push('/DashB')
-            console.log('onsignin rout')
-      })
-      
-    }
+              this.alert = this.$store.getters.alertG
+              console.log('alert final')
+              console.log(this.alert)
+              console.log(this.$store.getters.alertG)
+          })
+      },
+      alertS () {
+        if (!this.$store.getters.isAuthenticated) {
+          // this.alert = true
+          // this.alert = this.$store.alert
+          console.log('alertS')
+          
+          console.log(this.alert)
+          console.log(this.$store.getters.alertG)
+        }
+      }
     },
     created() {
       this.$store.dispatch('CeTo')
