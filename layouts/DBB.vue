@@ -36,6 +36,14 @@
                 <v-list-tile-title>{{button.text}}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
+            <v-list-tile href="/">
+              <v-list-tile-action>
+                <v-icon>exit_to_app</v-icon>
+              </v-list-tile-action>
+              <v-list-tile-content>
+                <v-list-tile-title>Salir</v-list-tile-title>
+              </v-list-tile-content>
+            </v-list-tile>
           </v-list>
 
         </v-navigation-drawer>
@@ -78,6 +86,10 @@
             <v-btn flat @click="dark = !dark; colorr()" >
                 <v-icon class="mr-1">invert_colors</v-icon>
                 {{button.text}}
+            </v-btn>
+            <v-btn flat href="/">
+                <v-icon class="mr-1">exit_to_app</v-icon>
+                Salir
             </v-btn>
           </v-toolbar-items>
         </v-toolbar>
