@@ -5,4 +5,8 @@ export default function (context) {
         context.redirect('/')
         console.log('midd login if')
     }
+    // if (this.$route.path !== "/") {
+    //     this.$router.push("/")
+    //     console.log('midd login iff')
+    // }
   }
