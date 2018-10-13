@@ -20,6 +20,7 @@
                 <v-list-tile-title>{{D.title}}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
+            <v-divider></v-divider>
             <v-list-tile @click="play">
               <v-list-tile-action>
                 <v-icon>{{this.snd}}</v-icon>
@@ -36,6 +37,7 @@
                 <v-list-tile-title>{{button.text}}</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
+            <v-divider></v-divider>
             <v-list-tile href="/">
               <v-list-tile-action>
                 <v-icon>exit_to_app</v-icon>
