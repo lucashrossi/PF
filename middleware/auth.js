@@ -4,4 +4,8 @@ export default function (context) {
   if (!context.store.getters.isAuthenticated) {
     context.redirect('/')
   }
+  // if (!this.$store.getters.isAuthenticated) {
+  //     this.$router.push("/")
+  //     console.log('mid Auth push')
+  // }
 }

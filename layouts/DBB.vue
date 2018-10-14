@@ -38,7 +38,8 @@
               </v-list-tile-content>
             </v-list-tile>
             <v-divider></v-divider>
-            <v-list-tile href="/">
+            <!-- <v-list-tile href="/"> -->
+            <v-list-tile @click="Salir">
               <v-list-tile-action>
                 <v-icon>exit_to_app</v-icon>
               </v-list-tile-action>
@@ -89,7 +90,8 @@
                 <v-icon class="mr-1">invert_colors</v-icon>
                 {{button.text}}
             </v-btn>
-            <v-btn flat href="/">
+            <!-- <v-btn flat href="/"> -->
+            <v-btn flat @click="Salir">
                 <v-icon class="mr-1">exit_to_app</v-icon>
                 Salir
             </v-btn>
@@ -230,6 +232,12 @@
         //   this.button.text="light"
         //   console.log(this.button.text)
         // }
+      },
+      Salir: function() {
+        // if (this.$route.path !== "/") {
+        console.log('Salir')
+        this.$router.push("/")
+      // }
       }
     },
     computed: {
