@@ -7,12 +7,12 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ['SY 330', 'BUCK ESMERALDA', 'SY 211', 'BUCK SAETA', 'BUCK TOPACIO', 'BUCK METEORO', 'SY 120', 'BUCK ZAFIRO', 'BUCK CLARAZ', 'BUCK BELLACO', 'NO ESTÁ', 'BUCKSY300', 'SY 200', 'BUCK PLATINO', 'BUCK GRANATE', 'BUCK PLENO', '55 CL 2'],
+            labels: ['METEORO', 'SY 300', 'SY 110', 'SY 200', 'SY 100', 'BELLACO', 'SY 330', 'PLENO', 'RANQUEL', 'SAETA', 'ZAFIRO', 'TAITA', 'MALEVO', 'SY 211', 'BAQUEANO', 'TILCARA', 'AGP FAST', '75 ANIVERSARIO', 'SY 015', '55 CL2', 'CLARAZ'],
             datasets: [{
-                label: "Population (millions)",
-                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e45cd", "#125ea2","#24ba9f","#85c3b9","#775850"],
-                data: [69906, 68774, 48716, 41590, 40107, 35743, 29953, 27146, 24220, 16371, 11500, 10925, 6837, 5310, 4844, 400, 400],
-                borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                label: "",
+                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+                data: [49859, 31798, 25196, 17604, 13762, 9537, 6891, 6461, 2455, 2048, 1937, 1552, 1489, 1001, 663, 606, 531, 392, 332, 245, 173],
+                borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
             }]
         },
         options: {

@@ -31,17 +31,17 @@ export default {
             },
             {
                 label: 'METEORO',
-                backgroundColor: '#65645a',
+                backgroundColor: '#35645a',
                 data: [17160, 12741, 1264]
             },
             {
                 label: 'PLENO',
-                backgroundColor: '#f87979',
+                backgroundColor: '#925193',
                 data: [1110, 307, 1143]
             },
             {
                 label: 'RANQUEL',
-                backgroundColor: '#f01313',
+                backgroundColor: '#501313',
                 data: [225, 3029, 0]
             },
             {
@@ -51,12 +51,12 @@ export default {
             },
             {
                 label: 'SAETA',
-                backgroundColor: '#f8f379',
+                backgroundColor: '#485379',
                 data: [0, 90, 0]
             },
             {
                 label: '55 CL2',
-                backgroundColor: '#65645a',
+                backgroundColor: '#100000',
                 data: [0, 1027, 0]
             },
             {
@@ -66,22 +66,22 @@ export default {
             },
             {
                 label: 'TAITA',
-                backgroundColor: '#f01313',
+                backgroundColor: '#251313',
                 data: [10, 0, 338]
             },
             {
                 label: 'SY 100',
-                backgroundColor: '#f01313',
+                backgroundColor: '#801313',
                 data: [8108, 4589, 4203]
             },
             {
                 label: 'SY 110',
-                backgroundColor: '#f8f379',
+                backgroundColor: '#f81379',
                 data: [2770, 560, 576]
             },
             {
                 label: 'SY 200',
-                backgroundColor: '#65645a',
+                backgroundColor: '#797918',
                 data: [4771, 603, 1306]
             },
             {
@@ -91,12 +91,12 @@ export default {
             },
             {
                 label: 'SY 330',
-                backgroundColor: '#f01313',
+                backgroundColor: '#805050',
                 data: [0, 0, 110]
             },
             {
                 label: 'SY 015',
-                backgroundColor: '#f01313',
+                backgroundColor: '',
                 data: [150, 215, 0]
             }
             ]

@@ -19,7 +19,7 @@
         </v-flex>
         <v-spacer></v-spacer> 
         <v-flex xs12 md5> <!--class="text-xs-center">-->
-          
+          <Radar/>
         </v-flex>
       </v-layout>
       <!-- <br>

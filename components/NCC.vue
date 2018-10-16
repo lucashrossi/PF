@@ -10,8 +10,8 @@ export default {
             labels: ["2014", "2015", "2016", "2017"],
             datasets: [
             {
-                label: 'REHa',
-                backgroundColor: '#f87979',
+                label: 'Ha',
+                backgroundColor: ['#987979', '#787979', '#587979', '#287979'],
                 data: [145482, 115304, 165650, 172013]
             }
             ]
@@ -36,7 +36,14 @@ export default {
                 }]
             },
             responsive: true,
-            maintainAspectRatio: false
+            maintainAspectRatio: false,
+            legend: {
+                // display: false,
+                labels: {
+                    // fontColor: 'rgb(255, 99, 132)',
+                    boxWidth: 0
+                }
+            }
         }        
         }
     },
