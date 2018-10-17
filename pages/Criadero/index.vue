@@ -16,7 +16,7 @@
 
     <v-tab href="#tab-2" class="caption">
       <v-icon class="mr-1">schedule</v-icon>
-      Variedades Candidatas
+      Precomerciales
     </v-tab>
 
     <v-tab href="#tab-3" class="caption">
@@ -30,12 +30,17 @@
     </v-tab>
 
     <v-tab href="#tab-5" class="caption">
+      <v-icon class="mr-1">grid_on</v-icon>
+      Ensayos
+    </v-tab>
+
+    <v-tab href="#tab-6" class="caption">
       <v-icon class="mr-1">table_chart</v-icon>
       Data
     </v-tab>
 
     <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
-    <v-tab-item id='tab-5'>
+    <v-tab-item id='tab-6'>
       <PivotI/>
     </v-tab-item>
       <!-- <v-card flat>
