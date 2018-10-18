@@ -1,5 +1,22 @@
 <template>
-  <div>
+  
+  <v-tabs centered color="#542a25" dark height="30">
+      
+    <v-tabs-slider color="green"></v-tabs-slider>
+
+    <v-tab href="#tab-1" class="caption">
+      <!-- <v-icon class="mr-1">note</v-icon> -->
+      Pagina
+    </v-tab>
+
+    <v-tab href="#tab-2" class="caption">
+      <!-- <v-icon class="mr-1">schedule</v-icon> -->
+      Newsletter
+    </v-tab>
+
+    <v-tab-item id='tab-1'>
+  
+
       <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg">
       <v-layout  justify-center>
        
@@ -70,13 +87,10 @@
         </v-flex>
       
       </v-layout>
-   
+      
+    </v-tab-item>
 
-
-
-
-
-
+    <v-tab-item id='tab-2'>
 
       <v-hover>
         <v-card
@@ -184,8 +198,11 @@
           </v-card>
         </v-dialog>
       </v-layout>
-      
-  </div>
+
+    </v-tab-item>
+    
+  </v-tabs>
+
 </template>
 
 <script>
