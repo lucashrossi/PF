@@ -122,8 +122,8 @@ export default {
                     stacked: true
                 }]
             },
-            responsive: true,
-            maintainAspectRatio: false
+            // responsive: true,
+            // maintainAspectRatio: false
         }
         
         }

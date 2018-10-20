@@ -16,34 +16,32 @@
 
       <v-tab-item id='tab-1'>
 
-        <v-container>
+        <v-container fluid>
         
           <v-layout row wrap>
-            <v-flex xs12 md5 >
+            <v-flex xs12 md3 >
               <NC/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md5 >
+            <v-flex xs12 md3 >
               <NCC/>
             </v-flex>
-          </v-layout>
-          
-          <v-layout row wrap>
-            <v-flex xs12 md5>
-              <Pii/>
-            </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md5>
+            <v-flex xs12 md3>
               <DN/>
             </v-flex>
           </v-layout>
           
           <v-layout row wrap>
-            <v-flex xs12 md5>
+            <v-flex xs12 md3>
+              <Pii/>
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 md3>
               <HOR/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md5>
+            <v-flex xs12 md3>
               
             </v-flex>
           </v-layout>

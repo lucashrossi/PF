@@ -51,8 +51,8 @@ export default {
                 }]
             },
     
-            responsive: true,
-            maintainAspectRatio: false,
+            // responsive: true,
+            // maintainAspectRatio: false,
             pan: {
                 // Boolean to enable panning
                 enabled: true,

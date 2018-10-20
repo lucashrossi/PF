@@ -16,15 +16,19 @@
 
     <v-tab-item id='tab-1'>
 
-      <v-container>
+      <v-container fluid>
 
         <v-layout row wrap>
-          <v-flex xs12 md5>
+          <v-flex xs12 md3>
             <FISC/>
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 md5>
+          <v-flex xs12 md3>
             <Polar/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 md3>
+            
           </v-flex>
         </v-layout>
 
@@ -34,15 +38,19 @@
 
     <v-tab-item id='tab-2'>
 
-      <v-container>
+      <v-container fluid>
 
         <v-layout row wrap>
-          <v-flex xs12 md5>
+          <v-flex xs12 md3>
             <PBF/>
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 md5>
+          <v-flex xs12 md3>
             <PI/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 md3>
+            
           </v-flex>
         </v-layout>
 

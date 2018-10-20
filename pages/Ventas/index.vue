@@ -42,17 +42,25 @@
           <!-- <v-layout justify-space-between row > -->
             <v-flex xs12 md6>
               <h1>Original</h1>
-              <PI/>
-              <BU/>
-              <DEJ/>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <PI/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <BU/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <DEJ/>
+              </v-flex>
             </v-flex>
 
             <v-flex xs12 md6>
               <h1>Primera multiplicacion</h1>
-              <Tabla/>
-              <MIX/>
-              <Tabla/>
-              <Radar/>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <MIX/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <Radar/>
+              </v-flex>
             </v-flex>
           </v-layout>
         </v-container>
