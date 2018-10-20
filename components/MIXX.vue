@@ -11,18 +11,18 @@ export default {
             datasets: [{
                 label: 'Ventas 2018',
                 backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
-                data: [790, 8970, 2367, 1326, 10193, 2964, 150],
+                data: [4070, 10200, 4298, 1879, 23646, 1685, 10255, 850],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Ventas 2017',
                 backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
-                data: [2005, 3903, 1972, 850, 483, 2007, 0],
+                data: [758, 1055, 4368, 437, 5850, 1029, 0, 0],
                 yAxisID: 'left-y-axis'
                 }, {
                 label: 'Diferencia',
                 
-                data: [-61, 130, 20, 56, 114, 29, 48, 100],
+                data: [81, 90, -2, 77, 75, 39, 100, 100],
 
                 // Changes this dataset to become a line
                 type: 'line',

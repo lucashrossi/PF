@@ -9,19 +9,19 @@ export default {
         datacollection: {
             
             datasets: [{
-                data: [20, 50, 100, 75, 25, 0],
-                label: 'Left dataset',
+                data: [790, 8970, 2367, 1326, 10193, 2964, 150],
+                label: 'Ventas 2018',
 
                 // This binds the dataset to the left y axis
                 yAxisID: 'left-y-axis'
             }, {
-                data: [0.9, 0.5, 1.0, 2.0, 1.5, 0],
-                label: 'Right dataset',
+                data: [-61, 130, 20, 56, 114, 29, 48, 100],
+                label: 'Diferencia 2017',
 
                 // This binds the dataset to the right y axis
                 yAxisID: 'right-y-axis',
             }],
-            labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun']
+            labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA']
         },
         options: {
             title: {

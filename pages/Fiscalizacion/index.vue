@@ -20,11 +20,11 @@
 
         <v-layout row wrap>
           <v-flex xs12 md3>
-            <FISC/>
+            <PBF/>
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>
-            <Piii/>
+            <PI/>
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>
@@ -42,11 +42,11 @@
 
         <v-layout row wrap>
           <v-flex xs12 md3>
-            <PBF/>
+            <FISC/>
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>
-            <PI/>
+            <Piii/>
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>

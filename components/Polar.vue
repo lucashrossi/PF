@@ -8,10 +8,17 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ['ALGARROBO', 'CEIBO', 'ACA 360', 'BASILIO', 'BAGUETTE 750', 'KLEIN SERPIENTE', 'ACA 303 PLUS', 'KLEIN TAURO'],
+            labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
             datasets: [{
-                data: [566060, 443338, 196320, 194986, 144401, 127973, 120775, 106771],
-                backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(100, 255, 0, 0.5)', 'rgba(200, 50, 255, 0.5)', 'rgba(0, 100, 255, 0.5)', 'rgba(50, 150, 200, 0.5)', 'rgba(150, 125, 150, 0.5)', 'rgba(100, 100, 100, 0.5)', 'rgba(50, 50, 50, 0.5)'],
+                label: 'Ventas 2018',
+                data: [3, 33, 9, 5, 37, 2, 11, 1],
+                backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0)', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
+                borderWidth: [0,0,0,0,0,0,0,0]
+            },
+            {
+                label: 'Ventas 2017',
+                data: [13, 24, 12, 5, 30, 3, 13],
+                backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
                 borderWidth: [0,0,0,0,0,0,0,0]
             }],
             // label: 'My dataset'
@@ -26,28 +33,49 @@ export default {
                 scaleLabel: {
                     display: true,
                     labelString: ""
-                }
+                },
+                // stacked: true,
+                // ticks: {
+                //     beginAtZero: true,
+                //     // steps: 10,
+                //     // stepValue: 5,
+                //     max: 50,
+                //     min: 0
+                // }
                 }],
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,
                     labelString: ""
-                }
+                },
+                stacked: true,
+                // ticks: {
+                //     beginAtZero: true,
+                //     // steps: 10,
+                //     // stepValue: 5,
+                //     max: 50,
+                //     min: 0
+                // }
                 }],
                 // display: false,
                 
                 ticks: {
-                    backdropColor: "rgba(0,0,0,0)" 
+                    backdropColor: "rgba(0,0,0,0)",
+                    beginAtZero: true,
+                    // steps: 10,
+                    // stepValue: 5,
+                    max: 50,
+                    min: 0
                 }
             },
             legend: {
                 labels: {
                     fontSize: 10,
                     boxWidth: 15,
-                    filter: function(legendItem, data) {
-                            // return legendItem.index != 1
-                            return legendItem.index < 5 
-                    }
+                    // filter: function(legendItem, data) {
+                    //         // return legendItem.index != 1
+                    //         return legendItem.index < 5 
+                    // }
                 }
             },
             
