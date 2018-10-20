@@ -11,19 +11,10 @@ export default {
             labels: ['ALGARROBO', 'CEIBO', 'ACA 360', 'BASILIO', 'BAGUETTE 750', 'KLEIN SERPIENTE', 'ACA 303 PLUS', 'KLEIN TAURO'],
             datasets: [{
                 data: [566060, 443338, 196320, 194986, 144401, 127973, 120775, 106771],
-                backgroundColor: [
-                'rgba(255, 0, 0, 0.5)',
-                'rgba(100, 255, 0, 0.5)',
-                'rgba(200, 50, 255, 0.5)',
-                'rgba(0, 100, 255, 0.5)',
-                'rgba(50, 150, 200, 0.5)',
-                'rgba(150, 125, 150, 0.5)',
-                'rgba(100, 100, 100, 0.5)',
-                'rgba(50, 50, 50, 0.5)'
-                ],
+                backgroundColor: ['rgba(255, 0, 0, 0.5)', 'rgba(100, 255, 0, 0.5)', 'rgba(200, 50, 255, 0.5)', 'rgba(0, 100, 255, 0.5)', 'rgba(50, 150, 200, 0.5)', 'rgba(150, 125, 150, 0.5)', 'rgba(100, 100, 100, 0.5)', 'rgba(50, 50, 50, 0.5)'],
                 borderWidth: [0,0,0,0,0,0,0,0]
             }],
-            label: 'My dataset'
+            // label: 'My dataset'
         },
         options: {
             title: {
@@ -47,6 +38,16 @@ export default {
                 
                 ticks: {
                     backdropColor: "rgba(0,0,0,0)" 
+                }
+            },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 15,
+                    filter: function(legendItem, data) {
+                            // return legendItem.index != 1
+                            return legendItem.index < 5 
+                    }
                 }
             },
             

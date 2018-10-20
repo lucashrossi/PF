@@ -1,32 +1,19 @@
 <script>
-import { Doughnut } from 'vue-chartjs'
+import { Pie } from 'vue-chartjs'
 
 export default {
-    extends: Doughnut,
+    extends: Pie,
 
     data () {
         return {
         datacollection: {
-            labels: ['BUENOS AIRES', 'CAPITAL', 'SANTA FE', 'CORDOBA', 'ENTRE RIOS', 'TUCUMAN', 'S. DEL ESTERO', 'LA PAMPA', 'SALTA', 'JUJUY', 'CHACO'],
-            datasets: [
-                {
-                label: 'Buck',
-                data: [84690, 34893, 28179, 13903, 4319, 2777, 2528, 1983, 1312, 440, 4],
-                backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','#3cba9f','#e8c3b9','#c45850','rgba(20,50,0)', 'rgba(20,100,20)','#38ba93','#e1c8b9','#c25250'],
-                // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
-                borderWidth: [0,0,0,0,0,0,0,0,0,0,0]
-                },
-                // {
-                // label: 'N',
-                // data: [10, 15, 6, 1],
-                // backgroundColor: "rgba(0,0,200,0.2)",
-                // },
-                // {
-                // label: 'K',
-                // data: [15, 20, 2, 4],
-                // backgroundColor: "rgba(100, 255, 0, 0.5)",
-                // },
-                ]
+            labels: ['ALGARROBO', 'CEIBO', 'ACA 360', 'BASILIO', 'BAGUETTE 750', 'KLEIN SERPIENTE', 'ACA 303 PLUS', 'KLEIN TAURO'],
+            datasets: [{
+                label: "",
+                backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0)', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(150, 125, 150)', 'rgba(100, 100, 100)', 'rgba(50, 50, 50)'],
+                data: [566060, 443338, 196320, 194986, 144401, 127973, 120775, 106771],
+                borderWidth: [0,0,0,0,0,0,0,0]
+            }]
         },
         options: {
             title: {
@@ -42,7 +29,7 @@ export default {
                             return legendItem.index < 5 
                     }
                 }
-            }, 
+            },
             // scales: {
             //     yAxes: [{ 
             //     scaleLabel: {
@@ -67,5 +54,8 @@ export default {
         // this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
         this.renderChart(this.datacollection, this.options)
     }
+
+
+
 }
 </script>

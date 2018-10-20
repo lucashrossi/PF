@@ -12,7 +12,7 @@
     {"country": "China", "year": 2011, "gender": "female", "count": 654068030},
     {"country": "China", "year": 2012, "gender": "male", "count": 697964288},
     {"country": "China", "year": 2012, "gender": "female", "count": 657422649},
-    /*{"country": "China", "year": 2013, "gender": "male", "count": 701775013},
+    {"country": "China", "year": 2013, "gender": "male", "count": 701775013},
     {"country": "China", "year": 2013, "gender": "female", "count": 660739286},
     {"country": "China", "year": 2014, "gender": "male", "count": 705465988},
     {"country": "China", "year": 2014, "gender": "female", "count": 663969676},
@@ -23,7 +23,7 @@
     {"country": "China", "year": 2017, "gender": "male", "count": 715392990},
     {"country": "China", "year": 2017, "gender": "female", "count": 672839688},
     {"country": "China", "year": 2018, "gender": "male", "count": 718240829},
-    {"country": "China", "year": 2018, "gender": "female", "count": 675445659},*/
+    {"country": "China", "year": 2018, "gender": "female", "count": 675445659},
     {"country": "India", "year": 2010, "gender": "male", "count": 638354751},
     {"country": "India", "year": 2010, "gender": "female", "count": 592629727},
     {"country": "India", "year": 2011, "gender": "male", "count": 646873890},

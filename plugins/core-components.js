@@ -12,6 +12,7 @@ import DN from '~/components/DN.vue'
 import BU from '~/components/BU.vue'
 import PI from '~/components/PI.vue'
 import Pii from '~/components/Pii.vue'
+import Piii from '~/components/Piii.vue'
 import MIX from '~/components/MIX.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
@@ -31,6 +32,7 @@ Vue.component('DN', DN)
 Vue.component('BU', BU)
 Vue.component('PI', PI)
 Vue.component('Pii', Pii)
+Vue.component('Piii', Piii)
 Vue.component('MIX', MIX)
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)

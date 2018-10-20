@@ -9,7 +9,7 @@ export default {
         datacollection: {
             labels: ['SY 330', 'BUCK ESMERALDA', 'SY 211', 'BUCK SAETA', 'BUCK TOPACIO', 'BUCK METEORO', 'SY 120', 'BUCK ZAFIRO', 'BUCK CLARAZ', 'BUCK BELLACO', 'NO ESTÁ', 'BUCKSY300', 'SY 200', 'BUCK PLATINO', 'BUCK GRANATE', 'BUCK PLENO', '55 CL 2'],
             datasets: [{
-                label: "Population (millions)",
+                // label: "Population (millions)",
                 backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e45cd", "#125ea2","#24ba9f","#85c3b9","#775850"],
                 data: [69906, 68774, 48716, 41590, 40107, 35743, 29953, 27146, 24220, 16371, 11500, 10925, 6837, 5310, 4844, 400, 400],
                 borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
@@ -19,6 +19,16 @@ export default {
             title: {
                 display: true,
                 text: ''
+            },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 15,
+                    filter: function(legendItem, data) {
+                            // return legendItem.index != 1
+                            return legendItem.index < 5 
+                    }
+                }
             },
             // scales: {
             //     yAxes: [{ 

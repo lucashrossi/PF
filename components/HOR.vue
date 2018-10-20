@@ -122,6 +122,17 @@ export default {
                     stacked: true
                 }]
             },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 15,
+                    filter: function(item, chart) {
+                    // filter: function(label) {                    
+                        return (!item.text.includes('CHACARERO') && !item.text.includes('BELLACO') && !item.text.includes('75 ANIVERSARIO') && !item.text.includes('SAETA') && !item.text.includes('SY 330') && !item.text.includes('TILCARA'))
+                        // return label.index !== 1
+                    }
+                }
+            },
             // responsive: true,
             // maintainAspectRatio: false
         }

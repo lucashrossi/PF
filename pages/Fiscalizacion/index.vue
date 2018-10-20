@@ -24,7 +24,7 @@
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>
-            <Polar/>
+            <Piii/>
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>

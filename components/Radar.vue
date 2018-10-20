@@ -50,6 +50,16 @@ export default {
                     backdropColor: "rgba(0,0,0,0)" 
                 }
             },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 15,
+                    // filter: function(legendItem, data) {
+                    //         // return legendItem.index != 1
+                    //         return legendItem.index < 5 
+                    // }
+                }
+            },
             
             // responsive: true,
             // maintainAspectRatio: false

@@ -35,15 +35,18 @@ export default {
                 }
                 }]
             },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 0,
+                    // filter: function(legendItem, data) {
+                    //         // return legendItem.index != 1
+                    //         return legendItem.index < 5 
+                    // }
+                }
+            },
             // responsive: true,
             // maintainAspectRatio: false,
-            legend: {
-                // display: false,
-                labels: {
-                    // fontColor: 'rgb(255, 99, 132)',
-                    boxWidth: 0
-                }
-            }
         }        
         }
     },

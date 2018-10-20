@@ -72,6 +72,24 @@ export default {
                     stacked: true
                 }]
             },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 15,
+                    // filter: function(legendItem, data) {
+                    //         // return legendItem.index != 1
+                    //         return legendItem.index < 5 
+                    // }
+                    // filter: function(item, chart) {
+                    filter: function(label) {
+                        
+                        // return (!item.text.includes('Otros') && !item.text.includes('Bioceres'))
+                        if (label.text != 'Otros') return true
+                        // if (label.text !== 'Bioceres') return true
+                
+                    }
+                }
+            },
             // responsive: true,
             // maintainAspectRatio: false
         }

@@ -61,6 +61,9 @@
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <Radar/>
               </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <Polar/>
+              </v-flex>
             </v-flex>
           </v-layout>
         </v-container>
