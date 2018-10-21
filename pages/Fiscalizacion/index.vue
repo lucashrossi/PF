@@ -60,6 +60,20 @@
             </v-flex>
           </v-layout>
 
+          <v-layout row wrap>
+            <v-flex xs12 md3>
+              <BU/>
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 md3>
+              
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 md3>
+              
+            </v-flex>
+          </v-layout>
+
         </v-container>
 
       </v-tab-item>

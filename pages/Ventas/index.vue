@@ -43,32 +43,32 @@
             <v-flex xs12 md6>
               <h1>Original</h1>
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
-                <Polar/>
-              </v-flex>
-              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
-                <Radar/>
-              </v-flex>
-              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <DNN/>
               </v-flex>
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <MIX/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <Polar/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <Radar/>
               </v-flex>
             </v-flex>
 
             <v-flex xs12 md6>
               <h1>Primera multiplicacion</h1>
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
-                <Poll/>
-              </v-flex>
-              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
-                <Rad/>
-              </v-flex>
-              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <DNNN/>
               </v-flex>
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <MIXX/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <Poll/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <Rad/>
               </v-flex>
             </v-flex>
           </v-layout>

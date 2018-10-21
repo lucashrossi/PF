@@ -19,7 +19,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Has'
             },
             scales: {
                 yAxes: [{ 
@@ -36,12 +36,13 @@ export default {
                 }]
             },
             legend: {
+                display: false,
                 labels: {
                     fontSize: 10,
                     boxWidth: 0,
                     // filter: function(legendItem, data) {
-                    //         // return legendItem.index != 1
-                    //         return legendItem.index < 5 
+                    //         return legendItem.index != 1
+                    //         // return legendItem.index < 5 
                     // }
                 }
             },

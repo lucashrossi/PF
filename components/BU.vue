@@ -7,43 +7,80 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ["China", "Denmark", "Germany", "Japan"],
+            labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
             datasets: [
                 {
-                label: ["China"],
-                backgroundColor: "rgba(255,221,50,0.2)",
-                borderColor: "rgba(255,221,50,1)",
+                label: ["I"],
+                backgroundColor: "rgba(255, 0, 0, 0.6)",
+                // borderColor: "rgba(255, 0, 0,1)",
+                // hoverBackgroundColor: "'rgba(255, 0, 0, 0.2)",
                 data: [{
-                    x: 21269017,
-                    y: 5.245,
-                    r: 30
+                    x: 505000,
+                    y: 1.3,
+                    r: 13.1
                 }]
                 }, {
-                label: ["Denmark"],
-                backgroundColor: "rgba(60,186,159,0.2)",
-                borderColor: "rgba(60,186,159,1)",
+                label: ["IIN"],
+                backgroundColor: "rgba(100, 255, 0, 0.6)",
+                // borderColor: "rgba(100, 255, 0,1)",
                 data: [{
-                    x: 258702,
-                    y: 7.526,
-                    r: 10
+                    x: 860000,
+                    y: 5.0,
+                    r: 17.5
                 }]
                 }, {
-                label: ["Germany"],
-                backgroundColor: "rgba(0,0,0,0.2)",
-                borderColor: "#000",
+                label: ["IIS"],
+                backgroundColor: "rgba(200, 50, 255, 0.6)",
+                // borderColor: "rgba(200, 50, 255,0.1)",
                 data: [{
-                    x: 3979083,
-                    y: 6.994,
-                    r: 15
+                    x: 1390000,
+                    y: 0.9,
+                    r: 11.2
                 }]
                 }, {
-                label: ["Japan"],
-                backgroundColor: "rgba(193,46,12,0.2)",
-                borderColor: "rgba(193,46,12,1)",
+                label: ["III"],
+                backgroundColor: "rgba(0, 100, 255, 0.6)",
+                // borderColor: "rgba(0, 100, 255,1)",
                 data: [{
-                    x: 4931877,
-                    y: 5.921,
-                    r: 20
+                    x: 280000,
+                    y: 1.8,
+                    r: 11.0
+                }]
+                }, {
+                label: ["IV"],
+                backgroundColor: "rgba(50, 150, 200, 0.6)",
+                // borderColor: "rgba(50, 150, 200,1)",
+                data: [{
+                    x: 635000,
+                    y: 7.5,
+                    r: 20.7
+                }]
+                }, {
+                label: ["VN"],
+                backgroundColor: "rgba(75, 25, 50, 0.6)",
+                // borderColor: "rgba(75, 25, 50,1)",
+                data: [{
+                    x: 1065000,
+                    y: 0.1,
+                    r: 0
+                }]
+                }, {
+                label: ["VS"],
+                backgroundColor: "rgba(150, 50, 100, 0.6)",
+                // borderColor: "rgba(150, 50, 100,1)",
+                data: [{
+                    x: 510000,
+                    y: 2.3,
+                    r: 14.3
+                }]
+                }, {
+                label: ["NOA"],
+                backgroundColor: "rgba(10, 50, 70, 0.6)",
+                // borderColor: "rgba(10, 50, 70,1)",
+                data: [{
+                    x: 855000,
+                    y: 0.0,
+                    r: 0
                 }]
                 }
             ]
@@ -51,19 +88,19 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Reg/Orig 2018'
             }, 
             scales: {
                 yAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: ""
+                    labelString: "% Var Buck 2018"
                 }
                 }],
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: ""
+                    labelString: "Has 2018"
                 }
                 }]
             },
@@ -90,7 +127,10 @@ export default {
                     render: () => {}
                 },
                 datalabels: {
-                    display: false
+                    display: true,
+                    font: {
+                        size: 8
+                    }
                 }
             } 
             // responsive: true,
