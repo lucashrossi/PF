@@ -78,6 +78,14 @@ export default {
                     // }
                 }
             },
+            layout: {
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 50
+                }
+            }
             
             // responsive: true,
             // maintainAspectRatio: false

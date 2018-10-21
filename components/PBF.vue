@@ -87,12 +87,20 @@ export default {
                 labels: {
                     fontSize: 10,
                     boxWidth: 15,
-                    filter: function(legendItem, data) {
-                            // return legendItem.index != 1
-                            return legendItem.index < 5 
-                    }
+                    // filter: function(legendItem, data) {
+                    //         // return legendItem.index != 1
+                    //         return legendItem.index < 5 
+                    // }
                 }
-            }, 
+            },
+            layout: {
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 50
+                }
+            }
             // responsive: true,
             // maintainAspectRatio: false
         }      

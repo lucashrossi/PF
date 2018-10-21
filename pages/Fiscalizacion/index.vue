@@ -28,6 +28,20 @@
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>
+            <Piv/>
+          </v-flex>
+        </v-layout>
+
+        <v-layout row wrap>
+          <v-flex xs12 md3>
+            <Pivi/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 md3>
+            
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 md3>
             
           </v-flex>
         </v-layout>
