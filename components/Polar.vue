@@ -26,7 +26,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Porcentaje 2018 y 2017'
             },
             scale: {
                 yAxes: [{ 

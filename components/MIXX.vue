@@ -9,18 +9,18 @@ export default {
         datacollection: {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
             datasets: [{
-                label: 'Ventas 2018',
+                label: '2018',
                 backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
                 data: [4070, 10200, 4298, 1879, 23646, 1685, 10255, 850],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Ventas 2017',
+                label: '2017',
                 backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
                 data: [758, 1055, 4368, 437, 5850, 1029, 0, 0],
                 yAxisID: 'left-y-axis'
                 }, {
-                label: 'Diferencia',
+                label: 'Diferencia Años',
                 
                 data: [81, 90, -2, 77, 75, 39, 100, 100],
 
@@ -33,7 +33,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Bls'
             },
             scales: {
                 yAxes: [{ 

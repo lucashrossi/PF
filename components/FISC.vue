@@ -54,7 +54,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Rotulos'
             },
             scales: {
                 xAxes: [{

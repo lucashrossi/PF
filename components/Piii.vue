@@ -18,7 +18,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Rotulos'
             },
             legend: {
                 labels: {

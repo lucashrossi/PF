@@ -67,7 +67,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Rotulos 2018'
             },
             scales: {
                 yAxes: [{ 

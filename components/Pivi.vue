@@ -26,7 +26,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Reg/Bls 2018 y 2017'
             },
             legend: {
                 labels: {

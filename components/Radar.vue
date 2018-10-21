@@ -12,14 +12,14 @@ export default {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
 
             datasets: [
-                {label: 'Ventas 2018',
+                {label: '2018',
                 data: [3, 33, 9, 5, 37, 2, 11, 1],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
 
                 backgroundColor: "rgba(50,150,100, 0.6)",
                 },
-                {label: 'Ventas 2017',
+                {label: '2017',
                 data: [13, 24, 12, 5, 30, 3, 13],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
@@ -38,7 +38,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Porcentaje'
             },
             scale: {
                 yAxes: [{ 

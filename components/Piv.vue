@@ -24,7 +24,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Bls Fiscalizadas 2018 y 2017'
             },
             legend: {
                 labels: {

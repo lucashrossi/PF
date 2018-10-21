@@ -27,7 +27,7 @@ export default {
             cutoutPercentage: 30,
             title: {
                 display: true,
-                text: ''
+                text: '% Var Buck 2018 y 2017'
             },
             legend: {
                 labels: {

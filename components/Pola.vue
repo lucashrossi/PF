@@ -26,7 +26,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: '% Var Buck 2018 y 2017'
             },
             scale: {
                 yAxes: [{ 
@@ -76,7 +76,9 @@ export default {
             },
             plugins: {
                 labels: {
-                    render: () => {}
+                    // render: () => {},
+                    position: 'outside',
+                    arc: true
                 },
                 datalabels: {
                     display: false
