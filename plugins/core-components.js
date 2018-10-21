@@ -15,6 +15,7 @@ import Pola from '~/components/Pola.vue'
 import DN from '~/components/DN.vue'
 import DNN from '~/components/DNN.vue'
 import DNNN from '~/components/DNNN.vue'
+import DNC from '~/components/DNC.vue'
 import BU from '~/components/BU.vue'
 import PI from '~/components/PI.vue'
 import Pii from '~/components/Pii.vue'
@@ -47,6 +48,7 @@ Vue.component('Pola', Pola)
 Vue.component('DN', DN)
 Vue.component('DNN', DNN)
 Vue.component('DNNN', DNNN)
+Vue.component('DNC', DNC)
 Vue.component('BU', BU)
 Vue.component('PI', PI)
 Vue.component('Pii', Pii)

@@ -34,34 +34,17 @@ export default {
                     display: true,
                     labelString: ""
                 },
-                stacked: false,
-                // ticks: {
-                //     backdropColor: "rgba(0,0,0,0)",
-                //     beginAtZero: true,
-                //     // steps: 10,
-                //     // stepValue: 5,
-                //     max: 50,
-                //     min: 0
-                // }
+                // stacked: false,
                 }],
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,
                     labelString: ""
-                },
-                // stacked: true,
-                
+                },                
                 // stacked: false,
-                // ticks: {
-                //     beginAtZero: true,
-                //     // steps: 10,
-                //     // stepValue: 5,
-                //     max: 50,
-                //     min: 0
-                // }
                 }],
                 // display: false,
-                
+                // stacked: false,
                 ticks: {
                     
                     backdropColor: "rgba(0,0,0,0)",

@@ -35,14 +35,6 @@ export default {
                     labelString: ""
                 },
                 // stacked: false,
-                // ticks: {
-                //     backdropColor: "rgba(0,0,0,0)",
-                //     beginAtZero: true,
-                //     // steps: 10,
-                //     // stepValue: 5,
-                //     max: 50,
-                //     min: 0
-                // }
                 }],
                 xAxes: [{ 
                 scaleLabel: {
@@ -50,15 +42,6 @@ export default {
                     labelString: ""
                 },
                 // stacked: true,
-                
-                // stacked: false,
-                // ticks: {
-                //     beginAtZero: true,
-                //     // steps: 10,
-                //     // stepValue: 5,
-                //     max: 50,
-                //     min: 0
-                // }
                 }],
                 // display: false,
                 
@@ -98,10 +81,12 @@ export default {
                 datalabels: {
                     display: false
                 }
-            } 
+            },
             
             // responsive: true,
-            // maintainAspectRatio: false
+            // maintainAspectRatio: false,
+            responsive: false,
+            // maintainAspectRatio: true
         }
         }
     },

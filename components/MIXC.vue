@@ -21,6 +21,7 @@ export default {
                 yAxisID: 'left-y-axis'
                 }, {
                 label: '% Var Buck 2018',
+                hidden: true,
                 backgroundColor: ['rgba(20,50,0,0.4)'],
                 data: [1,3, 5,0, 0,9, 1,8, 7,5, 0,1, 2,3, 0,0],
 
@@ -30,6 +31,7 @@ export default {
                 },
                 {
                 label: '% Var Buck 2017',
+                hidden: true,
                 backgroundColor: ['rgba(220,150,220,0.4)'],
                 data: [2,4, 5,7, 1,4, 5,0, 4,6, 0,2, 2,2, 0,0],
 

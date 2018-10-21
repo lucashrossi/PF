@@ -1,58 +1,33 @@
-
 <script>
-import { PolarArea } from 'vue-chartjs'
+import { Doughnut } from 'vue-chartjs'
 
 export default {
-    extends: PolarArea,
+    extends: Doughnut,
 
     data () {
         return {
         datacollection: {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
-            datasets: [{
-                label: 'Ventas 2018',
-                data: [3, 33, 9, 5, 37, 2, 11, 1],
+            datasets: [
+                {
+                label: '% Var Buck 2018',
+                data: [1.3, 5.0, 0.9, 1.8, 7.5, 0.1, 2.3, 0.0],
                 backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0)', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
                 borderWidth: [0,0,0,0,0,0,0,0]
-            },
-            {
+                },
+                {
                 label: 'Ventas 2017',
-                data: [13, 24, 12, 5, 30, 3, 13, 0],
+                data: [2.4, 5.7, 1.4, 5.0, 4.6, 0.2, 2.2, 0.0],
                 backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
                 borderWidth: [0,0,0,0,0,0,0,0]
-            }],
-            // label: 'My dataset'
+                }
+                ]
         },
         options: {
+            cutoutPercentage: 30,
             title: {
                 display: true,
                 text: ''
-            },
-            scale: {
-                yAxes: [{ 
-                scaleLabel: {
-                    display: true,
-                    labelString: ""
-                },
-                // stacked: true,
-                }],
-                xAxes: [{ 
-                scaleLabel: {
-                    display: true,
-                    labelString: ""
-                },
-                // stacked: true,
-                }],
-                // display: false,
-                
-                ticks: {
-                    backdropColor: "rgba(0,0,0,0)",
-                    beginAtZero: true,
-                    // steps: 10,
-                    // stepValue: 5,
-                    max: 50,
-                    min: 0
-                }
             },
             legend: {
                 labels: {
@@ -74,13 +49,26 @@ export default {
             },
             plugins: {
                 labels: {
-                    render: () => {}
+                    // render: () => {}
                 },
                 datalabels: {
                     display: false
                 }
             } 
-            
+            // scales: {
+            //     yAxes: [{ 
+            //     scaleLabel: {
+            //         display: true,
+            //         labelString: ""
+            //     }
+            //     }],
+            //     xAxes: [{ 
+            //     scaleLabel: {
+            //         display: true,
+            //         labelString: ""
+            //     }
+            //     }]
+            // },
             // responsive: true,
             // maintainAspectRatio: false
         }
@@ -91,14 +79,5 @@ export default {
         // this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
         this.renderChart(this.datacollection, this.options)
     }
-
-
-
 }
 </script>
-
-
-
-
-
-
