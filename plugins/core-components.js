@@ -8,8 +8,10 @@ import FISC from '~/components/FISC.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
 import Rad from '~/components/Rad.vue'
+import Radd from '~/components/Radd.vue'
 import Polar from '~/components/Polar.vue'
 import Poll from '~/components/Poll.vue'
+import Pola from '~/components/Pola.vue'
 import DN from '~/components/DN.vue'
 import DNN from '~/components/DNN.vue'
 import DNNN from '~/components/DNNN.vue'
@@ -21,11 +23,14 @@ import Piv from '~/components/Piv.vue'
 import Pivi from '~/components/Pivi.vue'
 import MIX from '~/components/MIX.vue'
 import MIXX from '~/components/MIXX.vue'
+import MIXXX from '~/components/MIXXX.vue'
+import MIXC from '~/components/MIXC.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
 import Pivot from '~/components/Pivot'
 import PivotTable from '~/components/PivotTable'
 import PivotI from '~/components/PivotI'
+
 
 Vue.component('NC', NC)
 Vue.component('NCC', NCC)
@@ -35,8 +40,10 @@ Vue.component('FISC', FISC)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)
 Vue.component('Rad', Rad )
+Vue.component('Radd', Radd )
 Vue.component('Polar', Polar)
 Vue.component('Poll', Poll)
+Vue.component('Pola', Pola)
 Vue.component('DN', DN)
 Vue.component('DNN', DNN)
 Vue.component('DNNN', DNNN)
@@ -48,6 +55,8 @@ Vue.component('Piv', Piv)
 Vue.component('Pivi', Pivi)
 Vue.component('MIX', MIX)
 Vue.component('MIXX', MIXX)
+Vue.component('MIXXX', MIXXX)
+Vue.component('MIXC', MIXC )
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)
 Vue.component('pivot', Pivot)

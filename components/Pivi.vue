@@ -1,5 +1,7 @@
 <script>
 import { Pie } from 'vue-chartjs'
+import 'chartjs-plugin-labels'
+import 'chartjs-plugin-datalabels'
 
 export default {
     extends: Pie,
@@ -44,7 +46,14 @@ export default {
                     bottom: 50
                 }
             },
-            
+            plugins: {
+                labels: {
+                    // render: () => {}
+                },
+                datalabels: {
+                    display: false
+                }
+            } 
             // scales: {
             //     yAxes: [{ 
             //     scaleLabel: {

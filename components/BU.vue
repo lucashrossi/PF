@@ -84,7 +84,15 @@ export default {
                     top: 0,
                     bottom: 50
                 }
-            }
+            },
+            plugins: {
+                labels: {
+                    render: () => {}
+                },
+                datalabels: {
+                    display: false
+                }
+            } 
             // responsive: true,
             // maintainAspectRatio: false
         }

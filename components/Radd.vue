@@ -12,15 +12,15 @@ export default {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
 
             datasets: [
-                {label: 'Ventas 2018',
-                data: [3, 33, 9, 5, 37, 2, 11, 1],
+                {label: '% Var Buck 2018',
+                data: [1.3, 5.0, 0.9, 1.8, 7.5, 0.1, 2.3, 0.0],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
 
-                backgroundColor: "rgba(50,150,200)",
+                backgroundColor: "rgba(50,150,100, 0.6)",
                 },
-                {label: 'Ventas 2017',
-                data: [13, 24, 12, 5, 30, 3, 13],
+                {label: '% Var Buck 2017',
+                data: [2.4, 5.7, 1.4, 5.0, 4.6, 0.2, 2.2, 0.0],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
 
@@ -45,7 +45,14 @@ export default {
                 scaleLabel: {
                     display: true,
                     labelString: ""
-                }
+                },
+                // ticks: {
+                //     beginAtZero: true,
+                //     // steps: 10,
+                //     // stepValue: 5,
+                //     max: 50,
+                //     min: 0
+                // }
                 }],
                 xAxes: [{ 
                 scaleLabel: {
@@ -60,7 +67,7 @@ export default {
                     beginAtZero: true,
                     // steps: 10,
                     // stepValue: 5,
-                    max: 50,
+                    max: 8,
                     min: 0
                 }
             },
@@ -89,7 +96,7 @@ export default {
                 datalabels: {
                     display: false
                 }
-            }  
+            } 
             
             // responsive: true,
             // maintainAspectRatio: false

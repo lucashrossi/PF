@@ -38,7 +38,21 @@
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>
-            
+            <MIXXX/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 md3>
+            <MIXC/>
+          </v-flex>
+        </v-layout>
+
+        <v-layout row wrap>
+          <v-flex xs12 md3>
+            <Radd/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 md3>
+            <!-- <Pola/> -->
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 md3>

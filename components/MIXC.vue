@@ -9,20 +9,29 @@ export default {
         datacollection: {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
             datasets: [{
-                label: 'Ventas 2018',
+                label: 'Has 2018',
                 backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
-                data: [4070, 10200, 4298, 1879, 23646, 1685, 10255, 850],
+                data: [505000, 860000, 1390000, 280000, 635000, 1065000, 510000, 855000],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Ventas 2017',
+                label: 'Has 2017',
                 backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
-                data: [758, 1055, 4368, 437, 5850, 1029, 0, 0],
+                data: [295000, 750000, 1145000, 250000, 722000, 1118000, 450000, 720000],
                 yAxisID: 'left-y-axis'
                 }, {
-                label: 'Diferencia',
-                
-                data: [81, 90, -2, 77, 75, 39, 100, 100],
+                label: '% Var Buck 2018',
+                backgroundColor: ['rgba(20,50,0,0.4)'],
+                data: [1,3, 5,0, 0,9, 1,8, 7,5, 0,1, 2,3, 0,0],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: '% Var Buck 2017',
+                backgroundColor: ['rgba(220,150,220,0.4)'],
+                data: [2,4, 5,7, 1,4, 5,0, 4,6, 0,2, 2,2, 0,0],
 
                 // Changes this dataset to become a line
                 type: 'line',
@@ -49,7 +58,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 25000,
+                        max: 1500000,
                         min: 0
                     }
     
@@ -61,8 +70,8 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 150,
-                        min: -70
+                        max: 20,
+                        min: -20
                     }
                 }],
                 xAxes: [{ 

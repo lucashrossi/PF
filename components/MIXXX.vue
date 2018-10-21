@@ -9,20 +9,41 @@ export default {
         datacollection: {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
             datasets: [{
-                label: 'Ventas 2018',
+                label: 'Regalias 2018',
                 backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
-                data: [4070, 10200, 4298, 1879, 23646, 1685, 10255, 850],
+                data: [10959, 86543, 26320, 9341, 85457, 0, 17544, 0],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Ventas 2017',
+                label: 'Regalias 2017',
                 backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
-                data: [758, 1055, 4368, 437, 5850, 1029, 0, 0],
+                data: [15844, 101571, 32044, 30257, 73394, 3750, 21109, 0],
                 yAxisID: 'left-y-axis'
+                },
+                {
+                label: 'Reg/Orig 2018',
+                backgroundColor: ['rgba(255, 0, 0)', 'rgba(100, 255, 0', 'rgba(200, 50, 255)', 'rgba(0, 100, 255)', 'rgba(50, 150, 200)', 'rgba(75, 25, 50)', 'rgba(150, 50, 100)', 'rgba(10, 50, 70)'],
+                data: [13.1, 17.5, 11.2, 11.0, 20.7, 0.0, 14.3, 0.0],
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Reg/Orig 2017',
+                backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)'],
+                data: [15.8, 13.1, 11.8, 14.1, 14.6, 5.1, 18.0, 0.0],
+                yAxisID: 'right-y-axis'
                 }, {
-                label: 'Diferencia',
-                
-                data: [81, 90, -2, 77, 75, 39, 100, 100],
+                label: 'Diferencia Regalias',
+                backgroundColor: ['rgba(20,50,0,0.4)'],
+                data: [-31, -15, -18, -69, 16, -100, -17, 0],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Diferencia Reg/Orig',
+                backgroundColor: ['rgba(220,150,220,0.4)'],
+                data: [-17, 33, -5, -22, 42, -100, -21, 0],
 
                 // Changes this dataset to become a line
                 type: 'line',
@@ -49,7 +70,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 25000,
+                        max: 100000,
                         min: 0
                     }
     
@@ -61,8 +82,8 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 150,
-                        min: -70
+                        max: 50,
+                        min: -110
                     }
                 }],
                 xAxes: [{ 
