@@ -24,7 +24,7 @@ export default {
                 {
                 label: 'Total Años',
                 hidden: true,
-                data: [, 0, 172, 455, 1596, 1651, 1696, 1717, 2095, 4119, 4555, 4941, 5192, 6075, 9110],
+                data: [, 0, 172, 1596, 455, 1651, 1717, 4555, 4941, 1696, 2095, 4119, 5192, 6075, 9110],
 
                 // Changes this dataset to become a line
                 type: 'line',
