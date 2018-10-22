@@ -49,7 +49,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Pesos'
             },
             scales: {
                 yAxes: [{ 

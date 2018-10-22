@@ -82,111 +82,110 @@ export default {
                     y: 0.0,
                     r: 0
                 }]
+                }, {
+                label: 'Dif I',
+                backgroundColor: ['rgba(255, 0, 0, 0.6)'],
+                data: [{
+                    x: 505000,
+                    y: -17,
+                    r: 1
+                }],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
                 },
-                // {
-                // label: 'Dif I',
-                // backgroundColor: ['rgba(255, 0, 0, 0.6)'],
-                // data: [{
-                //     x: 505000,
-                //     y: -17,
-                //     r: 1
-                // }],
+                {
+                label: 'Dif IIN',
+                backgroundColor: ['rgba(100, 255, 0, 0.6)'],
+                data: [{
+                    x: 860000,
+                    y: -33,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif IIN',
-                // backgroundColor: ['rgba(100, 255, 0, 0.6)'],
-                // data: [{
-                //     x: 860000,
-                //     y: -33,
-                //     r: 1
-                // }],
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Dif IIS',
+                backgroundColor: ['rgba(200, 50, 255, 0.6)'],
+                data: [{
+                    x: 1390000,
+                    y: -5,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif IIS',
-                // backgroundColor: ['rgba(200, 50, 255, 0.6)'],
-                // data: [{
-                //     x: 1390000,
-                //     y: -5,
-                //     r: 1
-                // }],
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Dif III',
+                backgroundColor: ['rgba(0, 100, 255, 0.6)'],
+                data: [{
+                    x: 280000,
+                    y: -22,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif III',
-                // backgroundColor: ['rgba(0, 100, 255, 0.6)'],
-                // data: [{
-                //     x: 280000,
-                //     y: -22,
-                //     r: 1
-                // }],
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Dif IV',
+                backgroundColor: ['rgba(50, 150, 200, 0.6)'],
+                data: [{
+                    x: 635000,
+                    y: 42,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif IV',
-                // backgroundColor: ['rgba(50, 150, 200, 0.6)'],
-                // data: [{
-                //     x: 635000,
-                //     y: 42,
-                //     r: 1
-                // }],
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Dif VN',
+                backgroundColor: ['rgba(75, 25, 50, 0.6)'],
+                data: [{
+                    x: 1065000,
+                    y: -100,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif VN',
-                // backgroundColor: ['rgba(75, 25, 50, 0.6)'],
-                // data: [{
-                //     x: 1065000,
-                //     y: -100,
-                //     r: 1
-                // }],
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Dif VS',
+                backgroundColor: ['rgba(150, 50, 100, 0.6)'],
+                data: [{
+                    x: 510000,
+                    y: -21,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif VS',
-                // backgroundColor: ['rgba(150, 50, 100, 0.6)'],
-                // data: [{
-                //     x: 510000,
-                //     y: -21,
-                //     r: 1
-                // }],
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                },
+                {
+                label: 'Dif NOA',
+                backgroundColor: ['rgba(10, 50, 70, 0.6)'],
+                data: [{
+                    x: 855000,
+                    y: 0,
+                    r: 1
+                }],
 
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // },
-                // {
-                // label: 'Dif NOA',
-                // backgroundColor: ['rgba(10, 50, 70, 0.6)'],
-                // data: [{
-                //     x: 855000,
-                //     y: 0,
-                //     r: 1
-                // }],
-
-                // // Changes this dataset to become a line
-                // type: 'line',
-                // yAxisID: 'right-y-axis'
-                // }
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis'
+                }
             ]
         },
         options: {
@@ -200,20 +199,18 @@ export default {
                     display: true,
                     labelString: "% Var Buck 2018"
                 }
-                }, 
-                // {
-                //     id: 'right-y-axis',
-                //     type: 'linear',
-                //     position: 'right',
-                //     ticks: {
-                //         beginAtZero: true,
-                //         // steps: 10,
-                //         // stepValue: 5,
-                //         max: 50,
-                //         min: -110
-                //     }
-                // }
-                ],
+                }, {
+                    id: 'right-y-axis',
+                    type: 'linear',
+                    position: 'right',
+                    ticks: {
+                        beginAtZero: true,
+                        // steps: 10,
+                        // stepValue: 5,
+                        max: 50,
+                        min: -110
+                    }
+                }],
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,

@@ -17,6 +17,7 @@ import DNN from '~/components/DNN.vue'
 import DNNN from '~/components/DNNN.vue'
 import DNC from '~/components/DNC.vue'
 import BU from '~/components/BU.vue'
+import BUU from '~/components/BUU.vue'
 import PI from '~/components/PI.vue'
 import Pii from '~/components/Pii.vue'
 import Piii from '~/components/Piii.vue'
@@ -26,6 +27,8 @@ import MIX from '~/components/MIX.vue'
 import MIXX from '~/components/MIXX.vue'
 import MIXXX from '~/components/MIXXX.vue'
 import MIXC from '~/components/MIXC.vue'
+import MIXCO from '~/components/MIXCO.vue'
+import MIXCP from '~/components/MIXCP.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
 import Pivot from '~/components/Pivot'
@@ -50,6 +53,7 @@ Vue.component('DNN', DNN)
 Vue.component('DNNN', DNNN)
 Vue.component('DNC', DNC)
 Vue.component('BU', BU)
+Vue.component('BUU', BUU)
 Vue.component('PI', PI)
 Vue.component('Pii', Pii)
 Vue.component('Piii', Piii)
@@ -59,6 +63,8 @@ Vue.component('MIX', MIX)
 Vue.component('MIXX', MIXX)
 Vue.component('MIXXX', MIXXX)
 Vue.component('MIXC', MIXC )
+Vue.component('MIXCO', MIXCO )
+Vue.component('MIXCP', MIXCP )
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)
 Vue.component('pivot', Pivot)

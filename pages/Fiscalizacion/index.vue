@@ -16,9 +16,12 @@
 
       <v-tab-item id='tab-1'>
 
-        <v-container fluid>
+        <v-container fluid text-xs-center>
 
-          <v-layout row wrap>
+          <v-layout row wrap >
+            <v-flex xs12 style="border-bottom: 5px solid green">
+              <h1>INASE</h1>
+            </v-flex>
             <v-flex xs12 md3>
               <PBF/>
             </v-flex>
@@ -28,11 +31,18 @@
             </v-flex>
             <v-spacer></v-spacer> 
             <v-flex xs12 md3>
-              <Piv/>
+              
             </v-flex>
           </v-layout>
 
           <v-layout row wrap>
+            <v-flex xs12 style="border-bottom: 5px solid green">
+              <h1>Mario</h1>
+            </v-flex>
+            <v-flex xs12 md3>
+              <Piv/>
+            </v-flex>
+            <v-spacer></v-spacer> 
             <v-flex xs12 md3>
               <Pivi/>
             </v-flex>
@@ -40,13 +50,13 @@
             <v-flex xs12 md3>
               <MIXXX/>
             </v-flex>
-            <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
-              <MIXC/>
-            </v-flex>
           </v-layout>
 
           <v-layout row wrap>
+            <v-flex xs12 md3>
+              <MIXC/>
+            </v-flex>
+            <v-spacer></v-spacer> 
             <v-flex xs12 md3>
               <Radd/>
             </v-flex>
@@ -54,23 +64,19 @@
             <v-flex xs12 md3>
               <Pola/>
             </v-flex>
-            <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
-              <DNC/>
-            </v-flex>
           </v-layout>
 
           <v-layout row wrap>
+            <v-flex xs12 md3>
+              <DNC/>
+            </v-flex>
+            <v-spacer></v-spacer> 
             <v-flex xs12 md3>
               <BU/>
             </v-flex>
             <v-spacer></v-spacer> 
             <v-flex xs12 md3>
-              
-            </v-flex>
-            <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
-              
+              <BUU/>
             </v-flex>
           </v-layout>
 
@@ -80,9 +86,12 @@
 
       <v-tab-item id='tab-2'>
 
-        <v-container fluid>
+        <v-container fluid text-xs-center>
 
           <v-layout row wrap>
+            <v-flex xs12 style="border-bottom: 5px solid green">
+              <h1>INASE</h1>
+            </v-flex>
             <v-flex xs12 md3>
               <FISC/>
             </v-flex>

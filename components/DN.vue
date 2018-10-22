@@ -31,7 +31,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Has 2017'
             },
             legend: {
                 labels: {

@@ -40,8 +40,11 @@
         <v-container fluid grid-list-md text-xs-center>
           <v-layout row wrap>
           <!-- <v-layout justify-space-between row > -->
-            <v-flex xs12 md6>
-              <h1>Original</h1>
+            <v-flex xs12 md6 style="border-right: 2px solid green">
+              <h1 style="border-bottom: 2px solid green">Original</h1>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <MIXCO/>
+              </v-flex>
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <DNN/>
               </v-flex>
@@ -56,8 +59,11 @@
               </v-flex>
             </v-flex>
 
-            <v-flex xs12 md6>
-              <h1>Primera multiplicacion</h1>
+            <v-flex xs12 md6 style="border-left: 2px solid green">
+              <h1 style="border-bottom: 2px solid green">Primera multiplicacion</h1>
+              <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
+                <MIXCP/>
+              </v-flex>
               <v-flex xs12 sm10 offset-sm1 md6 offset-md3>
                 <DNNN/>
               </v-flex>

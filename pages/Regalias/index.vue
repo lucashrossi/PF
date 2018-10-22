@@ -16,9 +16,12 @@
 
       <v-tab-item id='tab-1'>
 
-        <v-container fluid>
+        <v-container fluid text-xs-center>
         
           <v-layout row wrap>
+            <v-flex xs12 style="border-bottom: 5px solid green">
+              <h1>Marcelo</h1>
+            </v-flex>
             <v-flex xs12 md3 >
               <NC/>
             </v-flex>
@@ -28,21 +31,21 @@
             </v-flex>
             <v-spacer></v-spacer> 
             <v-flex xs12 md3>
-              <DN/>
+              
             </v-flex>
           </v-layout>
           
           <v-layout row wrap>
+            <v-flex xs12 md3>
+              <DN/>
+            </v-flex>
+            <v-spacer></v-spacer> 
             <v-flex xs12 md3>
               <Pii/>
             </v-flex>
             <v-spacer></v-spacer> 
             <v-flex xs12 md3>
               <HOR/>
-            </v-flex>
-            <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
-              
             </v-flex>
           </v-layout>
 
