@@ -119,6 +119,8 @@
           <span class="white--text">&copy; 2018</span>
         </v-footer> -->
 
+        <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_variables.styl -->
+
         <v-footer height=25 color="blue-grey darken-1" app>
           <span class="white--text caption" >&copy; 2018</span>
         </v-footer>

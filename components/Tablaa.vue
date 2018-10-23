@@ -4,7 +4,7 @@
 
         <v-card>
             <v-card-title>
-            ENSAYOS 2018
+            <h1>Bolsas 2018:</h1>
             <v-spacer></v-spacer>
             <v-text-field
                 v-model="search"
