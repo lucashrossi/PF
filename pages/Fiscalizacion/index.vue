@@ -22,15 +22,15 @@
             <v-flex xs12 style="border-bottom: 5px solid green">
               <h1>INASE</h1>
             </v-flex>
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <PBF/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <PI/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               
             </v-flex>
           </v-layout>
@@ -39,43 +39,43 @@
             <v-flex xs12 style="border-bottom: 5px solid green">
               <h1>Mario</h1>
             </v-flex>
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <Piv/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <Pivi/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <MIXXX/>
             </v-flex>
           </v-layout>
 
           <v-layout row wrap>
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <MIXC/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <Radd/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <Pola/>
             </v-flex>
           </v-layout>
 
           <v-layout row wrap>
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <DNC/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <BU/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <BUU/>
             </v-flex>
           </v-layout>
@@ -92,15 +92,15 @@
             <v-flex xs12 style="border-bottom: 5px solid green">
               <h1>INASE</h1>
             </v-flex>
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <FISC/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <Piii/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               
             </v-flex>
           </v-layout>

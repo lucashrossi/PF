@@ -22,29 +22,29 @@
             <v-flex xs12 style="border-bottom: 5px solid green">
               <h1>Marcelo</h1>
             </v-flex>
-            <v-flex xs12 md3 >
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
               <NC/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3 >
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
               <NCC/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               
             </v-flex>
           </v-layout>
           
           <v-layout row wrap>
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <DN/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <Pii/>
             </v-flex>
             <v-spacer></v-spacer> 
-            <v-flex xs12 md3>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
               <HOR/>
             </v-flex>
           </v-layout>
