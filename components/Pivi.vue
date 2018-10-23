@@ -26,7 +26,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Reg/Bls 2018 y 2017'
+                text: 'Reg/Orig 2018 y 2017'
             },
             legend: {
                 labels: {
@@ -42,7 +42,7 @@ export default {
                 padding: {
                     left: 0,
                     right: 0,
-                    top: 0,
+                    top: 20,
                     bottom: 50
                 }
             },

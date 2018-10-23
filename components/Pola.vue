@@ -70,7 +70,7 @@ export default {
                 padding: {
                     left: 0,
                     right: 0,
-                    top: 0,
+                    top: 20,
                     bottom: 50
                 }
             },
@@ -87,7 +87,7 @@ export default {
             
             // responsive: true,
             // maintainAspectRatio: false,
-            responsive: false,
+            // responsive: false,
             // maintainAspectRatio: true
         }
         }

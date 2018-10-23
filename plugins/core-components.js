@@ -4,7 +4,9 @@ import NC from '~/components/NC.vue'
 import NCC from '~/components/NCC.vue'
 // import pdf from 'vue-pdf'
 import Tabla from '~/components/Tabla.vue'
+import Tablaa from '~/components/Tablaa.vue'
 import FISC from '~/components/FISC.vue'
+import FISCV from '~/components/FISCV.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
 import Rad from '~/components/Rad.vue'
@@ -40,7 +42,9 @@ Vue.component('NC', NC)
 Vue.component('NCC', NCC)
 // Vue.component('pdf', pdf)
 Vue.component('Tabla', Tabla)
+Vue.component('Tablaa', Tablaa)
 Vue.component('FISC', FISC)
+Vue.component('FISCV', FISCV)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)
 Vue.component('Rad', Rad )

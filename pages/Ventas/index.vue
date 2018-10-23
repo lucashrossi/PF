@@ -83,8 +83,40 @@
       </v-tab-item>
 
       <v-tab-item id='tab-2'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
 
-        <h1>O</h1>
+      <v-tab-item id='tab-3'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+      <v-tab-item id='tab-4'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+      <v-tab-item id='tab-5'>
+
+        <v-container fluid>
+          <v-layout row wrap >
+            <v-flex xs12 md3>
+              <FISCV/>
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 md3>
+              
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 md3>
+              
+            </v-flex>
+          </v-layout>
+        </v-container>
+
+      </v-tab-item>
+
+      <v-tab-item id='tab-6'>
+
+        <Tablaa/>
 
       </v-tab-item>
     

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-container>
         <v-data-table
             :headers="headers"
             :items="desserts"
@@ -17,7 +17,7 @@
                 <td class="text-xs-right">{{ props.item.importe }}</td>
             </template>
         </v-data-table>
-    </div>
+    </v-container>
 </template>
 
 <script>
