@@ -34,6 +34,26 @@
       Data
     </v-tab>
 
+     <v-tab-item id='tab-1'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+      <v-tab-item id='tab-2'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+      <v-tab-item id='tab-3'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+       <v-tab-item id='tab-4'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+      <v-tab-item id='tab-5'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
     <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
     <v-tab-item id='tab-6'>
       <PivotI/>
