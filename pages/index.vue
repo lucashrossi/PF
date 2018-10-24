@@ -1,3 +1,31 @@
+//.firebaserc
+// {
+//   "projects": {
+//     /*"default": "ppff-94bd3"*/
+//     "default": "pfdbb-dc48b"
+//   }
+// }
+
+//firebase.json
+// {
+//   "hosting": {
+//     "public": "dist",
+//     "ignore": [
+//       "firebase.json",
+//       "**/.*",
+//       "**/node_modules/**"
+//     ],
+//     "rewrites": [
+//       {
+//         "source": "**",
+//         "destination": "/404.html"
+//       }
+//     ]
+//   }
+// }
+
+
+
 <template>
   <v-container>
     <v-layout row>
