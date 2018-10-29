@@ -24,6 +24,8 @@ import PI from '~/components/PI.vue'
 import Pii from '~/components/Pii.vue'
 import Piii from '~/components/Piii.vue'
 import Piv from '~/components/Piv.vue'
+import Pivv from '~/components/Pivv.vue'
+import Pivvv from '~/components/Pivvv.vue'
 import Pivi from '~/components/Pivi.vue'
 import MIX from '~/components/MIX.vue'
 import MIXX from '~/components/MIXX.vue'
@@ -62,6 +64,8 @@ Vue.component('PI', PI)
 Vue.component('Pii', Pii)
 Vue.component('Piii', Piii)
 Vue.component('Piv', Piv)
+Vue.component('Pivv', Pivv)
+Vue.component('Pivvv', Pivvv)
 Vue.component('Pivi', Pivi)
 Vue.component('MIX', MIX)
 Vue.component('MIXX', MIXX)

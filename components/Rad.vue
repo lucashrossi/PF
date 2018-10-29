@@ -26,18 +26,44 @@ export default {
 
                 backgroundColor: "rgba(10,20,100,0.4)",
                 },
+                {label: 'Toal 2018 Buck',
+                data: [38, 0, 0, 0, 0, 0, 0, 0],
+                // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
+                // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
+
+                backgroundColor: "rgba(50,150,100, 0.4",
+                fill: false,
+                showLine: false,
+                borderWidth: 4,
+                displayColors: true,
+                pointRadius: 1,
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
+                {label: 'Toal 2018 SY',
+                data: [62, 0, 0, 0, 0, 0, 0, 0],
+                // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
+                // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
+
+                backgroundColor: "rgba(10,20,100,0.4)",
+                fill: false,
+                showLine: false,
+                borderWidth: 4,
+                displayColors: true,
+                pointRadius: 1,
+                borderColor: 'rgba(0,0,0,1)'
+                },
                 {label: '2017 Buck',
                 data: [100, 36, 79, 100, 78, 0, 88, 0],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
-
+                hidden: true,
                 backgroundColor: "rgba(50,150,100, 0.2)",
                 },
                 {label: '2017 SY',
                 data: [0, 64, 21, 0, 22, 0, 12, 0],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
-
+                hidden: true,
                 backgroundColor: "rgba(10,20,100,0.2)",
                 }
                 // {label: 'N',

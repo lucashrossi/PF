@@ -57,6 +57,9 @@
               <v-flex xs12 sm10 offset-sm1 lg8 offset-lg2 xl6 offset-xl3>
                 <Radar/>
               </v-flex>
+              <v-flex xs12 sm10 offset-sm1 lg8 offset-lg2 xl6 offset-xl3>
+                <Pivv/>
+              </v-flex>
             </v-flex>
 
             <v-flex xs12 md10 offset-md1 lg6 offset-lg0 style="border-left: 2px solid green">
@@ -75,6 +78,9 @@
               </v-flex>
               <v-flex xs12 sm10 offset-sm1 lg8 offset-lg2 xl6 offset-xl3>
                 <Rad/>
+              </v-flex>
+              <v-flex xs12 sm10 offset-sm1 lg8 offset-lg2 xl6 offset-xl3>
+                <Pivvv/>
               </v-flex>
             </v-flex>
           </v-layout>
