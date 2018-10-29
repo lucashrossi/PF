@@ -12,19 +12,33 @@ export default {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
 
             datasets: [
-                {label: '2018',
-                data: [3, 33, 9, 5, 37, 2, 11, 1],
+                {label: '2018 Buck',
+                data: [13, 30, 16, 61, 37, 38, 79, 100],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
 
-                backgroundColor: "rgba(50,150,100, 0.6)",
+                backgroundColor: "rgba(50,150,100, 0.4)",
                 },
-                {label: '2017',
-                data: [13, 24, 12, 5, 30, 3, 13],
+                {label: '2018 SY',
+                data: [87, 70, 84, 39, 63, 62, 21, 0],
+                // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
+                // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
+
+                backgroundColor: "rgba(10,20,100,0.4)",
+                },
+                {label: '2017 Buck',
+                data: [52, 40, 28, 67, 22, 31, 71, 18],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
 
-                backgroundColor: "rgba(10,20,100,0.4)",
+                backgroundColor: "rgba(50,150,100, 0.2)",
+                },
+                {label: '2017 SY',
+                data: [48, 60, 72, 33, 78, 69, 29, 82],
+                // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
+                // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
+
+                backgroundColor: "rgba(10,20,100,0.2)",
                 }
                 // {label: 'N',
                 // data: [10, 15, 6, 1],
@@ -38,7 +52,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Porcentaje'
+                text: 'Porcentaje Buck vs SY'
             },
             scale: {
                 yAxes: [{ 
@@ -60,7 +74,7 @@ export default {
                     beginAtZero: true,
                     // steps: 10,
                     // stepValue: 5,
-                    max: 50,
+                    max: 100,
                     min: 0
                 }
             },
