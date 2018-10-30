@@ -10,12 +10,19 @@ export default {
             labels: ['SY 120', 'SY 330', 'Meteoro', 'Saeta', 'SY 211', 'Destello', 'Bellaco', 'Camba', 'SY 200', 'Claraz', '55 CL2', 'SY 300', 'Pleno'],
             datasets: [
                 {
-                // label: 'Buck',
+                // label: '2018',
                 data: [33, 19, 11, 10, 6, 6, 4, 3, 2, 2, 1, 1, 1],
-                backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','#8cba2f','#1111b9','#c45850','rgba(20,50,0)', 'rgba(150,10,0)','rgba(185, 250, 85, 1)','#e1c8b9','#c25250','#28c2b8','#c85858'],
+                backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','#8cba2f','#1111b9','#c45850','rgba(20,50,0)', 'rgba(150,10,0)', 'rgba(105, 200, 85, 1)','rgba(185, 250, 85, 1)','#e1c8b9','#115250','#28c2b8','#815858'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
                 borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0]
                 },
+                {
+                // label: '2017',
+                data: [7, 24, 9, 8, 13, 0, 24, 0, 2, 7, 1, 5, 0],
+                backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','#8cba2f','#1111b9','#c45850','rgba(20,50,0)', 'rgba(150,10,0)', 'rgba(105, 200, 85, 1)','rgba(185, 250, 85, 1)','#e1c8b9','#115250','#28c2b8','#815858'],
+                // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
+                borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0],
+                }
                 // {
                 // label: 'N',
                 // data: [10, 15, 6, 1],
@@ -29,9 +36,10 @@ export default {
                 ]
         },
         options: {
+            cutoutPercentage: 30,
             title: {
                 display: true,
-                text: 'Porcentaje 2018'
+                text: 'Porcentaje 2018 y 2017'
             },
             legend: {
                 labels: {

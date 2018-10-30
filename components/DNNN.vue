@@ -10,12 +10,19 @@ export default {
             labels: ['SY 330', 'SY 211', 'Saeta', 'Meteoro', 'SY 120', 'Bellaco', 'SY 200', 'SY 300', 'Claraz'],
             datasets: [
                 {
-                // label: 'Buck',
+                // label: '2018',
                 data: [25, 19, 14, 14, 7, 6, 6, 4, 4],
                 backgroundColor: ['rgba(50,200,0)', '#c45850','#1111b9','#8cba2f','rgba(255,0,0)','rgba(150,10,0)', 'rgba(185, 250, 85, 1)','#28c2b8','#e1c8b9'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
                 borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0]
                 },
+                {
+                // label: '2017',
+                data: [6, 8, 4, 23, 0, 39, 3, 0, 11],
+                backgroundColor: ['rgba(50,200,0)', '#c45850','#1111b9','#8cba2f','rgba(255,0,0)','rgba(150,10,0)', 'rgba(185, 250, 85, 1)','#28c2b8','#e1c8b9'],
+                // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
+                borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0]
+                }
                 // {
                 // label: 'N',
                 // data: [10, 15, 6, 1],
@@ -29,9 +36,10 @@ export default {
                 ]
         },
         options: {
+            cutoutPercentage: 30,
             title: {
                 display: true,
-                text: 'Porcentaje 2018'
+                text: 'Porcentaje 2018 y 2017'
             },
             legend: {
                 labels: {
