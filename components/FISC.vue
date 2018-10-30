@@ -31,12 +31,12 @@ export default {
             },
             {
             label: 'Buck',
-            backgroundColor: '#f97919',
+            backgroundColor: 'rgba(200, 50, 0)',
             data: [159183, 442202, 394354, 465320, 990274, 509433, 472121, 431950, 442742]
             },
             {
             label: 'Sursem',
-            backgroundColor: '#f01313',
+            backgroundColor: '#808050',
             data: [339630, 594849, 582008, 253843, 348794, 164663, 139093, 148232, 135284]
             },
             {

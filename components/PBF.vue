@@ -14,7 +14,7 @@ export default {
             datasets: [            
             {
                 label: 'Buck',
-                backgroundColor: ['#7979f8'],
+                backgroundColor: ['rgba(200, 50, 0)'],
                 data: [159183, 442202, 394354, 465320, 990274, 509433, 472121, 431950, 442742]
             },
             // {

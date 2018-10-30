@@ -9,13 +9,13 @@ export default {
         datacollection: {
             labels: ['Buck', 'SY'],
             datasets: [{
-                label: 'Original 2018',
+                // label: 'Original 2018',
                 backgroundColor: ['rgba(200, 50, 0)', 'rgba(100, 150, 0)'],
                 data: [10421, 16962],
                 borderWidth: [0,0]
             },
             {
-                label: 'Original 2017',
+                // label: 'Original 2017',
                 backgroundColor: ['rgba(200, 50, 0, 0.6)', 'rgba(100, 150, 0, 0.6)'],
                 data: [7842, 8149],
                 borderWidth: [0,0]

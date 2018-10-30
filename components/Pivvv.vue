@@ -22,13 +22,13 @@ export default {
             //     borderWidth: [0,0]
             // },
             {
-                label: 'Primera 2018',
+                // label: 'Primera 2018',
                 backgroundColor: ['rgba(200, 50, 0, 1)', 'rgba(100, 150, 0, 1)'],
                 data: [21828, 35055],
                 borderWidth: [0,0]
             },
             {
-                label: 'Primera 2017',
+                // label: 'Primera 2017',
                 backgroundColor: ['rgba(200, 0, 0, 0.6)', 'rgba(100, 150, 0, 0.6)'],
                 data: [10930, 3067],
                 borderWidth: [0,0]
