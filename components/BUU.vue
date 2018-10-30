@@ -83,7 +83,7 @@ export default {
                     r: 0
                 }]
                 }, {
-                label: 'Dif I',
+                label: '%Dif I',
                 backgroundColor: ['rgba(255, 0, 0, 0.6)'],
                 data: [{
                     x: 505000,
@@ -96,7 +96,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif IIN',
+                label: '%Dif IIN',
                 backgroundColor: ['rgba(100, 255, 0, 0.6)'],
                 data: [{
                     x: 860000,
@@ -109,7 +109,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif IIS',
+                label: '%Dif IIS',
                 backgroundColor: ['rgba(200, 50, 255, 0.6)'],
                 data: [{
                     x: 1390000,
@@ -122,7 +122,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif III',
+                label: '%Dif III',
                 backgroundColor: ['rgba(0, 100, 255, 0.6)'],
                 data: [{
                     x: 280000,
@@ -135,7 +135,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif IV',
+                label: '%Dif IV',
                 backgroundColor: ['rgba(50, 150, 200, 0.6)'],
                 data: [{
                     x: 635000,
@@ -148,7 +148,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif VN',
+                label: '%Dif VN',
                 backgroundColor: ['rgba(75, 25, 50, 0.6)'],
                 data: [{
                     x: 1065000,
@@ -161,7 +161,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif VS',
+                label: '%Dif VS',
                 backgroundColor: ['rgba(150, 50, 100, 0.6)'],
                 data: [{
                     x: 510000,
@@ -174,7 +174,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Dif NOA',
+                label: '%Dif NOA',
                 backgroundColor: ['rgba(10, 50, 70, 0.6)'],
                 data: [{
                     x: 855000,

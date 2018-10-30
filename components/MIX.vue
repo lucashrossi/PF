@@ -20,7 +20,7 @@ export default {
                 data: [2005, 3903, 1972, 850, 483, 2007, 0],
                 yAxisID: 'left-y-axis'
                 }, {
-                label: 'Diferencia Años',
+                label: '% Dif Años',
                 
                 data: [-61, 130, 20, 56, 114, 29, 48, 100],
 

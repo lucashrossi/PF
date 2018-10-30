@@ -32,7 +32,7 @@ export default {
                 data: [15.8, 13.1, 11.8, 14.1, 14.6, 5.1, 18.0, 0.0],
                 yAxisID: 'right-y-axis'
                 }, {
-                label: 'Diferencia Regalias',
+                label: '% Dif Regalias',
                 backgroundColor: ['rgba(20,50,0,0.4)'],
                 data: [-31, -15, -18, -69, 16, -100, -17, 0],
 
@@ -41,7 +41,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: 'Diferencia Reg/Orig',
+                label: '% Dif Reg/Orig',
                 backgroundColor: ['rgba(220,150,220,0.4)'],
                 data: [-17, 33, -5, -22, 42, -100, -21, 0],
 
