@@ -7,19 +7,31 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ['SY 330', 'Esmeralda', 'SY 211', 'Saeta', 'Topacio', 'Meteoro', 'SY 120', 'Zafiro', 'Claraz', 'Bellaco', 'NO ESTÁ', 'SY 300', 'SY 200', 'Platino', 'Granate', 'Pleno', '55 CL2'],
+            labels: ['Buck', 'SY'],
             datasets: [{
-                // label: "Population (millions)",
-                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e45cd", "#125ea2","#148a9f","#85c3b9","#775850"],
-                data: [69906, 68774, 48716, 41590, 40107, 35743, 29953, 27146, 24220, 16371, 11500, 10925, 6837, 5310, 4844, 400, 400],
-                borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+                // label: 'Original 2018',
+                backgroundColor: ['rgba(200, 50, 0)', 'rgba(100, 150, 0)'],
+                data: [276405, 166337],
+                borderWidth: [0,0]
             },
             {
-                // label: "Population (millions)",
-                backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850","#3e45cd", "#125ea2","#148a9f","#85c3b9","#775850"],
-                data: [53834, 87345, 65012, 15350, 58201, 53136, 2000, 9217, 27549, 18358, 1100, 14523, 11592, 416, 5092, 200, 200, 8825],
-                borderWidth: [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
-            }
+                // label: 'Original 2017',
+                backgroundColor: ['rgba(200, 50, 0, 0.6)', 'rgba(100, 150, 0, 0.6)'],
+                data: [276164, 155786],
+                borderWidth: [0,0]
+            },
+            // {
+            //     label: 'Primera 2018',
+            //     backgroundColor: ['rgba(255, 0, 0, 0.6)', 'rgba(100, 255, 0, 0.6)'],
+            //     data: [21828, 35055],
+            //     borderWidth: [0,0]
+            // },
+            // {
+            //     label: 'Primera 2017',
+            //     backgroundColor: ['rgba(255, 0, 0, 0.6)', 'rgba(100, 255, 0, 0.6)'],
+            //     data: [10930, 3067],
+            //     borderWidth: [0,0]
+            // }
             ]
         },
         options: {
@@ -31,10 +43,10 @@ export default {
                 labels: {
                     fontSize: 10,
                     boxWidth: 15,
-                    filter: function(legendItem, data) {
-                            // return legendItem.index != 1
-                            return legendItem.index < 5 
-                    }
+                    // filter: function(legendItem, data) {
+                    //         // return legendItem.index != 1
+                    //         return legendItem.index < 5 
+                    // }
                 }
             },
             layout: {

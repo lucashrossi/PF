@@ -23,7 +23,7 @@
               <h1>INASE</h1>
             </v-flex>
             <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
-              <PBF/>
+              <FISCR/>
             </v-flex>
             <v-spacer></v-spacer> 
             <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
@@ -31,7 +31,7 @@
             </v-flex>
             <v-spacer></v-spacer> 
             <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
-              
+              <Piiv/>
             </v-flex>
           </v-layout>
 

@@ -6,6 +6,7 @@ import NCC from '~/components/NCC.vue'
 import Tabla from '~/components/Tabla.vue'
 import Tablaa from '~/components/Tablaa.vue'
 import FISC from '~/components/FISC.vue'
+import FISCR from '~/components/FISCR.vue'
 import FISCV from '~/components/FISCV.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
@@ -24,6 +25,8 @@ import PI from '~/components/PI.vue'
 import Pii from '~/components/Pii.vue'
 import Piii from '~/components/Piii.vue'
 import Piv from '~/components/Piv.vue'
+import Piiv from '~/components/Piiv.vue'
+import Piiiv from '~/components/Piiiv.vue'
 import Pivv from '~/components/Pivv.vue'
 import Pivvv from '~/components/Pivvv.vue'
 import Pivi from '~/components/Pivi.vue'
@@ -46,6 +49,7 @@ Vue.component('NCC', NCC)
 Vue.component('Tabla', Tabla)
 Vue.component('Tablaa', Tablaa)
 Vue.component('FISC', FISC)
+Vue.component('FISCR', FISCR)
 Vue.component('FISCV', FISCV)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)
@@ -64,6 +68,8 @@ Vue.component('PI', PI)
 Vue.component('Pii', Pii)
 Vue.component('Piii', Piii)
 Vue.component('Piv', Piv)
+Vue.component('Piiv', Piiv)
+Vue.component('Piiiv', Piiiv)
 Vue.component('Pivv', Pivv)
 Vue.component('Pivvv', Pivvv)
 Vue.component('Pivi', Pivi)
