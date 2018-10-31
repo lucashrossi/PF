@@ -11,7 +11,7 @@ export default {
             datasets: [
             {
             label: 'SY 330',
-            backgroundColor: '#3e95cd',
+            backgroundColor: 'rgba(50, 200, 0, 1)',
             data: [0, 0, 0, 0, 0, 4500, 62915, 53834, 69906]
             },
             {
@@ -21,12 +21,12 @@ export default {
             },
             {
             label: 'SY 211',
-            backgroundColor: '#3cba9f',
+            backgroundColor: 'rgba(196, 88, 80, 1)',
             data: [0, 0, 0, 0, 0, 100, 5000, 65012, 48716]
             },
             {
             label: 'Saeta',
-            backgroundColor: '#e8c3b9',
+            backgroundColor: 'rgba(17, 17, 185, 1)',
             data: [0, 0, 0, 0, 0, 1200, 26391, 15350, 41590]
             },
             {
@@ -36,12 +36,12 @@ export default {
             },
             {
             label: 'Meteoro',
-            backgroundColor: '#3e45cd',
+            backgroundColor: 'rgba(140, 186, 47, 1)',
             data: [46073, 60904, 30445, 27394, 46379, 20555, 51449, 53136, 35743]
             },
             {
             label: 'SY 120',
-            backgroundColor: '#125ea2',
+            backgroundColor: 'rgba(255, 0, 0, 1)',
             data: [0, 0, 0, 0, 0, 0, 0, 2000, 29953]
             },
             {
@@ -51,22 +51,22 @@ export default {
             },
             {
             label: 'Claraz',
-            backgroundColor: '#85c3b9',
+            backgroundColor: 'rgba(225, 200, 185, 1)',
             data: [0, 0, 0, 0, 0, 0, 3500, 27549, 24220]
             },
             {
             label: 'Bellaco',
-            backgroundColor: '#775850',
+            backgroundColor: 'rgba(150, 10, 0, 1)',
             data: [0, 0, 0, 0, 0, 150, 8977, 18358, 16371]
             },
             {
             label: 'SY 300',
-            backgroundColor: '#24ba9f',
+            backgroundColor: 'rgba(40, 194, 184, 1)',
             data: [3500, 79303, 131507, 68976, 163617, 109263, 44852, 14523, 10925]
             },
             {
             label: 'SY 200',
-            backgroundColor: '#3e45cd',
+            backgroundColor: 'rgba(185, 250, 85, 1)',
             data: [3500, 56060, 72265, 47808, 183181, 90313, 35725, 11592, 6837]
             },
             {
@@ -81,12 +81,12 @@ export default {
             },
             {
             label: 'Pleno',
-            backgroundColor: '#85c3b9',
+            backgroundColor: 'rgba(200, 88, 88, 1)',
             data: [0, 0, 0, 6000, 66641, 44823, 25406, 200, 400]
             },
             {
             label: '55 CL2',
-            backgroundColor: '#775850',
+            backgroundColor: 'rgba(194, 82, 80, 1)',
             data: [6000, 1600, 0, 0, 0, 0, 0, 200, 400]
             },
             {
