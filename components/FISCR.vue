@@ -16,7 +16,7 @@ export default {
             },
             {
             label: 'Esmeralda',
-            backgroundColor: '#8e5ea2',
+            backgroundColor: 'rgba(142, 94, 162, 1)',
             data: [0, 0, 20370, 73441, 119091, 69515, 56721, 87345, 68774]
             },
             {
@@ -31,7 +31,7 @@ export default {
             },
             {
             label: 'Topacio',
-            backgroundColor: '#c45850',
+            backgroundColor: 'rgba(196, 88, 80, 1)',
             data: [0, 0, 16450, 84237, 99654, 63307, 78972, 58201, 40107]
             },
             {
@@ -46,7 +46,7 @@ export default {
             },
             {
             label: 'Zafiro',
-            backgroundColor: '#148a9f',
+            backgroundColor: 'rgba(20, 138, 159, 1)',
             data: [0, 0, 0, 0, 0, 1600, 13798, 9217, 27146]
             },
             {
@@ -71,12 +71,12 @@ export default {
             },
             {
             label: 'Platino',
-            backgroundColor: '#24ba9f',
+            backgroundColor: 'rgba(36, 186, 159, 1)',
             data: [0, 0, 570, 18583, 11300, 100, 859, 416, 5310]
             },
             {
             label: 'Granate',
-            backgroundColor: '#24ba9f',
+            backgroundColor: 'rgba(68, 68, 159, 1)',
             data: [0, 0, 350, 6215, 6511, 100, 518, 5092, 4844]
             },
             {
@@ -91,7 +91,7 @@ export default {
             },
             {
             label: 'Otros',
-            backgroundColor: '#987979',
+            backgroundColor: 'rgba(152, 121, 121, 1)',
             data: [100110, 244335, 122397, 132666, 293900, 103907, 57038, 9925, 11500]
             }
             ]
