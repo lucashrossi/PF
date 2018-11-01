@@ -25,7 +25,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Rotulos'
+                text: 'Rotulos 2018 y 2017'
             },
             legend: {
                 labels: {
