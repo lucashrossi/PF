@@ -29,7 +29,7 @@ export default {
             },
             {
                 // label: 'Primera 2017',
-                backgroundColor: ['rgba(200, 0, 0, 0.6)', 'rgba(100, 150, 0, 0.6)'],
+                backgroundColor: ['rgba(200, 50, 0, 0.6)', 'rgba(100, 150, 0, 0.6)'],
                 data: [10930, 3067],
                 borderWidth: [0,0]
             }
