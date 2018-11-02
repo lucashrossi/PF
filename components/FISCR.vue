@@ -10,6 +10,17 @@ export default {
             labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
             datasets: [
             {
+            label: 'Totales',
+            data: [159183, 442202, 394354, 465320, 990274, 509433, 472121, 431950, 442742],
+            type: 'line',
+            yAxisID: 'right-y-axis',
+            fill: false,
+            showLine: false,
+            pointRadius: 5,
+            // pointBackgroundColor: 'rgba(255, 255, 255, 1)',
+            borderColor: 'rgba(255, 0, 0, 1)'
+            },
+            {
             label: 'SY 330',
             backgroundColor: 'rgba(50, 200, 0, 1)',
             data: [0, 0, 0, 0, 0, 4500, 62915, 53834, 69906]
@@ -109,13 +120,31 @@ export default {
                     },
                     stacked: true
                 }],
-                yAxes: [{
+                yAxes: [
+                    {
                     scaleLabel: {
                         display: true,
                         labelString: ""
                     },
-                    stacked: true
-                }]
+                    stacked: true,
+                    // gridLines: {
+                    //     display: false
+                    // }
+                    },
+                    {
+                    id: 'right-y-axis',
+                    type: 'linear',
+                    position: 'right',
+                    display: false,
+                    ticks: {
+                        beginAtZero: true,
+                        // steps: 10,
+                        // stepValue: 5,
+                        max: 1000000,
+                        min: 0
+                    },
+                    }
+                ]
             },
             legend: {
                 labels: {

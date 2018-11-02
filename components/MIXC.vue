@@ -20,7 +20,7 @@ export default {
                 data: [295000, 750000, 1145000, 250000, 722000, 1118000, 450000, 720000],
                 yAxisID: 'left-y-axis'
                 }, {
-                label: '% Var Buck 2018',
+                label: '% 2018',
                 hidden: true,
                 backgroundColor: ['rgba(20,50,0,0.4)'],
                 data: [1.3, 5.0, 0.9, 1.8, 7.5, 0.1, 2.3, 0.0],
@@ -30,7 +30,7 @@ export default {
                 yAxisID: 'right-y-axis'
                 },
                 {
-                label: '% Var Buck 2017',
+                label: '% 2017',
                 hidden: true,
                 backgroundColor: ['rgba(220,150,220,0.4)'],
                 data: [2.4, 5.7, 1.4, 5.0, 4.6, 0.2, 2.2, 0.0],
@@ -44,7 +44,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: 'Has y % Variedades Buck'
             },
             scales: {
                 yAxes: [{ 

@@ -12,14 +12,14 @@ export default {
             labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA'],
 
             datasets: [
-                {label: '% Var Buck 2018',
+                {label: '2018',
                 data: [1.3, 5.0, 0.9, 1.8, 7.5, 0.1, 2.3, 0.0],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [6, 4, 33, 2, 6, 11, 1, 19, 3, 10, 2, 1, 1],
 
                 backgroundColor: "rgba(50,150,100, 0.6)",
                 },
-                {label: '% Var Buck 2017',
+                {label: '2017',
                 data: [2.4, 5.7, 1.4, 5.0, 4.6, 0.2, 2.2, 0.0],
                 // data: [84690, 34893, 13903, 28179, 1983, 4319, 2777, 1312, 2528, 440, 4],
                 // data: [16, 14, 33, 12, 16, 11, 11, 19, 3, 10, 2, 1, 1],
@@ -38,7 +38,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: ''
+                text: '% Variedades Buck'
             },
             scale: {
                 yAxes: [{ 

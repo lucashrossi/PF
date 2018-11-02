@@ -26,7 +26,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: '% Var Buck 2018 y 2017'
+                text: '% Variedades Buck 2018 y 2017'
             },
             scale: {
                 yAxes: [{ 
