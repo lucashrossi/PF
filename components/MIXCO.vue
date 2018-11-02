@@ -82,12 +82,12 @@ export default {
                 text: 'Bls'
             },
             scales: {
-                yAxes: [{ 
+                yAxes: [{
+                    // stacked: true,
                     scaleLabel: {
                         display: true,
                         labelString: ""
                     },
-                    // stacked: true,
                     id: 'left-y-axis',
                     type: 'linear',
                     position: 'left',
@@ -98,7 +98,7 @@ export default {
                         max: 16000,
                         min: 0
                     },
-                    // stacked: true
+                   
                 }, 
                 {
                     id: 'right-y-axis',
@@ -113,15 +113,15 @@ export default {
                     },
                 }
                 ],
-                xAxes: [{ 
-                scaleLabel: {
-                    display: true,
-                    labelString: ""
-                },
-                stacked: true,
-                ticks: {
-                    autoSkip: false
-                }
+                xAxes: [{
+                    stacked: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
+                    ticks: {
+                        autoSkip: false
+                    }
                 }]
             },
             legend: {

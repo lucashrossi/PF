@@ -83,11 +83,11 @@ export default {
             },
             scales: {
                 yAxes: [{ 
+                    // stacked: true,
                     scaleLabel: {
                         display: true,
                         labelString: ""
                     },
-                    // stacked: true,
                     id: 'left-y-axis',
                     type: 'linear',
                     position: 'left',
@@ -113,15 +113,15 @@ export default {
                     },
                 }
                 ],
-                xAxes: [{ 
-                scaleLabel: {
-                    display: true,
-                    labelString: ""
-                },
-                stacked: true,
-                ticks: {
-                    autoSkip: false
-                }
+                xAxes: [{
+                    stacked: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
+                    ticks: {
+                        autoSkip: false
+                    }
                 }]
             },
             legend: {
