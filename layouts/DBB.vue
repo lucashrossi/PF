@@ -51,7 +51,7 @@
 
         </v-navigation-drawer>
 
-        <v-toolbar height=50 color="blue-grey darken-3" dark fixed app>
+        <v-toolbar height=45 color="blue-grey darken-3" dark fixed app>
           <v-toolbar-side-icon @click.stop="drawer = !drawer" ></v-toolbar-side-icon> <!--class="hidden-sm-and-up"></v-toolbar-side-icon>-->
           <v-toolbar-title>
             <v-btn flat router to='/DashB'>
@@ -121,7 +121,7 @@
 
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_variables.styl -->
 
-        <v-footer height=25 color="blue-grey darken-1" app>
+        <v-footer height=20 color="blue-grey darken-1" app>
           <span class="white--text caption" >&copy; 2018</span>
         </v-footer>
         

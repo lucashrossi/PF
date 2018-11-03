@@ -1,6 +1,6 @@
 <template>
 
-    <v-tabs centered color="#542a25" dark height="30">
+    <v-tabs centered color="#542a25" dark height="25">
         
       <v-tabs-slider color="green"></v-tabs-slider>
 
