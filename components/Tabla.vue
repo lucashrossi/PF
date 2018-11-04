@@ -1,20 +1,15 @@
 <template>
     <v-container>
-        <v-data-table
-            :headers="headers"
-            :items="desserts"
-            hide-actions
-            class="elevation-1"
-        >
+        <v-data-table :headers="headers" :items="desserts" class="elevation-1" style="width: 100%">
             <template slot="items" slot-scope="props">
-                <td>{{ props.item.name }}</td>
-                <td class="text-xs-right">{{ props.item.cantidad }}</td>
-                <td class="text-xs-right">{{ props.item.precio }}</td>
-                <td class="text-xs-right">{{ props.item.factura }}</td>
-                <td class="text-xs-right">{{ props.item.detalle }}</td>
-                <td class="text-xs-right">{{ props.item.cta }}</td>
-                <td class="text-xs-right">{{ props.item.RS }}</td>
-                <td class="text-xs-right">{{ props.item.importe }}</td>
+                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.detalle }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
             </template>
         </v-data-table>
     </v-container>
@@ -26,20 +21,16 @@ export default {
 
   data: () => {
       return {
+        
         headers: [
-          {
-            text: 'Pedido',
-            align: 'left',
-            sortable: true,
-            value: 'name'
-          },
-          { text: 'Cantidad', value: 'cantidad', align: 'right' },
-          { text: 'Precio', value: 'precio', align: 'right' },
-          { text: 'Factura', value: 'factura', align: 'right' },
-          { text: 'detalle', value: 'detalle', align: 'right' },
-          { text: 'CTA', value: 'cta', align: 'right' },
-          { text: 'Razon Social', value: 'RS', align: 'right' },
-          { text: 'Importe', value: 'importe', align: 'right' }
+          { text: 'Pedido', value: 'name', align: 'left', width: '1'},
+          { text: 'Cantidad', value: 'cantidad', align: 'right', width: '1' },
+          { text: 'Precio', value: 'precio', align: 'right', width: '1' },
+          { text: 'Factura', value: 'factura', align: 'right', width: '1' },
+          { text: 'detalle', value: 'detalle', align: 'right', width: '1' },
+          { text: 'CTA', value: 'cta', align: 'right', width: '1' },
+          { text: 'Razon Social', value: 'RS', align: 'right', width: '1' },
+          { text: 'Importe', value: 'importe', align: 'right', width: '1' },
         ],
         desserts: [
           {

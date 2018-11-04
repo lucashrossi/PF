@@ -46,8 +46,15 @@
         <h1>oooOooo</h1>
       </v-tab-item>
 
-       <v-tab-item id='tab-4'>
-        <h1>oooOooo</h1>
+      <v-tab-item id='tab-4'>
+        <v-container fluid text-xs-center>
+          <v-layout row wrap >
+            <v-flex xs12 >
+              <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen style="border: 5px solid green"></iframe>
+            </v-flex>
+          </v-layout>
+        </v-container>
+
       </v-tab-item>
 
       <v-tab-item id='tab-5'>
