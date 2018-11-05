@@ -1,10 +1,9 @@
 <template>
   <div>
 
-      <v-btn elevation-25 @click="enviar">
-        <!-- <v-icon left>link</v-icon> -->
+      <!-- <v-btn elevation-25 @click="enviar">
         Cargar
-      </v-btn>
+      </v-btn> -->
 
     <v-container grid-list-md text-xs-center>
       <v-layout row wrap>
@@ -303,18 +302,18 @@ export default {
   layout: 'DBB',
   data: () => ({
       // mensaje:[
-        mensaje:
-              {
-                value: false,
-                name: 25616,
-                cantidad: 1133,
-                precio: 61.56,
-                factura: 'A001200004761',
-                detalle: 'BUCKSY200',
-                cta: 4036,
-                RS:'GONZALEZ LISANDRO Y L. HNOS SRL',
-                importe: 69747.48
-              },
+        // mensaje:
+              // {
+              //   value: false,
+              //   name: 25616,
+              //   cantidad: 1133,
+              //   precio: 61.56,
+              //   factura: 'A001200004761',
+              //   detalle: 'BUCKSY200',
+              //   cta: 4036,
+              //   RS:'GONZALEZ LISANDRO Y L. HNOS SRL',
+              //   importe: 69747.48
+              // },
               // {
               //   value: false,
               //   name: 25617,
@@ -347,26 +346,26 @@ export default {
               //   cta: 6288,
               //   RS:'CARENA GERMAN DIEGO',
               //   importe: 5040
-              // }
+              // },
               // ],
               
       
       lorem: `Lorem ipsum dolor sit amet, mel at clita quando. Te sit oratio vituperatoribus, nam ad ipsum posidonium mediocritatem, explicari dissentiunt cu mea. Repudiare disputationi vim in, mollis iriure nec cu, alienum argumentum ius ad. Pri eu justo aeque torquatos.`
     })
   ,
-  methods: {
-    enviar(mensaje){
-      // this.$axios.post(process.env.BASE_URL + '/posts.json',this.mensaje)
-      this.$axios.post('https://pfdbb-dc48b.firebaseio.com/posts.json',this.mensaje)
-        .then(result => console.log(result))
-        .catch(e => console.log(e))
+  // methods: {
+  //   enviar(mensaje){
+      
+  //     this.$axios.post('https://pfdbb-dc48b.firebaseio.com/postss.json',this.mensaje)
+  //       .then(result => console.log(result))
+  //       .catch(e => console.log(e))
         
-        console.log(this.mensaje)
-        console.log(process.env.BASE_URL)
-        // console.log(this.$store.state.loadedPosts.filter(loadedPost => loadedPost.men === '7918'))
-    }
+  //       console.log(this.mensaje)
+  //       console.log(process.env.BASE_URL)
+        
+  //   }
     
-  },
+  // },
   created() {
       
       this.$store.dispatch('nSIt')

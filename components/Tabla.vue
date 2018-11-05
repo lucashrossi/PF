@@ -168,12 +168,12 @@ export default {
   //     console.log('computed desserts')
   //   }
   // },
-  // created: {
-    
-  //   desserts() {
-  //     return this.$store.getters.desserts
-  //     console.log('computed desserts')
-  //   }
-  // },
+  created() {
+    console.log('created Tabla')
+    // desserts() {
+    //   return this.$store.getters.desserts
+    //   console.log('created desserts')
+    // }
+  },
 }
 </script>
