@@ -18,6 +18,35 @@
 <script>
 export default {
 
+  // asyncData(context) {
+  //   return this.$axios.get('https://pfdbb-dc48b.firebaseio.com/posts' + context.params.id + '.json')
+  //     console.log(context.params.id)
+  //     .then(res => {
+  //       return {
+  //         headers: [
+  //           { text: 'Pedido', value: 'name', align: 'left', width: '1'},
+  //           { text: 'Cantidad', value: 'cantidad', align: 'right', width: '1' },
+  //           { text: 'Precio', value: 'precio', align: 'right', width: '1' },
+  //           { text: 'Factura', value: 'factura', align: 'right', width: '1' },
+  //           { text: 'detalle', value: 'detalle', align: 'right', width: '1' },
+  //           { text: 'CTA', value: 'cta', align: 'right', width: '1' },
+  //           { text: 'Razon Social', value: 'RS', align: 'right', width: '1' },
+  //           { text: 'Importe', value: 'importe', align: 'right', width: '1' },
+  //         ],
+  //         desserts: res.data
+          
+  //       }
+  //       console.log('res.data')
+  //     })
+  //     .catch(e => context.error(e))
+  // },
+  // props: {
+  //   desserts:{
+  //     type: Array,
+  //     required: true
+  //   }
+  // },
+  
 
   data: () => {
       return {
@@ -32,53 +61,69 @@ export default {
           { text: 'Razon Social', value: 'RS', align: 'right', width: '1' },
           { text: 'Importe', value: 'importe', align: 'right', width: '1' },
         ],
-        desserts: [
-          {
-            value: false,
-            name: 25616,
-            cantidad: 1133,
-            precio: 61.56,
-            factura: 'A001200004761',
-            detalle: 'BUCKSY200',
-            cta: 4036,
-            RS:'GONZALEZ LISANDRO Y L. HNOS SRL',
-            importe: 69747.48
-          },
-          {
-            value: false,
-            name: 25617,
-            cantidad: 720,
-            precio: 77.35,
-            factura: 'A001200004762',
-            detalle: 'BUCKSY200',
-            cta: 6275,
-            RS:'FIRMAN ALDO HECTOR',
-            importe: 55692
-          },
-          {
-            value: false,
-            name: 25618,
-            cantidad: 113,
-            precio: 52,
-            factura: 'A001200004763',
-            detalle: 'BUCKMETEORO',
-            cta: 4119,
-            RS:'ADMINISTRACION BRIONES S.A.',
-            importe: 5876
-          },
-          {
-            value: false,
-            name: 25700,
-            cantidad: 60,
-            precio: 84,
-            factura: 'A001200004859',
-            detalle: 'BUCKSY300',
-            cta: 6288,
-            RS:'CARENA GERMAN DIEGO',
-            importe: 5040
-          }
-        ]
+        // desserts: this.$store.getters.desserts
+        // desserts: []
+        // desserts: [
+        //   {
+        //     value: false,
+        //     name: 25616,
+        //     cantidad: 1133,
+        //     precio: 61.56,
+        //     factura: 'A001200004761',
+        //     detalle: 'BUCKSY200',
+        //     cta: 4036,
+        //     RS:'GONZALEZ LISANDRO Y L. HNOS SRL',
+        //     importe: 69747.48
+        //   },
+        //   {
+        //     value: false,
+        //     name: 25617,
+        //     cantidad: 720,
+        //     precio: 77.35,
+        //     factura: 'A001200004762',
+        //     detalle: 'BUCKSY200',
+        //     cta: 6275,
+        //     RS:'FIRMAN ALDO HECTOR',
+        //     importe: 55692
+        //   },
+        //   {
+        //     value: false,
+        //     name: 25618,
+        //     cantidad: 113,
+        //     precio: 52,
+        //     factura: 'A001200004763',
+        //     detalle: 'BUCKMETEORO',
+        //     cta: 4119,
+        //     RS:'ADMINISTRACION BRIONES S.A.',
+        //     importe: 5876
+        //   },
+        //   {
+        //     value: false,
+        //     name: 25700,
+        //     cantidad: 60,
+        //     precio: 84,
+        //     factura: 'A001200004859',
+        //     detalle: 'BUCKSY300',
+        //     cta: 6288,
+        //     RS:'CARENA GERMAN DIEGO',
+        //     importe: 5040
+        //   }
+        // ]
       }
-    }
+  },
+  // computed: {
+    
+  //   desserts() {
+  //     return this.$store.getters.desserts
+  //     console.log('computed desserts')
+  //   }
+  // },
+  // created: {
+    
+  //   desserts() {
+  //     return this.$store.getters.desserts
+  //     console.log('computed desserts')
+  //   }
+  // },
 }
 </script>

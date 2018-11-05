@@ -63,6 +63,7 @@
                 <v-card>
                   <v-card-text></v-card-text> -->
                   <Tabla/>
+                  <!-- <Tabla :desserts="desserts"/> -->
                 <!-- </v-card>
               </v-expansion-panel-content>
             </v-expansion-panel> -->
@@ -78,8 +79,13 @@
 <script>
 export default {
   layout: 'DBB',
-
-  
+  // data() {
+    
+  //   desserts: this.$store.getters.desserts
+      
+  // }
 }
+
+
 </script>
 

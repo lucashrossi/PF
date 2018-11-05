@@ -5,7 +5,8 @@ const createStore = () => {
   return new Vuex.Store({
     state: {   
       token: null,
-      alert: false
+      alert: false,
+      loadedPosts: []
     },
     mutations: {
       setToken (state, token) {
@@ -22,9 +23,31 @@ const createStore = () => {
       alertFa (state) {
         state.alert = false
         console.log('mutation alertFa')
+      },
+      setPosts(state, posts) {
+        state.loadedPosts = posts
+        console.log('mutation setPosts')
       }
     },
     actions: {
+      nuxtServerInit(vuexContext, context) {
+        console.log('nuxtServerInit')
+        return this.$axios.get('https://pfdbb-dc48b.firebaseio.com/posts.json')
+            .then(res => {
+                const postArray = []
+                for (const key in res.data) {
+                    postArray.push({ ...res.data[key], id: key})
+                }
+                console.log('store setPosts')
+                vuexContext.commit('setPosts', postArray)
+                
+            })
+            .catch(e => {
+              context.error(e)
+              console.log(e)
+            })
+           
+      },
       authenticateUser (vuexContext, authData) {
         let authUrl = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyD7QIWh3QJv9q5qMi52-QQoG1n_Un0G-Ds'
         return this.$axios
@@ -42,6 +65,10 @@ const createStore = () => {
 
             this.$router.push('/DashB')
             console.log('onsignin rout')
+
+
+            
+            
 
             // localStorage.setItem('token', result.idToken)
             // localStorage.setItem(
@@ -103,6 +130,10 @@ const createStore = () => {
       alertG (state) {
         console.log('getter alert')
         return state.alert
+      },
+      dessert (state) {
+        console.log('getter dessert')
+        return state.loadedPosts
       }
     }
   })

@@ -81,7 +81,7 @@ module.exports = {
     }
   },
   env: {
-    baseUrl: process.env.BASE_URL || 'https://DBB.firebaseio.com'
+    baseUrl: process.env.BASE_URL || 'https://pfdbb-dc48b.firebaseio.com/'
   },
   generate: {
     fallback: true, // if you want to use '404.html'
