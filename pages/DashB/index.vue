@@ -366,6 +366,11 @@ export default {
         // console.log(this.$store.state.loadedPosts.filter(loadedPost => loadedPost.men === '7918'))
     }
     
+  },
+  created() {
+      
+      this.$store.dispatch('nSIt')
+      console.log('dispatch nSIt')
   }
 }
 </script>

@@ -30,7 +30,8 @@ const createStore = () => {
       }
     },
     actions: {
-      nuxtServerInit(vuexContext, context) {
+      // nuxtServerInit(vuexContext, context) {
+      nSIt(vuexContext, context) {
         console.log('nuxtServerInit')
         return this.$axios.get('https://pfdbb-dc48b.firebaseio.com/posts.json')
             .then(res => {

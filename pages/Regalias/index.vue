@@ -62,8 +62,8 @@
                 <div slot="header" style="text-align: center">Auditorias</div>
                 <v-card>
                   <v-card-text></v-card-text> -->
-                  <Tabla/>
-                  <!-- <Tabla :desserts="desserts"/> -->
+                  <!-- <Tabla/> -->
+                  <TablaPreview :desserts="dessert"/>
                 <!-- </v-card>
               </v-expansion-panel-content>
             </v-expansion-panel> -->
@@ -79,11 +79,12 @@
 <script>
 export default {
   layout: 'DBB',
-  // data() {
-    
-  //   desserts: this.$store.getters.desserts
-      
-  // }
+ 
+  computed: {
+    dessert() {
+      return this.$store.getters.desserts
+    }
+  }
 }
 
 

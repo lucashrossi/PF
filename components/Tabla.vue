@@ -1,7 +1,11 @@
 <template>
+    
     <v-container>
-        <v-data-table :headers="headers" :items="desserts" class="elevation-1" style="width: 100%">
-            <template slot="items" slot-scope="props">
+        <p>{{ name }}</p>
+        <!-- <v-data-table :headers="headers" :items="desserts" class="elevation-1" style="width: 100%"> -->
+        <v-data-table :headers="headers" class="elevation-1" style="width: 100%">
+
+            <!-- <template slot="items" slot-scope="props">
                 <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
@@ -10,6 +14,16 @@
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
+            </template> -->
+            <template >
+                <td style="height: 20px; font-size: 11px">{{ name }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ cantidad }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ precio }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ factura }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ detalle }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ cta }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ RS }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ importe }}</td>
             </template>
         </v-data-table>
     </v-container>
@@ -40,12 +54,48 @@ export default {
   //     })
   //     .catch(e => context.error(e))
   // },
-  // props: {
-  //   desserts:{
-  //     type: Array,
-  //     required: true
-  //   }
-  // },
+   props: {
+        id: {
+        type: String,
+        required: true
+        },
+        value: {
+        type: Boolean,
+        required: true
+        },
+        name: {
+        type: String,
+        required: true
+        },
+        cantidad: {
+        type: String,
+        required: true
+        },
+        precio: {
+        type: String,
+        required: true
+        },
+        factura: {
+        type: String,
+        required: true
+        },
+        detalle: {
+        type: String,
+        required: true
+        },
+        cta: {
+        type: String,
+        required: true
+        },
+        RS: {
+        type: String,
+        required: true
+        },
+        importe: {
+        type: String,
+        required: true
+        },
+  },
   
 
   data: () => {
