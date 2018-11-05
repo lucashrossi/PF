@@ -8,6 +8,7 @@ import TablaPreview from '~/components/TablaPreview.vue'
 import Tablaa from '~/components/Tablaa.vue'
 import FISC from '~/components/FISC.vue'
 import FISCR from '~/components/FISCR.vue'
+import RegR from '~/components/RegR.vue'
 import FISCV from '~/components/FISCV.vue'
 import PBF from '~/components/PBF.vue'
 import Radar from '~/components/Radar.vue'
@@ -52,6 +53,7 @@ Vue.component('TablaPreview', TablaPreview)
 Vue.component('Tablaa', Tablaa)
 Vue.component('FISC', FISC)
 Vue.component('FISCR', FISCR)
+Vue.component('RegR', RegR)
 Vue.component('FISCV', FISCV)
 Vue.component('PBF', PBF)
 Vue.component('Radar', Radar)

@@ -104,7 +104,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Has 2017'
+                text: 'Has 2016'
             },
             scales: {
                 xAxes: [{

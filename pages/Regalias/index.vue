@@ -49,6 +49,20 @@
             </v-flex>
           </v-layout>
 
+          <v-layout row wrap>
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+              <RegR/>
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+              
+            </v-flex>
+            <v-spacer></v-spacer> 
+            <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+              
+            </v-flex>
+          </v-layout>
+
         </v-container>
 
       </v-tab-item>
