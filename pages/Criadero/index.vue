@@ -30,6 +30,11 @@
     </v-tab>
 
     <v-tab href="#tab-6" class="caption">
+      <!-- <v-icon class="mr-1">grid_on</v-icon> -->
+      Siembra
+    </v-tab>
+
+    <v-tab href="#tab-7" class="caption">
       <!-- <v-icon class="mr-1">table_chart</v-icon> -->
       Data
     </v-tab>
@@ -39,7 +44,16 @@
       </v-tab-item>
 
       <v-tab-item id='tab-2'>
-        <h1>oooOooo</h1>
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12 class="embed-container">
+              <iframe class="embed-container-iframe" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Multiplicaciones%202018.htm?alt=media&token=2e2ab46c-2cf4-4fcc-b34f-dcd2f62f265b"></iframe>
+              <!-- <br>
+              <Mult18 style="border: 5px solid green"/> -->
+            </v-flex>
+          </v-layout>
+        </v-container>
+        
       </v-tab-item>
 
       <v-tab-item id='tab-3'>
@@ -61,11 +75,19 @@
       </v-tab-item>
 
       <v-tab-item id='tab-5'>
-        <h1>oooOooo</h1>
+         <v-container fluid text-xs-center >
+          <!-- <v-layout align-center justify-center row > -->
+          <v-layout align-center justify-center row >
+            <v-flex xs12 class="embed-container">
+              <iframe class="embed-container-iframe" frameborder="0" scrolling="no"  src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21801&authkey=%21AIziUJvtS7yOv4c&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+              <!-- <iframe class="embed-container-iframe" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Ensayos%202018.htm?alt=media&token=896f7863-3694-4fd3-b34b-40427bc12613"></iframe> -->
+            </v-flex>
+          </v-layout>
+        </v-container>
       </v-tab-item>
 
     <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
-    <v-tab-item id='tab-6'>
+    <v-tab-item id='tab-7'>
       <PivotI/>
     </v-tab-item>
       <!-- <v-card flat>
@@ -137,4 +159,5 @@ export default {
     height: 75%;
     border: 5px solid green
 }
+
 </style>

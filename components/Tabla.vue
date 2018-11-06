@@ -162,8 +162,9 @@ export default {
       }
   },
   computed: {
-
+    
     desserts: {
+      
       get () {
         return this.$store.state.loadedPosts
         console.log('computed get loadedPosts')
