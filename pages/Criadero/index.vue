@@ -49,8 +49,8 @@
       <v-tab-item id='tab-4'>
         <v-container fluid text-xs-center>
           <v-layout row wrap >
-            <v-flex xs12 >
-              <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="580" height="326" allowfullscreen style="border: 5px solid green"></iframe>
+            <v-flex xs12 class="embed-container">
+              <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen style="border: 5px solid green"></iframe>
             </v-flex>
           </v-layout>
         </v-container>
@@ -118,3 +118,19 @@ export default {
 
 }
 </script>
+
+<style>
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+.embed-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+</style>

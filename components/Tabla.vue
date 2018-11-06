@@ -1,11 +1,11 @@
 <template>
     
     <v-container>
-        <p>{{ name }}</p>
-        <!-- <v-data-table :headers="headers" :items="desserts" class="elevation-1" style="width: 100%"> -->
-        <v-data-table :headers="headers" class="elevation-1" style="width: 100%">
+        <!-- <p>{{ name }}</p> -->
+        <v-data-table :headers="headers" :items="desserts" class="elevation-1" style="width: 100%">
+        <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
-            <!-- <template slot="items" slot-scope="props">
+            <template slot="items" slot-scope="props">
                 <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
@@ -14,8 +14,8 @@
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
-            </template> -->
-            <template >
+            </template>
+            <!-- <template >
                 <td style="height: 20px; font-size: 11px">{{ name }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ cantidad }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ precio }}</td>
@@ -24,7 +24,7 @@
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ cta }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ RS }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ importe }}</td>
-            </template>
+            </template> -->
         </v-data-table>
     </v-container>
 </template>
@@ -54,48 +54,48 @@ export default {
   //     })
   //     .catch(e => context.error(e))
   // },
-   props: {
-        id: {
-        type: String,
-        required: true
-        },
-        value: {
-        type: Boolean,
-        required: true
-        },
-        name: {
-        type: String,
-        required: true
-        },
-        cantidad: {
-        type: String,
-        required: true
-        },
-        precio: {
-        type: String,
-        required: true
-        },
-        factura: {
-        type: String,
-        required: true
-        },
-        detalle: {
-        type: String,
-        required: true
-        },
-        cta: {
-        type: String,
-        required: true
-        },
-        RS: {
-        type: String,
-        required: true
-        },
-        importe: {
-        type: String,
-        required: true
-        },
-  },
+//    props: {
+//         id: {
+//         type: String,
+//         required: true
+//         },
+//         value: {
+//         type: Boolean,
+//         required: true
+//         },
+//         name: {
+//         type: String,
+//         required: true
+//         },
+//         cantidad: {
+//         type: String,
+//         required: true
+//         },
+//         precio: {
+//         type: String,
+//         required: true
+//         },
+//         factura: {
+//         type: String,
+//         required: true
+//         },
+//         detalle: {
+//         type: String,
+//         required: true
+//         },
+//         cta: {
+//         type: String,
+//         required: true
+//         },
+//         RS: {
+//         type: String,
+//         required: true
+//         },
+//         importe: {
+//         type: String,
+//         required: true
+//         },
+//    },
   
 
   data: () => {
@@ -161,13 +161,13 @@ export default {
         // ]
       }
   },
-  // computed: {
+  computed: {
     
-  //   desserts() {
-  //     return this.$store.getters.desserts
-  //     console.log('computed desserts')
-  //   }
-  // },
+    desserts() {
+      return this.$store.getters.desserts
+      console.log('computed desserts')
+    }
+  },
   created() {
     console.log('created Tabla')
     // desserts() {
