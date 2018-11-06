@@ -162,11 +162,17 @@ export default {
       }
   },
   computed: {
-    
-    desserts() {
-      return this.$store.getters.desserts
-      console.log('computed desserts')
-    }
+
+    desserts: {
+      get () {
+        return this.$store.state.loadedPosts
+        console.log('computed get loadedPosts')
+      },
+    },
+    // desserts() {
+    //   return this.$store.getters.desserts
+    //   console.log('computed desserts')
+    // }
   },
   created() {
     console.log('created Tabla')
