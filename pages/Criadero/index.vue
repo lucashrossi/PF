@@ -47,10 +47,13 @@
       </v-tab-item>
 
       <v-tab-item id='tab-4'>
-        <v-container fluid text-xs-center>
-          <v-layout row wrap >
+        <v-container fluid text-xs-center >
+          <!-- <v-layout align-center justify-center row > -->
+          <v-layout align-center justify-center row >
             <v-flex xs12 class="embed-container">
-              <iframe src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen style="border: 5px solid green"></iframe>
+            <!-- <v-flex xs12 style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;" > -->
+              <iframe class="embed-container-iframe" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe>
+              <!-- <iframe style="border: 5px solid green; position: absolute; top:0; left: 0%; width: 75%; height: 75%;" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe> -->
             </v-flex>
           </v-layout>
         </v-container>
@@ -126,11 +129,12 @@ export default {
     height: 0;
     overflow: hidden;
 }
-.embed-container iframe {
+.embed-container-iframe {
     position: absolute;
     top:0;
-    left: 0;
+    left: 0%;
     width: 100%;
-    height: 100%;
+    height: 75%;
+    border: 5px solid green
 }
 </style>
