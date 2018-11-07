@@ -44,16 +44,16 @@
       </v-tab-item>
 
       <v-tab-item id='tab-2'>
-        <!-- <v-container fluid text-xs-center >
+        <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
-            <v-flex xs12 class="embed-container">
-              <iframe class="embed-container-iframe" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Multiplicaciones%202018.htm?alt=media&token=2e2ab46c-2cf4-4fcc-b34f-dcd2f62f265b"></iframe> -->
-              <br>
+            <v-flex xs12 class="embed-container1">
+              <iframe class="embed-container-iframe1" height="1400px" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Multiplicaciones%202018.htm?alt=media&token=2e2ab46c-2cf4-4fcc-b34f-dcd2f62f265b"></iframe>
+              <!-- <br> -->
               <!-- <Mult18 style="border: 5px solid green"/> -->
-              <Mult18 />
-            <!-- </v-flex>
+              <!-- <Mult18 /> -->
+            </v-flex>
           </v-layout>
-        </v-container> -->
+        </v-container>
         
       </v-tab-item>
 
@@ -62,27 +62,27 @@
       </v-tab-item>
 
       <v-tab-item id='tab-4'>
-        <!-- <v-container fluid text-xs-center >
+        <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
-            <v-flex xs12 class="embed-container"> -->
+            <v-flex xs12 class="embed-container2">
             <!-- <v-flex xs12 style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;" > -->
-              <iframe  height="1080px" width="1920px" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe>
+              <iframe class="embed-container-iframe2" height="1080px" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe>
               <!-- <iframe style="border: 5px solid green; position: absolute; top:0; left: 0%; width: 75%; height: 75%;" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe> -->
-            <!-- </v-flex>
+            </v-flex>
           </v-layout>
-        </v-container> -->
+        </v-container>
 
       </v-tab-item>
 
       <v-tab-item id='tab-5'>
          <v-container fluid text-xs-center >
-          <!-- <v-layout align-center justify-center row > -->
-            <!-- <v-flex xs12 class="embed-container"> -->
+          <v-layout align-center justify-center row >
+            <v-flex xs12 class="embed-container3">
               <br>
-              <iframe  height="2600px" width="1735px" frameborder="0" scrolling="no"  src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21801&authkey=%21AIziUJvtS7yOv4c&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+              <iframe class="embed-container-iframe3" height="2600px" frameborder="0" scrolling="no"  src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21801&authkey=%21AIziUJvtS7yOv4c&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
               <!-- <iframe class="embed-container-iframe" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Ensayos%202018.htm?alt=media&token=896f7863-3694-4fd3-b34b-40427bc12613"></iframe> -->
-            <!-- </v-flex> -->
-          <!-- </v-layout> -->
+            </v-flex>
+          </v-layout>
          </v-container>
       </v-tab-item>
 
@@ -145,19 +145,50 @@ export default {
 </script>
 
 <style>
-.embed-container {
+
+.embed-container1 {
     position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
+    padding-bottom: 1400px;
+    height: 100%;
     overflow: hidden;
 }
-.embed-container-iframe {
+.embed-container-iframe1 {
     position: absolute;
     top:0;
     left: 0%;
     width: 100%;
     height: 100%;
-    border: 5px solid green
+    /* border: 5px solid green */
+}
+
+.embed-container2 {
+    position: relative;
+    padding-bottom: 1080px;
+    height: 100%;
+    overflow: hidden;
+}
+.embed-container-iframe2 {
+    position: absolute;
+    top:0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid green */
+}
+
+.embed-container3 {
+    position: relative;
+    padding-bottom: 2600px;
+    height: 100%;
+    overflow: hidden;
+}
+.embed-container-iframe3 {
+    position: absolute;
+    top:0;
+    left: 3%;
+    width: 92.7%;
+    height: 100%;
+    /* border: 5px solid green */
 }
 
 </style>
