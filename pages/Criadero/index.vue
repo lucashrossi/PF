@@ -47,7 +47,7 @@
         <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
             <v-flex xs12 class="embed-container1">
-              <iframe class="embed-container-iframe1" height="1400px" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Multiplicaciones%202018.htm?alt=media&token=2e2ab46c-2cf4-4fcc-b34f-dcd2f62f265b"></iframe>
+              <iframe class="embed-container-iframe1" height="1400px" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Multiplicaciones%202018.htm?alt=media&token=2e2ab46c-2cf4-4fcc-b34f-dcd2f62f265b"></iframe>
               <!-- <br> -->
               <!-- <Mult18 style="border: 5px solid green"/> -->
               <!-- <Mult18 /> -->
@@ -79,7 +79,7 @@
           <v-layout align-center justify-center row >
             <v-flex xs12 class="embed-container3">
               <br>
-              <iframe class="embed-container-iframe3" height="2600px" frameborder="0" scrolling="no"  src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21801&authkey=%21AIziUJvtS7yOv4c&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+              <iframe class="embed-container-iframe3" height="2600px" frameborder="0" src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21801&authkey=%21AIziUJvtS7yOv4c&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
               <!-- <iframe class="embed-container-iframe" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Ensayos%202018.htm?alt=media&token=896f7863-3694-4fd3-b34b-40427bc12613"></iframe> -->
             </v-flex>
           </v-layout>
