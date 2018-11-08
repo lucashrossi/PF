@@ -79,7 +79,7 @@
           <v-layout align-center justify-center row >
             <v-flex xs12 class="embed-container3">
               <br>
-              <iframe class="embed-container-iframe3" height="2600px" frameborder="0" src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21801&authkey=%21AIziUJvtS7yOv4c&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
+              <iframe class="embed-container-iframe3" height="2600px" frameborder="0" src="https://onedrive.live.com/embed?resid=C359680E9C8B1157%21803&authkey=%21AK07DXL1cxBuegc&em=2&Item='Hoja1'!A1%3AM102&wdHideGridlines=True&wdDownloadButton=True&wdInConfigurator=True"></iframe>
               <!-- <iframe class="embed-container-iframe" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Ensayos%202018.htm?alt=media&token=896f7863-3694-4fd3-b34b-40427bc12613"></iframe> -->
             </v-flex>
           </v-layout>
@@ -186,7 +186,7 @@ export default {
     position: absolute;
     top:0;
     left: 3%;
-    width: 92.7%;
+    width: 93.6%;
     height: 100%;
     /* border: 5px solid green */
 }
