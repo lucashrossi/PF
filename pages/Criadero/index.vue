@@ -30,16 +30,11 @@
     </v-tab>
 
     <v-tab href="#tab-6" class="caption">
-      <!-- <v-icon class="mr-1">grid_on</v-icon> -->
-      Siembra
-    </v-tab>
-
-    <v-tab href="#tab-7" class="caption">
       <!-- <v-icon class="mr-1">table_chart</v-icon> -->
       Data
     </v-tab>
 
-    <v-tab href="#tab-8" class="caption">
+    <v-tab href="#tab-7" class="caption">
       <!-- <v-icon class="mr-1">table_chart</v-icon> -->
       Fotos
     </v-tab>
@@ -94,7 +89,7 @@
       </v-tab-item>
 
     <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
-    <v-tab-item id='tab-7'>
+    <v-tab-item id='tab-6'>
       <PivotI/>
     </v-tab-item>
       <!-- <v-card flat>
@@ -124,7 +119,7 @@
 
 
     <!-- <v-tab-item id='tab-8' style="background-size: contain; background-position: left top; background-repeat: repeat; background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975)"> -->
-    <v-tab-item id='tab-8' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=c6c5cb81-6650-4b75-829b-37418715527f)">
+    <v-tab-item id='tab-7' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=c6c5cb81-6650-4b75-829b-37418715527f)">
     <!-- <v-tab-item id='tab-8'> -->
         <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975">
           
@@ -166,14 +161,14 @@
         <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
             <v-flex xs12>
-              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/14.jpg?alt=media&token=61e4f5a0-f553-4b69-939c-10bbcbe9a779">
+              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/14.jpg?alt=media&token=284eb96b-fbed-4e27-a21a-5e9afdc2b8cd">
 
               </v-parallax>
             </v-flex>
           </v-layout>
          </v-container>
        
-        <v-parallax  src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/15.jpg?alt=media&token=2a65aff0-b82a-4cee-a368-108743698c27">
+        <v-parallax  src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/15.jpg?alt=media&token=82cee1e8-9807-4b42-9acd-d5e9804a96d9">
 
         </v-parallax>
 
@@ -194,7 +189,7 @@
         <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
             <v-flex xs12>
-              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/16.jpg?alt=media&token=2c2519f2-3ed9-4453-8d1a-6208f638d21f">
+              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/16.jpg?alt=media&token=4ba980fc-c16e-407f-9de2-74afc41dfabb">
 
               </v-parallax>
             </v-flex>
