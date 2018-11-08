@@ -39,6 +39,11 @@
       Data
     </v-tab>
 
+    <v-tab href="#tab-8" class="caption">
+      <!-- <v-icon class="mr-1">table_chart</v-icon> -->
+      Fotos
+    </v-tab>
+
      <v-tab-item id='tab-1'>
         <h1>oooOooo</h1>
       </v-tab-item>
@@ -66,7 +71,9 @@
           <v-layout align-center justify-center row >
             <v-flex xs12 class="embed-container2">
             <!-- <v-flex xs12 style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;" > -->
-              <iframe class="embed-container-iframe2" height="1080px" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe>
+              <!-- <iframe class="embed-container-iframe2" height="1080px" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe> -->
+              <iframe class="embed-container-iframe2" height="1080px" src="https://3dwarehouse.sketchup.com/embed.html?mid=a44695e9-8489-494f-af40-be47f02ae74e" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe>
+              
               <!-- <iframe style="border: 5px solid green; position: absolute; top:0; left: 0%; width: 75%; height: 75%;" src="https://3dwarehouse.sketchup.com/embed.html?mid=937b5abadd578aafe7b8ba67db451f0d" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" allowfullscreen ></iframe> -->
             </v-flex>
           </v-layout>
@@ -113,6 +120,90 @@
       <!-- <pdfshower pdfurl="Catalogo Buck 2018.pdf" scale=1.2 ></pdfshower> -->
 
     <!-- </v-tab-item> -->
+
+
+
+    <!-- <v-tab-item id='tab-8' style="background-size: contain; background-position: left top; background-repeat: repeat; background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975)"> -->
+    <v-tab-item id='tab-8' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=c6c5cb81-6650-4b75-829b-37418715527f)">
+    <!-- <v-tab-item id='tab-8'> -->
+        <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975">
+          
+      
+          <!-- <v-parallax height="800" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975"> -->
+
+          
+            
+            <v-parallax height="450" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975">
+
+    
+
+            </v-parallax>
+
+          <!-- </v-parallax> -->
+        </v-parallax>
+
+        <!-- <br>
+        <v-parallax height="450" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975">
+
+        </v-parallax> -->
+
+        
+     
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12>
+              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/10.jpg?alt=media&token=0ec486f2-8fc9-4abe-a67d-f9c41ff53426">
+
+              </v-parallax>
+            </v-flex>
+          </v-layout>
+         </v-container>
+
+        <v-parallax  src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/12.jpg?alt=media&token=5b0525a1-206c-4fc6-bb68-6f7ac9a499fd">
+
+        </v-parallax>
+
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12>
+              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/14.jpg?alt=media&token=61e4f5a0-f553-4b69-939c-10bbcbe9a779">
+
+              </v-parallax>
+            </v-flex>
+          </v-layout>
+         </v-container>
+       
+        <v-parallax  src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/15.jpg?alt=media&token=2a65aff0-b82a-4cee-a368-108743698c27">
+
+        </v-parallax>
+
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12>
+              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/4.jpg?alt=media&token=bd585527-5a14-4f92-a9af-07902e18bc48">
+
+              </v-parallax>
+            </v-flex>
+          </v-layout>
+         </v-container>
+
+        <v-parallax  src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/11.jpg?alt=media&token=6c0d3a06-331f-4884-8245-c94ad8749104">
+
+        </v-parallax>
+
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12>
+              <v-parallax height="700" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/16.jpg?alt=media&token=2c2519f2-3ed9-4453-8d1a-6208f638d21f">
+
+              </v-parallax>
+            </v-flex>
+          </v-layout>
+         </v-container>
+
+      </v-tab-item>
+
+
   </v-tabs>
  
 </template>
