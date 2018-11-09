@@ -122,18 +122,13 @@
     <v-tab-item id='tab-7' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=13db82f9-27f1-4421-9081-d6afd5c7e202)">
     <!-- <v-tab-item id='tab-8'> -->
         <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
-          
       
           <!-- <v-parallax height="800" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975"> -->
 
-          
-          
-            <v-parallax height="320" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=dddeb8f5-13cb-4310-8ec5-6cb1d5927a82">
+                <v-parallax height="600" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
 
-    
-
-            </v-parallax>
-
+                </v-parallax>
+            
           <!-- </v-parallax> -->
         </v-parallax>
 
@@ -142,8 +137,6 @@
 
         </v-parallax> -->
 
-        
-     
         <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
             <v-flex xs12>
