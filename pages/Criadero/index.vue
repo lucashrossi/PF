@@ -39,8 +39,37 @@
       Fotos
     </v-tab>
 
-     <v-tab-item id='tab-1'>
-        <h1>oooOooo</h1>
+      <v-tab-item id='tab-1'>
+        <!-- <embed src="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c" width="100%" height="600px"> -->
+        <!-- <embed src="https://docs.google.com/viewer?url=https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c" width="100%" height="600px"> -->
+        <!-- <embed src="https://docs.google.com/viewer?url=https://drive.google.com/open?id=1OoCNry6bjUGVvwpD4IFdyUZIzKqrlupG" width="100%" height="600px"> -->
+        <!-- <embed src="https://docs.google.com/viewer?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpfdbb-dc48b.appspot.com%2Fo%2FCatalogo%2520Buck%25202018.pdf%3Falt%3Dmedia%26token%3Dcf795851-99aa-4803-b82c-d03f0f65ae4b&embedded=true#page=3&zoom=100&view=fitH" width="100%" height="600px"> -->
+        <!-- <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c" width="100%" height="600px"> -->
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12 class="embed-container4">
+              <embed class="embed-container-iframe4" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpfdbb-dc48b.appspot.com%2Fo%2FCatalogo%2520Buck%25202018.pdf%3Falt%3Dmedia%26token%3Dcf795851-99aa-4803-b82c-d03f0f65ae4b&embedded=true#page=3&zoom=100&view=fitH" width="100%" height="600px">
+            </v-flex>
+          </v-layout>
+        </v-container>
+        <!-- <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b" width="100%" height="600px"> -->
+        <!-- <embed src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" type="application/pdf" width="100%" height="600px" /> -->
+        <!-- <embed src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" width="100%" height="600px"  pluginspage="http://www.adobe.com/products/acrobat/readstep2.html"> -->
+
+        <!-- <object width="100%" height="600px" type="application/pdf" data="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c"></object> -->
+        
+
+        <!-- <object data="https://drive.google.com/open?id=1DMtBw9zRBf63QJWpEld0BM9LFP-WiZdH" type="application/pdf" width="100%" height="600px">
+            <embed src="https://drive.google.com/open?id=1DMtBw9zRBf63QJWpEld0BM9LFP-WiZdH" type="application/pdf"/>         
+        </object> -->
+        <!-- <object data="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" type="application/pdf" width="100%" height="600px">
+            <embed src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" type="application/pdf"/>         
+        </object> -->
+
+        <!-- <iframe src="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c" width="100%" height="600px" frameborder="0"></iframe> -->
+        <!-- <iframe src="https://docs.google.com/viewer?url=https://drive.google.com/file/d/1OoCNry6bjUGVvwpD4IFdyUZIzKqrlupG/view?usp=sharing" width="100%" height="600px" frameborder="0"></iframe> -->
+        <!-- <iframe src="https://docs.google.com/viewer?url=https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b" width="100%" height="600px" frameborder="0"></iframe> -->
+        <!-- <iframe src="https://docs.google.com/viewer?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpfdbb-dc48b.appspot.com%2Fo%2FCatalogo%2520Buck%25202018.pdf%3Falt%3Dmedia%26token%3Dcf795851-99aa-4803-b82c-d03f0f65ae4b&embedded=true#page=3&zoom=100&view=fitH" width="100%" height="600px" frameborder="0"></iframe> -->
       </v-tab-item>
 
       <v-tab-item id='tab-2'>
@@ -242,7 +271,7 @@ export default {
 
 .embed-container2 {
     position: relative;
-    padding-bottom: 1080px;
+    padding-bottom: 800px;
     height: 100%;
     overflow: hidden;
 }
@@ -266,6 +295,21 @@ export default {
     top:0;
     left: 3%;
     width: 93.6%;
+    height: 100%;
+    /* border: 5px solid green */
+}
+
+.embed-container4 {
+    position: relative;
+    padding-bottom: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+.embed-container-iframe4 {
+    position: absolute;
+    top:0;
+    left: 0%;
+    width: 100%;
     height: 100%;
     /* border: 5px solid green */
 }
