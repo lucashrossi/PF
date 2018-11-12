@@ -31,11 +31,6 @@
 
     <v-tab href="#tab-6" class="caption">
       <!-- <v-icon class="mr-1">table_chart</v-icon> -->
-      Data
-    </v-tab>
-
-    <v-tab href="#tab-7" class="caption">
-      <!-- <v-icon class="mr-1">table_chart</v-icon> -->
       Fotos
     </v-tab>
 
@@ -118,9 +113,7 @@
       </v-tab-item>
 
     <!-- <v-tab-item v-for="i in 5" :id="'tab-' + i" :key="i"> -->
-    <v-tab-item id='tab-6'>
-      <PivotI/>
-    </v-tab-item>
+
       <!-- <v-card flat>
         <v-card-text>{{ text }}</v-card-text>
       </v-card> -->
@@ -148,7 +141,7 @@
 
 
     <!-- <v-tab-item id='tab-8' style="background-size: contain; background-position: left top; background-repeat: repeat; background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975)"> -->
-    <v-tab-item id='tab-7' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=13db82f9-27f1-4421-9081-d6afd5c7e202)">
+    <v-tab-item id='tab-6' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=13db82f9-27f1-4421-9081-d6afd5c7e202)">
     <!-- <v-tab-item id='tab-8'> -->
         <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
       

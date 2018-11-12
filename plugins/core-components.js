@@ -19,6 +19,7 @@ import Poll from '~/components/Poll.vue'
 import Pola from '~/components/Pola.vue'
 import DN from '~/components/DN.vue'
 import DNN from '~/components/DNN.vue'
+import DNND from '~/components/DNND.vue'
 import DNNN from '~/components/DNNN.vue'
 import DNC from '~/components/DNC.vue'
 import BU from '~/components/BU.vue'
@@ -37,6 +38,7 @@ import MIXX from '~/components/MIXX.vue'
 import MIXXX from '~/components/MIXXX.vue'
 import MIXC from '~/components/MIXC.vue'
 import MIXCO from '~/components/MIXCO.vue'
+import MIXCOD from '~/components/MIXCOD.vue'
 import MIXCP from '~/components/MIXCP.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
@@ -65,6 +67,7 @@ Vue.component('Poll', Poll)
 Vue.component('Pola', Pola)
 Vue.component('DN', DN)
 Vue.component('DNN', DNN)
+Vue.component('DNND', DNND)
 Vue.component('DNNN', DNNN)
 Vue.component('DNC', DNC)
 Vue.component('BU', BU)
@@ -83,6 +86,7 @@ Vue.component('MIXX', MIXX)
 Vue.component('MIXXX', MIXXX)
 Vue.component('MIXC', MIXC )
 Vue.component('MIXCO', MIXCO )
+Vue.component('MIXCOD', MIXCOD)
 Vue.component('MIXCP', MIXCP )
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)
