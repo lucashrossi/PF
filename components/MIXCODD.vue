@@ -9,27 +9,27 @@ export default {
         datacollection: {
             labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
             datasets: [{
-                label: 'Original',
+                label: 'Extendidas',
                 backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 194, 184, 1)'],
                 data: [5000, 1000, 200, 50],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Primera',
+                label: 'Comunes',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 194, 184, 0.4)'],
                 data: [10000, 2000, 400, 100],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Fiscalizada',
+                label: 'Segunda',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 194, 184, 0.4)'],
                 data: [3000, 500, 100, 100],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Total Bls',
+                label: 'Total Has',
                 // hidden: true,
                 data: [18000, 3500, 700, 250],
 
@@ -59,7 +59,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls y $'
+                text: 'Has y $'
             },
             scales: {
                 yAxes: [{

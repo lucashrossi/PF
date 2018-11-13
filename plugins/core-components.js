@@ -17,12 +17,16 @@ import Radd from '~/components/Radd.vue'
 import Polar from '~/components/Polar.vue'
 import Poll from '~/components/Poll.vue'
 import Pola from '~/components/Pola.vue'
+import PolaD from '~/components/PolaD.vue'
 import DN from '~/components/DN.vue'
 import DNN from '~/components/DNN.vue'
 import DNND from '~/components/DNND.vue'
+import DNNDD from '~/components/DNNDD.vue'
 import DNNN from '~/components/DNNN.vue'
 import DNC from '~/components/DNC.vue'
 import BU from '~/components/BU.vue'
+import BUD from '~/components/BUD.vue'
+import BUDD from '~/components/BUDD.vue'
 import BUU from '~/components/BUU.vue'
 import PI from '~/components/PI.vue'
 import Pii from '~/components/Pii.vue'
@@ -39,6 +43,8 @@ import MIXXX from '~/components/MIXXX.vue'
 import MIXC from '~/components/MIXC.vue'
 import MIXCO from '~/components/MIXCO.vue'
 import MIXCOD from '~/components/MIXCOD.vue'
+import MIXCODD from '~/components/MIXCODD.vue'
+import MIXCODDD from '~/components/MIXCODDD.vue'
 import MIXCP from '~/components/MIXCP.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
@@ -65,12 +71,16 @@ Vue.component('Radd', Radd )
 Vue.component('Polar', Polar)
 Vue.component('Poll', Poll)
 Vue.component('Pola', Pola)
+Vue.component('PolaD', PolaD)
 Vue.component('DN', DN)
 Vue.component('DNN', DNN)
 Vue.component('DNND', DNND)
+Vue.component('DNNDD', DNNDD)
 Vue.component('DNNN', DNNN)
 Vue.component('DNC', DNC)
 Vue.component('BU', BU)
+Vue.component('BUD', BUD)
+Vue.component('BUDD', BUDD)
 Vue.component('BUU', BUU)
 Vue.component('PI', PI)
 Vue.component('Pii', Pii)
@@ -87,6 +97,8 @@ Vue.component('MIXXX', MIXXX)
 Vue.component('MIXC', MIXC )
 Vue.component('MIXCO', MIXCO )
 Vue.component('MIXCOD', MIXCOD)
+Vue.component('MIXCODD', MIXCODD)
+Vue.component('MIXCODDD', MIXCODDD)
 Vue.component('MIXCP', MIXCP )
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)

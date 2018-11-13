@@ -19,8 +19,8 @@
       <v-container fluid grid-list-md>
         
         <v-layout row wrap>
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
-            <v-card height="350px" class="elevation-20" >
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg6>
+            <v-card height="350px" style="border-radius: 10px; margin-top: 4px" class="elevation-20">
               <v-layout row>
                 <v-flex xs12>
                   <v-card-title primary-title>
@@ -90,32 +90,48 @@
           </v-flex>
           <v-spacer></v-spacer>
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
+            <MIXCOD height="350px" style="border-radius: 10px" class="elevation-20" />
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
+            <MIXCODD height="350px" style="border-radius: 10px" class="elevation-20" />
+          </v-flex>
+          <!-- <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg2 >
             <MIXCOD height="350px" class="elevation-20" />
-          </v-flex>
-          <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg2 >
-            <DNND height="350px" class="elevation-20"/>
-          </v-flex>
-          <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg2 >
-            <DNND height="350px" class="elevation-20"/>
-          </v-flex>
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg2 >
-            <DNND height="350px" class="elevation-20"/>
-          </v-flex>
-          <v-spacer></v-spacer> 
+          </v-flex> -->
           
+        </v-layout>
+      </v-container>
+
+      <v-container fluid grid-list-md>
+        <v-layout row wrap>
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+            <BUD height="400px" style="border-radius: 10px" class="elevation-20"/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+            <DNND height="400px" style="border-radius: 10px" class="elevation-20"/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+            <MIXCODDD height="400px" style="border-radius: 10px" class="elevation-20"/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+            <DNNDD height="400px" style="border-radius: 10px" class="elevation-20"/>
+          </v-flex>
         </v-layout>
         
       </v-container>
 
 
 
-      <v-container fluid grid-list-md text-xs-center>
+      <v-container fluid grid-list-md >
         
         <v-layout row wrap>
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg6 >
-            <v-carousel class="elevation-20" height="400px">
+            <v-carousel class="elevation-0" height="410px">
               <!-- <v-carousel-item
                 v-for="(item,i) in items"
                 :key="i"
@@ -128,15 +144,21 @@
               ><v-img contain :src="item.src"></v-img></v-carousel-item>
             </v-carousel>
           </v-flex>
+          
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
-            <embed class="elevation-20" src="http://semillasbuck.com.ar/noticias/" width="100%" height="400px">
-          </v-flex>
-          <v-spacer></v-spacer> 
-          <v-flex class="elevation-20" xs12 sm10 offset-sm1 md6 offset-md0 lg2 >
-            <a class="twitter-timeline" data-height="400px" href="https://twitter.com/buck_semillas?ref_src=twsrc%5Etfw">Tweets by buck_semillas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+           
+            <a data-chrome="nofooter noborders noheader" class="twitter-timeline" data-height="400" href="https://twitter.com/buck_semillas?ref_src=twsrc%5Etfw">Tweets by buck_semillas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <!-- <a class="twitter-timeline" data-height="350px" data-theme="dark" href="https://twitter.com/buck_semillas?ref_src=twsrc%5Etfw">Tweets by buck_semillas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             <!-- <a href="https://twitter.com/intent/tweet?screen_name=buck_semillas&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @buck_semillas</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+            
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>            
+            <iframe src="http://semillasbuck.com.ar/noticias/"  width="100%" height="400px" frameborder="0"></iframe>
+            <!-- <embed class="elevation-20" src="http://semillasbuck.com.ar/noticias/" width="100%" height="400px"> -->
+
           </v-flex>
         </v-layout>
 
@@ -541,3 +563,10 @@ export default {
   }
 }
 </script>
+
+<style>
+
+/* .twitter-timeline {
+  elevation: 20
+} */
+</style>

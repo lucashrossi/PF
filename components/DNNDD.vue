@@ -7,36 +7,30 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
+            labels: ['Regalias', 'Fiscalizadas', 'Primera', 'Original'],
             datasets: [
                 {
                 // label: '2018',
-                data: [33, 19, 11, 10],
+                data: [3, 9, 15, 20],
                 backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','rgba(140, 186, 47, 1)','rgba(17, 17, 185, 1)'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
                 borderWidth: [0,0,0,0]
                 },
                 {
-                // label: '2017',
-                data: [7, 24, 9, 8],
-                backgroundColor: ['rgba(255,0,0, 0.6)', 'rgba(50,200,0, 0.6)','rgba(140, 186, 47, 0.6)','rgba(17, 17, 185, 0.6)'],
+                // label: '2018',
+                data: [200, 1000, 20000, 30000],
+                backgroundColor: ['rgba(255,0,0)', 'rgba(50,200,0)','rgba(140, 186, 47, 1)','rgba(17, 17, 185, 1)'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
-                borderWidth: [0,0,0,0],
-                },
-                {
-                // label: '2017',
-                data: [7, 24, 9, 8],
-                backgroundColor: ['rgba(255,0,0, 0.6)', 'rgba(50,200,0, 0.6)','rgba(140, 186, 47, 0.6)','rgba(17, 17, 185, 0.6)'],
-                // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
-                borderWidth: [0,0,0,0],
+                borderWidth: [0,0,0,0]
                 }
+                
                 ]
         },
         options: {
             cutoutPercentage: 30,
             title: {
                 display: true,
-                text: '$ Bls Has'
+                text: '$ y Has'
             },
             legend: {
                 labels: {
