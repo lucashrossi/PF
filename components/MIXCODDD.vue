@@ -36,7 +36,10 @@ export default {
                 // Changes this dataset to become a line
                 type: 'line',
                 // yAxisID: 'right-y-axis',
-                fill: false
+                fill: false,
+                showLine: false,
+                pointRadius: 5,
+                borderColor: 'rgba(150, 100, 250, 1)'
                 }, 
                 {
                 label: 'Total $',

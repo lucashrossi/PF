@@ -10,21 +10,21 @@ export default {
             labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
             datasets: [{
                 label: 'Extendidas',
-                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 194, 184, 1)'],
+                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
                 data: [5000, 1000, 200, 50],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Comunes',
                 // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 194, 184, 0.4)'],
+                backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
                 data: [10000, 2000, 400, 100],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Segunda',
                 // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 194, 184, 0.4)'],
+                backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
                 data: [3000, 500, 100, 100],
                 yAxisID: 'left-y-axis'
                 },
@@ -36,7 +36,9 @@ export default {
                 // Changes this dataset to become a line
                 type: 'line',
                 // yAxisID: 'right-y-axis',
-                fill: false
+                fill: false,
+                pointRadius: 5,
+                borderColor: 'rgba(100, 100, 100, 1)'
                 }, 
                 {
                 label: 'Total $',

@@ -7,43 +7,44 @@ export default {
     data () {
         return {
         datacollection: {
-            labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
+            labels: ['SY 110', 'Pleno', 'SY 300', '55 CL2', 'Claraz', 'SY 200', 'Camba', 'Bellaco', 'Destello', 'SY 211', 'Saeta', 'Meteoro', 'SY 330', 'SY 120'],
             datasets: [{
-                label: 'Original',
-                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
-                data: [5000, 1000, 200, 50],
+                label: 'Extendidas',
+                backgroundColor: ['rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 194, 184, 1)', 'rgba(194, 82, 80, 1)', 'rgba(225, 200, 185, 1)', 'rgba(185, 250, 85, 1)', 'rgba(136, 186, 147, 1)', 'rgba(150, 10, 0, 1)', 'rgba(20, 50, 0, 1)', 'rgba(196, 88, 80, 1)', 'rgba(17, 17, 185, 1)', 'rgba(140, 186, 47, 1)', 'rgba(50, 200, 0, 1)'],
+                data: [0, 172, 185, 355, 455, 616, 748, 1086, 1696, 1745, 2839, 3070, 5336],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Primera',
+                label: 'Comunes',
                 // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
-                data: [10000, 2000, 400, 100],
+                backgroundColor: ['rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 194, 184, 1)', 'rgba(194, 82, 80, 1)', 'rgba(225, 200, 185, 1)', 'rgba(185, 250, 85, 1)', 'rgba(136, 186, 147, 1)', 'rgba(150, 10, 0, 1)', 'rgba(20, 50, 0, 1)', 'rgba(196, 88, 80, 1)', 'rgba(17, 17, 185, 1)', 'rgba(140, 186, 47, 1)', 'rgba(50, 200, 0, 1)'],
+                data: [0, 0, 1411, 100, 1196, 1101, 3807, 3855, 0, 350, 1280, 2122, 739],
                 yAxisID: 'left-y-axis'
                 },
+                // {
+                // label: 'Fiscalizada',
+                // // hidden: true,
+                // backgroundColor: ['rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 194, 184, 1)', 'rgba(194, 82, 80, 1)', 'rgba(225, 200, 185, 1)', 'rgba(185, 250, 85, 1)', 'rgba(136, 186, 147, 1)', 'rgba(150, 10, 0, 1)', 'rgba(20, 50, 0, 1)', 'rgba(196, 88, 80, 1)', 'rgba(17, 17, 185, 1)', 'rgba(140, 186, 47, 1)', 'rgba(50, 200, 0, 1)'],
+                // data: [0, 172, 1596, 455, 1651, 1717, 4555, 4941, 1696, 2095, 4119, 5192, 6075],
+                // yAxisID: 'left-y-axis'
+                // },
                 {
-                label: 'Fiscalizada',
+                label: 'Total Has',
                 // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
-                data: [3000, 500, 100, 100],
-                yAxisID: 'left-y-axis'
-                },
-                {
-                label: 'Total Bls',
-                // hidden: true,
-                data: [18000, 3500, 700, 250],
+                data: [0, 172, 1596, 455, 1651, 1717, 4555, 4941, 1696, 2095, 4119, 5192, 6075],
 
                 // Changes this dataset to become a line
                 type: 'line',
                 // yAxisID: 'right-y-axis',
                 fill: false,
+                showLine: false,
                 pointRadius: 5,
-                borderColor: 'rgba(100, 100, 100, 1)'
+                borderColor: 'rgba(150, 100, 250, 1)'
                 }, 
                 {
                 label: 'Total $',
                 
-                data: [50000, 30000, 5000, 1000],
+                data: [0, 172, 1596, 455, 1651, 1717, 4555, 4941, 1696, 2095, 4119, 5192, 6075],
 
                 // Changes this dataset to become a line
                 type: 'line',
@@ -61,7 +62,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls y $'
+                text: 'Has y $'
             },
             scales: {
                 yAxes: [{

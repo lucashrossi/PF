@@ -45,6 +45,7 @@ import MIXCO from '~/components/MIXCO.vue'
 import MIXCOD from '~/components/MIXCOD.vue'
 import MIXCODD from '~/components/MIXCODD.vue'
 import MIXCODDD from '~/components/MIXCODDD.vue'
+import MIXCODDDD from '~/components/MIXCODDDD.vue'
 import MIXCP from '~/components/MIXCP.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
@@ -99,6 +100,7 @@ Vue.component('MIXCO', MIXCO )
 Vue.component('MIXCOD', MIXCOD)
 Vue.component('MIXCODD', MIXCODD)
 Vue.component('MIXCODDD', MIXCODDD)
+Vue.component('MIXCODDDD', MIXCODDDD)
 Vue.component('MIXCP', MIXCP )
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)

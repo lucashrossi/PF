@@ -55,13 +55,13 @@ export default {
         options: {
             title: {
                 display: true,
-                text: '$'
+                text: '$ Neto'
             }, 
             scales: {
                 yAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: "Bls"
+                    labelString: "Bls + Reg"
                 }
                 }, 
                 // {
@@ -80,7 +80,7 @@ export default {
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: "Has"
+                    labelString: "$ Ventas"
                 }
                 }]
             },
