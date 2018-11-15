@@ -11,21 +11,21 @@ export default {
             datasets: [
                 {
                 // label: '2018',
-                data: [3, 9, 15, 20],
+                data: [2285145, 853245, 442742, 688052],
                 backgroundColor: ['rgba(180,50,60, 1)', 'rgba(80,150,80, 1)','rgba(130, 130, 130, 1)','rgba(50, 150, 150, 1)'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
                 borderWidth: [0,0,0,0]
                 },
                 {
                 // label: '2018',
-                data: [200, 1000, 20000, 30000],
+                data: [50781, 56883, 442742, 0],
                 backgroundColor: ['rgba(180,50,60, 1)', 'rgba(80,150,80, 1)','rgba(130, 130, 130, 1)','rgba(50, 150, 150, 1)'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
                 borderWidth: [0,0,0,0]
                 },
                 {
                 // label: '2017',
-                data: [7, 24, 9, 8],
+                data: [0, 0, 0, 172013],
                 backgroundColor: ['rgba(180,50,60, 1)', 'rgba(80,150,80, 1)','rgba(130, 130, 130, 1)','rgba(50, 150, 150, 1)'],
                 // borderColor: ['rgba(255,0,0,0)', 'rgba(50,200,0,0)', 'rgba(0,0,255,0.9)'],
                 borderWidth: [0,0,0,0],
@@ -37,7 +37,7 @@ export default {
             cutoutPercentage: 30,
             title: {
                 display: true,
-                text: '$ Bls Has'
+                text: 'U$S Bls Has'
             },
             legend: {
                 labels: {

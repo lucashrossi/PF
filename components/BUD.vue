@@ -9,25 +9,26 @@ export default {
         datacollection: {
             labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
             datasets: [
-                {
-                label: ["Girasol"],
-                backgroundColor: "rgba(255, 0, 0, 0.6)",
-                // borderColor: "rgba(255, 0, 0,1)",
-                // hoverBackgroundColor: "'rgba(255, 0, 0, 0.2)",
-                data: [{
-                    x: 505000,
-                    y: 1.3,
-                    r: 13.1
-                }]
-                }, 
+                // {
+                // label: ["Girasol"],
+                // backgroundColor: "rgba(255, 0, 0, 0.6)",
+                // // borderColor: "rgba(255, 0, 0,1)",
+                // // hoverBackgroundColor: "'rgba(255, 0, 0, 0.2)",
+                // data: [{
+                //     x: 45000,
+                //     y: 1000,
+                //     r: 35000
+                // }]
+                // }, 
                 {
                 label: ["Avena"],
                 backgroundColor: "rgba(100, 255, 0, 0.6)",
                 // borderColor: "rgba(100, 255, 0,1)",
                 data: [{
-                    x: 860000,
-                    y: 5.0,
-                    r: 17.5
+                    x: 575505,
+                    y: 12839,
+                    // r: -63945=511560
+                    r: 5.1
                 }]
                 },
                 {
@@ -35,9 +36,10 @@ export default {
                 backgroundColor: "rgba(200, 50, 255, 0.6)",
                 // borderColor: "rgba(200, 50, 255,0.1)",
                 data: [{
-                    x: 1390000,
-                    y: 0.9,
-                    r: 11.2
+                    x: 588271,
+                    y: 155790,
+                    // r: -48045=540226
+                    r: 5.4
                 }]
                 },
                 {
@@ -45,9 +47,10 @@ export default {
                 backgroundColor: "rgba(0, 100, 255, 0.6)",
                 // borderColor: "rgba(0, 100, 255,1)",
                 data: [{
-                    x: 280000,
-                    y: 1.8,
-                    r: 11.0
+                    x: 3070093,
+                    y: 466833,
+                    // r: -421330=2648763
+                    r: 26.4
                 }]
                 }
             ]
@@ -55,13 +58,13 @@ export default {
         options: {
             title: {
                 display: true,
-                text: '$ Neto'
+                text: 'U$S Neto (*100mil)'
             }, 
             scales: {
                 yAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: "Bls + Reg"
+                    labelString: "Bls (Orig, 1ª, fisc) + Reg (2bls/ha)"
                 }
                 }, 
                 // {
@@ -80,7 +83,7 @@ export default {
                 xAxes: [{ 
                 scaleLabel: {
                     display: true,
-                    labelString: "$ Ventas"
+                    labelString: "U$S Bls (Orig, 1ª, fisc) + Reg"
                 }
                 }]
             },

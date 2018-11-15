@@ -41,7 +41,7 @@ export default {
                 borderColor: 'rgba(100, 100, 100, 1)'
                 }, 
                 {
-                label: 'Total $',
+                label: 'Total U$S',
                 
                 data: [50000, 30000, 5000, 1000],
 
@@ -53,7 +53,48 @@ export default {
                 pointRadius: 5,
                 // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
                 borderColor: 'rgba(0, 255, 0, 1)'
-                }, 
+                },
+                {
+                label: 'Extendidas U$S',
+                
+                data: [10000, 10000, 500, 200],
+
+                // Changes this dataset to become a line
+                // type: 'line',
+                yAxisID: 'right-y-axis',
+                fill: false,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },{
+                label: 'Comunes U$S',
+                
+                data: [30000, 10000, 500, 200],
+
+                // Changes this dataset to become a line
+                // type: 'line',
+                yAxisID: 'right-y-axis',
+                fill: false,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
+                {
+                label: 'Segunda U$S',
+                
+                data: [10000, 10000, 4000, 600],
+
+                // Changes this dataset to become a line
+                // type: 'line',
+                yAxisID: 'right-y-axis',
+                fill: false,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
                 
                 ],
             // labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA']
@@ -61,7 +102,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Has y $'
+                text: 'Has y U$S'
             },
             scales: {
                 yAxes: [{
@@ -77,26 +118,27 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 16000,
+                        max: 20000,
                         min: 0
                     },
                    
                 }, 
                 {
+                    stacked: true,
                     id: 'right-y-axis',
-                    type: 'linear',
+                    // type: 'linear',
                     position: 'right',
                     ticks: {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 80000,
+                        max: 60000,
                         min: 0
                     },
                 }
                 ],
                 xAxes: [{
-                    stacked: true,
+                    // stacked: true,
                     scaleLabel: {
                         display: true,
                         labelString: ""

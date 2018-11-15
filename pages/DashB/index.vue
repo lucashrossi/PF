@@ -25,15 +25,17 @@
                 <v-flex xs12>
                   <v-card-title primary-title>
                     <div>
-                      <div>Original</div>
+                      <div>Original Pan, Fideo, Avena, Girasol</div>
                       <div>1º Multitplicacion</div>
-                      <div>Descuento</div>
+                      <div>Costo Pan, Fideo, Avena, Girasol</div>
+                      <div>Regalia Mult</div>
                     </div>
                     <v-spacer></v-spacer>
                     <div>
-                      <div>U$S 45</div>
-                      <div>U$S 20</div>
-                      <div>% 10</div>
+                      <div>U$S 45, U$S 45, U$S 45, U$S 45</div>
+                      <div>U$S 15, U$S 5, U$S 5, U$S 15</div>
+                      <div>U$S 5, U$S 5, U$S 5, U$S 10</div>
+                      <div>U$S 1, U$S 1, U$S 1, U$S 1</div>
                     </div>
                   </v-card-title>
                 </v-flex>
@@ -44,10 +46,7 @@
               <v-layout row >
                 <v-flex xs12 >
                   <v-card-title primary-title  justify-end>
-                    <v-flex xs12 text-xs-center>
-                      <div>Regalias:</div>
-                    </v-flex>
-                      
+                   
                     <v-flex xs6>
                         <div>Zafiro</div>
                     </v-flex>

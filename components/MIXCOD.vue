@@ -11,27 +11,27 @@ export default {
             datasets: [{
                 label: 'Original',
                 backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
-                data: [5000, 1000, 200, 50],
+                data: [1000, 12789, 9609, 27383],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Primera',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
-                data: [10000, 2000, 400, 100],
+                data: [0, 0, 0, 56883],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Fiscalizada',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
-                data: [3000, 500, 100, 100],
+                data: [0, 0, 146181, 296561],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Total Bls',
                 // hidden: true,
-                data: [18000, 3500, 700, 250],
+                data: [1000, 12789, 155790, 380827],
 
                 // Changes this dataset to become a line
                 type: 'line',
@@ -41,9 +41,9 @@ export default {
                 borderColor: 'rgba(100, 100, 100, 1)'
                 }, 
                 {
-                label: 'Total $',
+                label: 'Total U$S',
                 
-                data: [50000, 30000, 5000, 1000],
+                data: [45000, 575505, 578586, 2382041],
 
                 // Changes this dataset to become a line
                 type: 'line',
@@ -61,7 +61,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls y $'
+                text: 'Bls y U$S'
             },
             scales: {
                 yAxes: [{
@@ -77,7 +77,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 16000,
+                        max: 400000,
                         min: 0
                     },
                    
@@ -90,7 +90,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 80000,
+                        max: 2500000,
                         min: 0
                     },
                 }
