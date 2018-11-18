@@ -16,7 +16,7 @@ export default {
                 },
                 {
                 label: 'Comunes',
-                // hidden: true,
+                hidden: true,
                 backgroundColor: ['rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 194, 184, 1)', 'rgba(194, 82, 80, 1)', 'rgba(225, 200, 185, 1)', 'rgba(185, 250, 85, 1)', 'rgba(136, 186, 147, 1)', 'rgba(150, 10, 0, 1)', 'rgba(20, 50, 0, 1)', 'rgba(196, 88, 80, 1)', 'rgba(17, 17, 185, 1)', 'rgba(140, 186, 47, 1)', 'rgba(50, 200, 0, 1)'],
                 data: [0, 0, 1411, 100, 1196, 1101, 3807, 3855, 0, 350, 1280, 2122, 739],
                 yAxisID: 'left-y-axis'
@@ -91,7 +91,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 80000,
+                        max: 8000,
                         min: 0
                     },
                 }

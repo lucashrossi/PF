@@ -37,6 +37,7 @@ export default {
                 type: 'line',
                 // yAxisID: 'right-y-axis',
                 fill: false,
+                showLine: false,
                 pointRadius: 5,
                 borderColor: 'rgba(100, 100, 100, 1)'
                 }, 

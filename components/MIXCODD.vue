@@ -11,45 +11,46 @@ export default {
             datasets: [{
                 label: 'Extendidas',
                 backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
-                data: [5000, 1000, 200, 50],
+                data: [0, 1000, 50000, 170000],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Comunes',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
-                data: [10000, 2000, 400, 100],
+                data: [0, 2000, 40000, 50000],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Segunda',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
-                data: [3000, 500, 100, 100],
+                data: [0, 500, 10000, 10000],
                 yAxisID: 'left-y-axis'
                 },
                 {
                 label: 'Total Has',
                 // hidden: true,
-                data: [18000, 3500, 700, 250],
+                data: [0, 3500, 100000, 230000],
 
                 // Changes this dataset to become a line
                 type: 'line',
                 // yAxisID: 'right-y-axis',
                 fill: false,
+                showLine: false,
                 pointRadius: 5,
                 borderColor: 'rgba(100, 100, 100, 1)'
                 }, 
                 {
                 label: 'Total U$S',
                 
-                data: [50000, 30000, 5000, 1000],
+                data: [0, 7500, 300000, 900000],
 
                 // Changes this dataset to become a line
                 type: 'line',
                 yAxisID: 'right-y-axis',
                 fill: false,
-                showLine: true,
+                // showLine: false,
                 pointRadius: 5,
                 // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
                 borderColor: 'rgba(0, 255, 0, 1)'
@@ -57,7 +58,7 @@ export default {
                 {
                 label: 'Extendidas U$S',
                 
-                data: [10000, 10000, 500, 200],
+                data: [0, 5000, 250000, 850000],
 
                 // Changes this dataset to become a line
                 // type: 'line',
@@ -70,7 +71,7 @@ export default {
                 },{
                 label: 'Comunes U$S',
                 
-                data: [30000, 10000, 500, 200],
+                data: [0, 2000, 40000, 50000],
 
                 // Changes this dataset to become a line
                 // type: 'line',
@@ -84,7 +85,7 @@ export default {
                 {
                 label: 'Segunda U$S',
                 
-                data: [10000, 10000, 4000, 600],
+                data: [0, 500, 10000, 10000],
 
                 // Changes this dataset to become a line
                 // type: 'line',
@@ -118,7 +119,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 20000,
+                        max: 250000,
                         min: 0
                     },
                    
@@ -132,7 +133,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 60000,
+                        max: 1000000,
                         min: 0
                     },
                 }
