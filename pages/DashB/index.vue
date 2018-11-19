@@ -119,6 +119,7 @@
           <v-spacer></v-spacer> 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
             <MIXCODD height="400px" style="border-radius: 10px" class="elevation-20"/>
+            <!-- <TX height="400px" style="border-radius: 10px" class="elevation-20"/> -->
           </v-flex>
         </v-layout>
         

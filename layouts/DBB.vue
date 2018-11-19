@@ -26,7 +26,7 @@
                 <v-icon>{{this.snd}}</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>Sonido</v-list-tile-title>
+                <v-list-tile-title>Music</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
             <v-list-tile @click="dark = !dark; colorr()">
@@ -44,7 +44,7 @@
                 <v-icon>exit_to_app</v-icon>
               </v-list-tile-action>
               <v-list-tile-content>
-                <v-list-tile-title>Salir</v-list-tile-title>
+                <v-list-tile-title>Exit</v-list-tile-title>
               </v-list-tile-content>
             </v-list-tile>
           </v-list>
@@ -84,7 +84,7 @@
 
                 <v-icon class="mr-1" >{{this.snd}}</v-icon>
                 <!-- <v-icon left >volume_up</v-icon> -->
-                Sonido
+                Music
             </v-btn>
             <v-btn flat @click="dark = !dark; colorr()" >
                 <v-icon class="mr-1">invert_colors</v-icon>
@@ -93,7 +93,7 @@
             <!-- <v-btn flat href="/"> -->
             <v-btn flat @click="Salir">
                 <v-icon class="mr-1">exit_to_app</v-icon>
-                Salir
+                Exit
             </v-btn>
           </v-toolbar-items>
         </v-toolbar>
