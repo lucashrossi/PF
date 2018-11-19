@@ -19,7 +19,7 @@
       <v-container fluid grid-list-md>
         
         <v-layout row wrap>
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg6>
             <v-card height="350px" style="border-radius: 10px; margin-top: 4px" class="elevation-20">
               <v-layout row>
                 <v-flex xs12>
@@ -87,17 +87,17 @@
               
             </v-card>
           </v-flex>
-          <v-spacer></v-spacer>
+          <!-- <v-spacer></v-spacer>
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
             <BUD height="350px" style="border-radius: 10px" class="elevation-20" />
+          </v-flex> -->
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
+            <MIXCOD height="350px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
-            <DNND height="350px" style="border-radius: 10px" class="elevation-20" />
-          </v-flex>
-          <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
-            <DNNDD height="350px" style="border-radius: 10px" class="elevation-20" />
+            <!-- < height="350px" style="border-radius: 10px" class="elevation-20" /> -->
           </v-flex>
           
         </v-layout>
@@ -106,15 +106,15 @@
       <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+            <DNND height="400px" style="border-radius: 10px" class="elevation-20"/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+            <DNNDD height="400px" style="border-radius: 10px" class="elevation-20"/>
+          </v-flex>
+          <v-spacer></v-spacer> 
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
             <MIXCODDD height="400px" style="border-radius: 10px" class="elevation-20"/>
-          </v-flex>
-          <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
-            <MIXCODDDD height="400px" style="border-radius: 10px" class="elevation-20"/>
-          </v-flex>
-          <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
-            <MIXCOD height="400px" style="border-radius: 10px" class="elevation-20"/>
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
