@@ -42,7 +42,8 @@ export default {
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
                 data: [0, 500, 10000, 10000],
-                yAxisID: 'left-y-axis'
+                yAxisID: 'left-y-axis',
+                // xAxisID: 'left-x-axis',
                 },
                 
                 
@@ -54,6 +55,8 @@ export default {
                 // Changes this dataset to become a line
                 // type: 'line',
                 yAxisID: 'right-y-axis',
+                // xAxisID: 'right-x-axis',
+                hidden: true,
                 fill: false,
                 showLine: true,
                 pointRadius: 5,
@@ -68,6 +71,8 @@ export default {
                 // Changes this dataset to become a line
                 // type: 'line',
                 yAxisID: 'right-y-axis',
+                // xAxisID: 'right-x-axis',
+                hidden: true,
                 fill: false,
                 showLine: true,
                 pointRadius: 5,
@@ -83,6 +88,8 @@ export default {
                 // Changes this dataset to become a line
                 // type: 'line',
                 yAxisID: 'right-y-axis',
+                // xAxisID: 'right-x-axis',
+                hidden: true,
                 fill: false,
                 showLine: true,
                 pointRadius: 5,
@@ -150,6 +157,7 @@ export default {
                 }
                 ],
                 xAxes: [{
+                    // id: 'left-x-axis',
                     // stacked: true,
                     scaleLabel: {
                         display: true,
