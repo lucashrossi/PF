@@ -8,28 +8,29 @@ export default {
         return {
         datacollection: {
             labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
-            datasets: [{
-                label: 'Original',
-                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
-                data: [1000, 12789, 9609, 27383],
-                yAxisID: 'left-y-axis'
-                },
+            datasets: [
                 {
-                label: 'Primera',
-                // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
-                data: [0, 0, 0, 56883],
-                yAxisID: 'left-y-axis'
-                },
-                {
-                label: 'Fiscalizada',
+                label: 'CostoT',
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
                 data: [0, 0, 146181, 296561],
                 yAxisID: 'left-y-axis'
                 },
                 {
-                label: 'Total Bls',
+                label: 'Costo',
+                // hidden: true,
+                backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
+                data: [0, 0, 0, 56883],
+                yAxisID: 'left-y-axis'
+                },
+                {
+                label: 'Neto',
+                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
+                data: [1000, 12789, 9609, 27383],
+                yAxisID: 'left-y-axis'
+                },             
+                {
+                label: 'Venta',
                 // hidden: true,
                 data: [1000, 12789, 155790, 380827],
 
@@ -42,14 +43,28 @@ export default {
                 borderColor: 'rgba(100, 100, 100, 1)'
                 }, 
                 {
-                label: 'Total U$S',
+                label: 'Rent',
                 
-                data: [45000, 575505, 578586, 2382041],
+                data: [-20, -10, 70, 50],
 
                 // Changes this dataset to become a line
                 type: 'line',
                 yAxisID: 'right-y-axis',
-                fill: false,
+                fill: true,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
+                {
+                label: 'RentT',
+                
+                data: [-50, -40, 40, 20],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis',
+                fill: true,
                 showLine: true,
                 pointRadius: 5,
                 // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
@@ -62,7 +77,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls y U$S'
+                text: 'U$S y %'
             },
             scales: {
                 yAxes: [{
@@ -91,9 +106,13 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 2500000,
-                        min: 0
+                        max: 100,
+                        min: -100
                     },
+                    gridLines: {
+                        display: false,
+                        // offsetGridLines: true
+                    }
                 }
                 ],
                 xAxes: [{

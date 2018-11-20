@@ -10,14 +10,44 @@ export default {
             labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
             datasets: [
                 
+                
                 {
-                label: 'Total Has',
+                label: 'Original',
+                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
+                data: [0, 1000, 50000, 170000],
+                yAxisID: 'left-y-axis'
+                },
+                {
+                label: 'Primera',
                 // hidden: true,
-                data: [0, 3500, 100000, 230000],
+                backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
+                data: [0, 2000, 40000, 50000],
+                yAxisID: 'left-y-axis'
+                },
+                {
+                label: 'Fiscalizada',
+                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
+                data: [0, 1000, 50000, 170000],
+                yAxisID: 'left-y-axis'
+                },
+            
+                {
+                label: 'Extendida',
+                // hidden: true,
+                backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
+                data: [0, 500, 10000, 10000],
+                yAxisID: 'left-y-axis',
+                // xAxisID: 'left-x-axis',
+                },
+                {
+                label: 'Total',
+                // hidden: true,
+                data: [0, 4500, 150000, 400000],
 
                 // Changes this dataset to become a line
                 type: 'line',
                 // yAxisID: 'right-y-axis',
+                // xAxisID: 'right-x-axis',
                 fill: false,
                 showLine: false,
                 pointRadius: 5,
@@ -25,30 +55,7 @@ export default {
                 },
                 
                 {
-                label: 'Extendidas',
-                backgroundColor: ['rgba(100, 100, 100, 1)','rgba(170, 150, 120, 1)', 'rgba(200, 88, 88, 1)', 'rgba(40, 150, 200, 1)'],
-                data: [0, 1000, 50000, 170000],
-                yAxisID: 'left-y-axis'
-                },
-                {
-                label: 'Comunes',
-                // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.6)','rgba(170, 150, 120, 0.6)', 'rgba(200, 88, 88, 0.6)', 'rgba(40, 150, 200, 0.6)'],
-                data: [0, 2000, 40000, 50000],
-                yAxisID: 'left-y-axis'
-                },
-                {
-                label: 'Segunda',
-                // hidden: true,
-                backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
-                data: [0, 500, 10000, 10000],
-                yAxisID: 'left-y-axis',
-                // xAxisID: 'left-x-axis',
-                },
-                
-                
-                {
-                label: 'Extendidas U$S',
+                label: 'Original U$S',
                 
                 data: [0, 5000, 250000, 850000],
 
@@ -64,7 +71,7 @@ export default {
                 borderColor: 'rgba(0, 255, 0, 1)'
                 },
                 {
-                label: 'Comunes U$S',
+                label: 'Primera U$S',
                 
                 data: [0, 2000, 40000, 50000],
 
@@ -81,7 +88,23 @@ export default {
                 },
                 
                 {
-                label: 'Segunda U$S',
+                label: 'Fiscalizada U$S',
+                
+                data: [0, 500, 10000, 10000],
+
+                // Changes this dataset to become a line
+                // type: 'line',
+                yAxisID: 'right-y-axis',
+                // xAxisID: 'right-x-axis',
+                hidden: true,
+                fill: false,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
+                {
+                label: 'Extendida U$S',
                 
                 data: [0, 500, 10000, 10000],
 
@@ -120,7 +143,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Has y U$S'
+                text: 'Bls y U$S'
             },
             scales: {
                 yAxes: [{
@@ -136,7 +159,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 250000,
+                        max: 500000,
                         min: 0
                     },
                    
@@ -154,6 +177,10 @@ export default {
                         max: 1000000,
                         min: 0
                     },
+                    gridLines: {
+                        display: false,
+                        // offsetGridLines: true
+                    }
                 }
                 ],
                 xAxes: [{
@@ -165,7 +192,8 @@ export default {
                     },
                     ticks: {
                         autoSkip: false
-                    }
+                    },
+                
                 },
                 {   
                     id: 'right-x-axis',
