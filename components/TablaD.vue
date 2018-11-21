@@ -60,7 +60,9 @@
               <v-text-field v-model="search" height="1" single-line hide-details flat></v-text-field>
           </v-card-title>
 
-          <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="50" :rows-per-page-items="[50, 200]">
+          <!-- <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="1" :rows-per-page-items="[1, 200]"> -->
+          <v-data-table must-sort hide-headers hide-actions style="width: 100%" :headers="headerss" :items="dessertss" :search="search" :pagination.sync="pagination" >
+
               <template  slot="items" slot-scope="props">
                   
                   <td style="height: 20px; font-size: 11px" >{{ props.item.name }}</td>
@@ -230,7 +232,20 @@ export default {
 
 
 
-
+        // pagination: {
+        //     descending: true,
+        //     page: 1,
+        //     rowsPerPage: 1,
+        //     sortBy: 'fat',
+        //     totalItems: 1,
+        //     rowsPerPageItems: [1]
+        // },
+        pagination: {
+            rowsPerPage: 1,
+            // totalItems: 1,
+            // rowsPerPageItems: [1]
+        },
+        totalItems: 1,
         search: '',
         headerss: [
           { text: 'RAZON SOCIAL', value: 'name', align: 'left', width: '200' },
@@ -1587,6 +1602,17 @@ export default {
       }
   },
   computed: {
+    pages () {
+      if (this.pagination.rowsPerPage == null ||
+        this.pagination.totalItems == null
+      ) 
+      console.log(this.pagination.totalItems)
+      console.log(this.pagination.rowsPerPage)
+      return 0
+      console.log(this.pagination.totalItems)
+      console.log(this.pagination.rowsPerPage)
+      return Math.ceil(this.pagination.totalItems / this.pagination.rowsPerPage)
+    },
     
     desserts: {
       
@@ -1599,6 +1625,27 @@ export default {
     //   return this.$store.getters.desserts
     //   console.log('computed desserts')
     // }
+  },
+   watch: {
+    initialDesserts () {
+      this.$nextTick(() => {
+        this.pagination.totalItems = this.initialDessertss.length
+        console.log(this.pagination.totalItems)
+        console.log(this.pagination.rowsPerPage)
+      })
+    }
+  },
+  methods: {
+    addItems(){
+      this.initialDesserts = this.dessertss.slice()
+      console.log(this.pagination.totalItems)
+      console.log(this.pagination.rowsPerPage)
+    },
+    appendItems(){
+      this.initialDesserts = this.initialDesserts.concat(this.dessertss)
+      console.log(this.pagination.totalItems)
+      console.log(this.pagination.rowsPerPage)
+    }
   },
   created() {
     console.log('created Tabla')
