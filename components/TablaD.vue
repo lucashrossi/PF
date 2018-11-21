@@ -52,42 +52,32 @@
             </template> -->
         </v-data-table>
 
-        <v-card class="elevation-0" >
-          <v-card-title>
+        <v-card class="elevation-0" style="width: 100%" >
+          <v-card-title style="height: 30px; padding: 0px">
               <!-- <h1>Bolsas 2018:</h1>
               <v-spacer></v-spacer> -->
               <!-- <v-text-field v-model="search" append-icon="search" label="Search" single-line hide-details ></v-text-field> -->
-              <v-text-field v-model="search" height="1" single-line hide-details flat></v-text-field>
+              <v-text-field style="padding: 0px" v-model="search" height="1" single-line hide-details flat></v-text-field>
           </v-card-title>
 
           <!-- <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="1" :rows-per-page-items="[1, 200]"> -->
-          <v-data-table must-sort hide-headers hide-actions style="width: 100%" :headers="headerss" :items="dessertss" :search="search" :pagination.sync="pagination" >
+          <v-data-table style="width: 100%; height: 60px" must-sort hide-actions :headers="headerss" :items="dessertss" :search="search" :pagination.sync="pagination" >
+            
+
 
               <template  slot="items" slot-scope="props">
-                  
-                  <td style="height: 20px; font-size: 11px" >{{ props.item.name }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.ingeniero }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.localidad }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.distib }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.remito }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.bellaco }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.destello }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.sy120 }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.sy200 }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.sy211 }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.meteoro }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.sy300 }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.saeta }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.sy330 }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.camba }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.claraz }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.zafiro }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.esmeralda }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.total }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.obelix }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.odisseo }}</td>
-                  <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.varios }}</td>
-                  
+                <!-- <tr style="height: 10px; padding: 0 5px"> -->
+                  <!-- <th style="padding: 0 5px"> -->
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-left">{{ props.item.name }}</td>
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-right">{{ props.item.ingeniero }}</td>
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-right">{{ props.item.localidad }}</td>
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-right">{{ props.item.distib }}</td>
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-right">{{ props.item.remito }}</td>
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-right">{{ props.item.bellaco }}</td>
+                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-right">{{ props.item.destello }}</td>
+                    
+                  <!-- </th> -->
+                <!-- </tr> -->
               </template>
               <!-- <v-alert slot="no-results" :value="true" color="error" icon="warning">
                   Your search for "{{ search }}" found no results.
@@ -242,60 +232,32 @@ export default {
         // },
         pagination: {
             rowsPerPage: 1,
-            // totalItems: 1,
+            totalItems: 1,
             // rowsPerPageItems: [1]
         },
-        totalItems: 1,
+        // totalItems: 1,
         search: '',
         headerss: [
-          { text: 'RAZON SOCIAL', value: 'name', align: 'left', width: '200' },
-          { text: 'INGENIERO', value: 'ingeniero', align: 'right', width: '200' },
-          { text: 'LOCALIDAD', value: 'localidad', align: 'right', width: '1' },
-          { text: 'DISTIB', value: 'distib', align: 'right', width: '1' },
-          { text: 'REMITO', value: 'remito', align: 'right', width: '1' },
-          { text: 'BUCK BELLACO', value: 'bellaco', align: 'right', width: '1' },
-          { text: 'BUCK DESTELLO', value: 'destello', align: 'right', width: '1' },
-          { text: 'SY 120', value: 'sy120', align: 'right', width: '1' },
-          { text: 'SY 200', value: 'sy200', align: 'right', width: '1' },
-          { text: 'SY 211', value: 'sy211', align: 'right', width: '1' },
-          { text: 'BUCK METEORO', value: 'meteoro', align: 'right', width: '1' },
-          { text: 'SY 300', value: 'sy300', align: 'right', width: '1' },
-          { text: 'BUCK SAETA', value: 'saeta', align: 'right', width: '1' },
-          { text: 'SY 330', value: 'sy330', align: 'right', width: '1' },
-          { text: 'BUCK CAMBA', value: 'camba', align: 'right', width: '1' },
-          { text: 'BUCK CLARAZ', value: 'claraz', align: 'right', width: '1' },
-          { text: 'BUCK ZAFIRO', value: 'zafiro', align: 'right', width: '1' },
-          { text: 'BUCK ESMERALDA', value: 'esmeralda', align: 'right', width: '1' },
-          { text: 'TOTAL', value: 'total', align: 'right', width: '1' },
-          { text: 'OBELIX', value: 'obelix', align: 'right', width: '1' },
-          { text: 'ODISSEO', value: 'odisseo', align: 'right', width: '1' },
-          { text: 'VARIOS', value: 'varios', align: 'right', width: '200' },
+          { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: false },
+          { text: 'Original', value: 'ingeniero', align: 'right', width: '1', sortable: false, },
+          { text: 'Primera', value: 'localidad', align: 'right', width: '1', sortable: false, },
+          { text: 'Regalia C', value: 'distib', align: 'right', width: '1', sortable: false, },
+          { text: 'Regalia E', value: 'remito', align: 'right', width: '1', sortable: false, },
+          { text: 'Costo', value: 'bellaco', align: 'right', width: '1', sortable: false, },
+          { text: 'CostoT', value: 'destello', align: 'right', width: '1', sortable: false, },
+         
         ],
         dessertss: [
             {
                 "value": "false",
-                "name": "JORGE LATERZA",
-                "ingeniero": "",
+                "name": "Zafiro",
+                "ingeniero": "45",
                 "localidad": "NECOCHEA",
                 "distib": "5",
                 "remito": "",
                 "bellaco": "",
                 "destello": "",
-                "sy120": "",
-                "sy200": "",
-                "sy211": "",
-                "meteoro": "",
-                "sy300": "",
-                "saeta": "",
-                "sy330": "",
-                "camba": "",
-                "claraz": "",
-                "zafiro": "",
-                "esmeralda": "",
-                "total ": "0",
-                "obelix": "",
-                "odiseo": "",
-                "varios": " "
+                
             },
             {
                 "value": "false",
@@ -1656,3 +1618,20 @@ export default {
   },
 }
 </script>
+
+
+<style>
+
+/* table.v-table thead tr th {
+    padding: 0px;
+    
+} */
+
+table.v-table thead tr {
+    height: 5px;
+   
+}
+
+
+
+</style>
