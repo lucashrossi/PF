@@ -5,6 +5,7 @@ import NCC from '~/components/NCC.vue'
 // import pdf from 'vue-pdf'
 import Tabla from '~/components/Tabla.vue'
 import TablaD from '~/components/TablaD.vue'
+import TablaDD from '~/components/TablaDD.vue'
 import TablaPreview from '~/components/TablaPreview.vue'
 import Tablaa from '~/components/Tablaa.vue'
 import FISC from '~/components/FISC.vue'
@@ -62,6 +63,7 @@ Vue.component('NCC', NCC)
 // Vue.component('pdf', pdf)
 Vue.component('Tabla', Tabla)
 Vue.component('TablaD', TablaD)
+Vue.component('TablaDD', TablaDD)
 Vue.component('TablaPreview', TablaPreview)
 Vue.component('Tablaa', Tablaa)
 Vue.component('FISC', FISC)
