@@ -2,7 +2,7 @@
     
     <v-container>
         <!-- <p>{{ name }}</p> -->
-        <v-data-table hide-headers hide-actions :headers="headers" :items="desserts"  style="width: 100%">
+        <v-data-table  hide-actions :headers="headers" :items="desserts"  style="width: 100%">
         <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
             <template slot="items" slot-scope="props">
@@ -18,21 +18,7 @@
            
         </v-data-table>
         
-        <v-data-table hide-headers hide-actions :headers="headers" :items="desserts"  style="width: 100%">
-        <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
-
-            <template slot="items" slot-scope="props">
-                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.detalle }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
-            </template>
-          
-        </v-data-table>
+        
 
         <v-card class="elevation-0" style="width: 100%" >
           <v-card-title style="padding: 0px">
@@ -56,7 +42,7 @@
                     <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.distib }}</td>
                     <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.remito }}</td>
                     <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.bellaco }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td>
+                    <!-- <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td> -->
                     
                   <!-- </th> -->
                 <!-- </tr> -->
@@ -77,11 +63,11 @@ export default {
       return {
         
         headers: [
-          { text: 'Pedido', value: 'name', align: 'left', width: '1'},
-          { text: 'Cantidad', value: 'cantidad', align: 'right', width: '1' },
+          { text: 'Cultivo', value: 'name', align: 'left', width: '1'},
           { text: 'Precio', value: 'precio', align: 'right', width: '1' },
-          { text: 'Factura', value: 'factura', align: 'right', width: '1' },
-          { text: 'detalle', value: 'detalle', align: 'right', width: '1' },
+          { text: 'Bolsas T', value: 'cantidad', align: 'right', width: '1' },
+          { text: 'U$S T', value: 'factura', align: 'right', width: '1' },
+          { text: 'U$S R', value: 'detalle', align: 'right', width: '1' },
           { text: 'CTA', value: 'cta', align: 'right', width: '1' },
           { text: 'Razon Social', value: 'RS', align: 'right', width: '1' },
           { text: 'Importe', value: 'importe', align: 'right', width: '1' },
@@ -95,114 +81,105 @@ export default {
        
         search: '',
         headerss: [
-          { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: false },
-          { text: 'Original', value: 'ingeniero', align: 'center', width: '1', sortable: false, },
-          { text: 'Primera', value: 'localidad', align: 'center', width: '1', sortable: false, },
-          { text: 'Regalia C', value: 'distib', align: 'center', width: '1', sortable: false, },
-          { text: 'Regalia E', value: 'remito', align: 'center', width: '1', sortable: false, },
-          { text: 'Costo', value: 'bellaco', align: 'center', width: '1', sortable: false, },
-          { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: false, },
+          { text: 'Grafico', value: 'name', align: 'left', width: '1', sortable: false },
+          { text: 'Actualizacion', value: 'ingeniero', align: 'center', width: '1', sortable: false, },
+          { text: 'Seccion', value: 'localidad', align: 'center', width: '1', sortable: false, },
+          { text: 'Tab', value: 'distib', align: 'center', width: '1', sortable: false, },
+          { text: 'Persona', value: 'remito', align: 'center', width: '1', sortable: false, },
+          { text: 'RC', value: 'bellaco', align: 'center', width: '1', sortable: false, },
+        //   { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: false, },
          
         ],
         dessertss: [
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "1",
+                "ingeniero": "22/11/2018",
+                "localidad": "Ventas",
+                "distib": "Pan",
+                "remito": "",
+                "bellaco": "R1C1",
+                                
             },
             
                       

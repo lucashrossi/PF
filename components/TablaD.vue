@@ -1,38 +1,34 @@
 <template>
     
     <v-container>
-        <!-- <p>{{ name }}</p> -->
-        <v-data-table hide-headers hide-actions :headers="headers" :items="desserts"  style="width: 100%">
-        <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
-            <template slot="items" slot-scope="props">
-                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.detalle }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
-            </template>
-           
-        </v-data-table>
-        
-        <v-data-table hide-headers hide-actions :headers="headers" :items="desserts"  style="width: 100%">
-        <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
+        <v-card-title primary-title  justify-end>
+                   
+            <v-flex xs6>
+                <div>Dolar</div>
+            </v-flex>
+            <v-flex xs6 text-xs-right>
+                <div>$ 38</div>
+            </v-flex>
+            
+            <v-flex xs6>
+                <div>Dolar</div>
+            </v-flex>
+            <v-flex xs6 text-xs-right>
+                <div>$ 38</div>
+            </v-flex>
+            
+            <v-flex xs6>
+                <div>Dolar</div>
+            </v-flex>
+            <v-flex xs6 text-xs-right>
+                <div>$ 38</div>
+            </v-flex>
 
-            <template slot="items" slot-scope="props">
-                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.detalle }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
-            </template>
-          
-        </v-data-table>
+    
+        </v-card-title>
+
+       
 
         <v-card class="elevation-0" style="width: 100%" >
           <v-card-title style="padding: 0px">
@@ -76,16 +72,7 @@ export default {
   data: () => {
       return {
         
-        headers: [
-          { text: 'Pedido', value: 'name', align: 'left', width: '1'},
-          { text: 'Cantidad', value: 'cantidad', align: 'right', width: '1' },
-          { text: 'Precio', value: 'precio', align: 'right', width: '1' },
-          { text: 'Factura', value: 'factura', align: 'right', width: '1' },
-          { text: 'detalle', value: 'detalle', align: 'right', width: '1' },
-          { text: 'CTA', value: 'cta', align: 'right', width: '1' },
-          { text: 'Razon Social', value: 'RS', align: 'right', width: '1' },
-          { text: 'Importe', value: 'importe', align: 'right', width: '1' },
-        ],
+        
         
         pagination: {
             rowsPerPage: 2,
