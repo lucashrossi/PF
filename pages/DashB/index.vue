@@ -164,7 +164,7 @@
           <v-spacer></v-spacer> 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>            
             <!-- <iframe src="http://semillasbuck.com.ar/noticias"  width="100%" height="400px" frameborder="0"></iframe> -->
-            <embed src="http://semillasbuck.com.ar" width="100%" height="400px">
+            <embed src="https://semillasbuck.com.ar" width="100%" height="400px">
             <!-- <embed src="https://www.infobae.com/" width="100%" height="400px"> -->
             <!--  -->
 

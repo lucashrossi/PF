@@ -43,8 +43,8 @@
         <v-container fluid text-xs-center >
           <v-layout align-center justify-center row >
             <v-flex xs12 class="embed-container5">
-              <!-- <embed class="embed-container-iframe4" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpfdbb-dc48b.appspot.com%2Fo%2FCatalogo%2520Buck%25202018.pdf%3Falt%3Dmedia%26token%3Dcf795851-99aa-4803-b82c-d03f0f65ae4b&embedded=true#page=3&zoom=100&view=fitH" width="100%" height="600px"> -->
-              <iframe class="embed-container-iframe5" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" ></iframe>
+              <embed class="embed-container-iframe4" src="https://drive.google.com/viewerng/viewer?embedded=true&url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fpfdbb-dc48b.appspot.com%2Fo%2FCatalogo%2520Buck%25202018.pdf%3Falt%3Dmedia%26token%3Dcf795851-99aa-4803-b82c-d03f0f65ae4b&embedded=true#page=3&zoom=100&view=fitH" width="100%" height="600px">
+              <!-- <iframe class="embed-container-iframe5" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" ></iframe> -->
             </v-flex>
           </v-layout>
         </v-container>
