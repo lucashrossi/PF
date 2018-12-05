@@ -12,18 +12,34 @@
             </v-flex>
             
             <v-flex xs6>
-                <div>Dolar</div>
+                <div>Trigo</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>$ 38</div>
+                <div>U$S 200</div>
+            </v-flex>
+
+            <v-flex xs6>
+                <div>Candeal</div>
+            </v-flex>
+            <v-flex xs6 text-xs-right>
+                <div>U$S 200</div>
             </v-flex>
             
             <v-flex xs6>
-                <div>Dolar</div>
+                <div>Avena</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>$ 38</div>
+                <div>U$S 190</div>
             </v-flex>
+
+            <v-flex xs6>
+                <div>Girasol</div>
+            </v-flex>
+            <v-flex xs6 text-xs-right>
+                <div>U$S 230</div>
+            </v-flex>
+
+            <!-- <iframe width="500" height="300" style="border:none;" src="http://www.bcp.org.ar/informes.asp?id_inf=24/embed/183032105700513423896"></iframe> -->
 
     
         </v-card-title>
