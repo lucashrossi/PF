@@ -79,7 +79,7 @@ export default {
           { text: 'Bolsas T', value: 'cantidad', align: 'right', width: '1' },
           { text: 'U$S T', value: 'factura', align: 'right', width: '1' },
           { text: 'U$S C', value: 'cta', align: 'right', width: '1' },
-          { text: 'U$S R', value: 'detalle', align: 'right', width: '1' },
+          { text: 'U$S N', value: 'detalle', align: 'right', width: '1' },
           
           // { text: 'Total', value: 'RS', align: 'right', width: '1' },
           // { text: 'Importe', value: 'importe', align: 'right', width: '1' },
