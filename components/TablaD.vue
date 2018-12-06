@@ -46,7 +46,7 @@
 
        
         <!-- <p>{{ name }}</p> -->
-        <v-data-table  hide-actions :headers="headers" :items="desserts"  style="width: 100%">
+        <v-data-table  disable-initial-sort hide-actions :headers="headers" :items="desserts"  style="width: 100%">
         <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
             <template slot="items" slot-scope="props">
