@@ -2,41 +2,41 @@
     
     <v-container>
 
-        <v-card-title primary-title  justify-end>
+        <v-card-title primary-title  justify-end style="padding-bottom: 28px;">
                    
             <v-flex xs6>
-                <div>Dolar</div>
+                <div style="font-size: 12px;">Dolar</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>$ 38</div>
+                <div style="font-size: 12px;">$ 38</div>
             </v-flex>
             
             <v-flex xs6>
-                <div>Trigo</div>
+                <div style="font-size: 12px;">Trigo</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>U$S 200</div>
+                <div style="font-size: 12px;">U$S 200</div>
             </v-flex>
 
             <v-flex xs6>
-                <div>Candeal</div>
+                <div style="font-size: 12px;">Candeal</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>U$S 200</div>
+                <div style="font-size: 12px;">U$S 200</div>
             </v-flex>
             
             <v-flex xs6>
-                <div>Avena</div>
+                <div style="font-size: 12px;">Avena</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>U$S 190</div>
+                <div style="font-size: 12px;">U$S 190</div>
             </v-flex>
 
             <v-flex xs6>
-                <div>Girasol</div>
+                <div style="font-size: 12px;">Girasol</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div>U$S 230</div>
+                <div style="font-size: 12px;">U$S 230</div>
             </v-flex>
 
             <!-- <iframe width="500" height="300" style="border:none;" src="http://www.bcp.org.ar/informes.asp?id_inf=24/embed/183032105700513423896"></iframe> -->
@@ -45,39 +45,24 @@
         </v-card-title>
 
        
+        <!-- <p>{{ name }}</p> -->
+        <v-data-table  hide-actions :headers="headers" :items="desserts"  style="width: 100%">
+        <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
-        <v-card class="elevation-0" style="width: 100%" >
-          <v-card-title style="padding: 0px">
-              <!-- <h1>Bolsas 2018:</h1>
-              <v-spacer></v-spacer> -->
-              <!-- <v-text-field v-model="search" append-icon="search" label="Search" single-line hide-details ></v-text-field> -->
-              <v-text-field label="Search" prepend-icon="search" style="padding-top: 0px;" v-model="search" single-line hide-details flat solo></v-text-field>
-          </v-card-title>
-
-          <!-- <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="1" :rows-per-page-items="[1, 200]"> -->
-          <v-data-table style="width: 100%; height: 80px" must-sort hide-actions :headers="headerss" :items="dessertss" :search="search" :pagination.sync="pagination" >
-            
-
-
-              <template  slot="items" slot-scope="props">
-                <!-- <tr style="height: 10px; padding: 0 5px"> -->
-                  <!-- <th style="padding: 0 5px"> -->
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-left">{{ props.item.name }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.ingeniero }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.localidad }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.distib }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.remito }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.bellaco }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td>
-                    
-                  <!-- </th> -->
-                <!-- </tr> -->
-              </template>
-              <!-- <v-alert slot="no-results" :value="true" color="error" icon="warning">
-                  Your search for "{{ search }}" found no results.
-              </v-alert> -->
-          </v-data-table>
-        </v-card>
+            <template slot="items" slot-scope="props">
+                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
+                <!-- <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td> -->
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.detalle }}</td>
+                
+                <!-- <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td> -->
+                <!-- <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td> -->
+            </template>
+           
+        </v-data-table>
+        
 
     </v-container>
 </template>
@@ -88,128 +73,72 @@ export default {
   data: () => {
       return {
         
-        
-        
-        pagination: {
-            rowsPerPage: 2,
-            totalItems: 2,
-           
-        },
-       
-        search: '',
-        headerss: [
-          { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: false },
-          { text: 'Original', value: 'ingeniero', align: 'center', width: '1', sortable: false, },
-          { text: 'Primera', value: 'localidad', align: 'center', width: '1', sortable: false, },
-          { text: 'Regalia C', value: 'distib', align: 'center', width: '1', sortable: false, },
-          { text: 'Regalia E', value: 'remito', align: 'center', width: '1', sortable: false, },
-          { text: 'Costo', value: 'bellaco', align: 'center', width: '1', sortable: false, },
-          { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: false, },
-         
+        headers: [
+          { text: 'Cultivo', value: 'name', align: 'left', width: '1'},
+          // { text: 'Precio', value: 'precio', align: 'right', width: '1' },
+          { text: 'Bolsas T', value: 'cantidad', align: 'right', width: '1' },
+          { text: 'U$S T', value: 'factura', align: 'right', width: '1' },
+          { text: 'U$S C', value: 'cta', align: 'right', width: '1' },
+          { text: 'U$S R', value: 'detalle', align: 'right', width: '1' },
+          
+          // { text: 'Total', value: 'RS', align: 'right', width: '1' },
+          // { text: 'Importe', value: 'importe', align: 'right', width: '1' },
         ],
-        dessertss: [
+
+        desserts: [
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "Trigo",
+                // "precio": 200,
+                "cantidad": 380827,
+                "factura": 2382041,
+                "cta": 1000000,
+                "detalle": 1382041,
+                                             
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "Candeal",
+                // "precio": 200,
+                "cantidad": 155790,
+                "factura": 578586,
+                "cta": 250000,
+                "detalle": 328586, 
+                                
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "Avena",
+                // "precio": 190,
+                "cantidad": 12789,
+                "factura": 575505,
+                "cta": 250000,
+                "detalle": 325505, 
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "Girasol",
+                // "precio": 230,
+                "cantidad": 1000,
+                "factura": 45000,
+                "cta": 20000,
+                "detalle": 25000, 
             },
             {
                 "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
-            },
-            {
-                "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
-            },
-            {
-                "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
-            },
-            {
-                "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
-            },
-            {
-                "value": "false",
-                "name": "Zafiro",
-                "ingeniero": "45",
-                "localidad": "15",
-                "distib": "1",
-                "remito": "7",
-                "bellaco": "5",
-                "destello": "35",
-                
+                "name": "Total",
+                // "precio": 230,
+                "cantidad": 550406,
+                "factura": 3581132,
+                "cta": 1520000,
+                "detalle": 2061132, 
             },
             
+            
                       
-        ]
+        ],
+        
+        
       }
   },
   computed: {
@@ -225,13 +154,13 @@ export default {
       return Math.ceil(this.pagination.totalItems / this.pagination.rowsPerPage)
     },
     
-    desserts: {
+    // desserts: {
       
-      get () {
-        return this.$store.state.loadedPosts
-        console.log('computed get loadedPosts')
-      },
-    },
+    //   get () {
+    //     return this.$store.state.loadedPosts
+    //     console.log('computed get loadedPosts')
+    //   },
+    // },
     // desserts() {
     //   return this.$store.getters.desserts
     //   console.log('computed desserts')

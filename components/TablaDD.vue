@@ -1,57 +1,83 @@
 <template>
     
     <v-container>
-        <!-- <p>{{ name }}</p> -->
-        <v-data-table  hide-actions :headers="headers" :items="desserts"  style="width: 100%">
-        <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
-            <template slot="items" slot-scope="props">
-                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.detalle }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cta }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.RS }}</td>
-                <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.importe }}</td>
+      <v-card class="elevation-0" style="width: 100%" >
+        <v-card-title style="padding: 0px">
+            <!-- <h1>Bolsas 2018:</h1>
+            <v-spacer></v-spacer> -->
+            <!-- <v-text-field v-model="search" append-icon="search" label="Search" single-line hide-details ></v-text-field> -->
+            <v-text-field label="Search" prepend-icon="search" style="padding-top: 0px;" v-model="searchh" single-line hide-details flat solo></v-text-field>
+        </v-card-title>
+
+        <!-- <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="1" :rows-per-page-items="[1, 200]"> -->
+        <v-data-table style="width: 100%; height: 100px" must-sort hide-actions :headers="headers" :items="desserts" :search="searchh" :pagination.sync="paginationn" >
+          
+
+
+            <template  slot="items" slot-scope="props">
+              <!-- <tr style="height: 10px; padding: 0 5px"> -->
+                <!-- <th style="padding: 0 5px"> -->
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-left">{{ props.item.name }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.ingeniero }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.localidad }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.distib }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.remito }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.bellaco }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td>
+                  
+                <!-- </th> -->
+              <!-- </tr> -->
             </template>
-           
+            <!-- <v-alert slot="no-results" :value="true" color="error" icon="warning">
+                Your search for "{{ search }}" found no results.
+            </v-alert> -->
         </v-data-table>
+      </v-card>
+
+
+
+
+
+
+      <br>
+
         
         
+        
 
-        <v-card class="elevation-0" style="width: 100%" >
-          <v-card-title style="padding: 0px">
-              <!-- <h1>Bolsas 2018:</h1>
-              <v-spacer></v-spacer> -->
-              <!-- <v-text-field v-model="search" append-icon="search" label="Search" single-line hide-details ></v-text-field> -->
-              <v-text-field label="Search" prepend-icon="search" style="padding-top: 0px;" v-model="search" single-line hide-details flat solo></v-text-field>
-          </v-card-title>
+      <v-card class="elevation-0" style="width: 100%" >
+        <v-card-title style="padding: 0px">
+            <!-- <h1>Bolsas 2018:</h1>
+            <v-spacer></v-spacer> -->
+            <!-- <v-text-field v-model="search" append-icon="search" label="Search" single-line hide-details ></v-text-field> -->
+            <v-text-field label="Search" prepend-icon="search" style="padding-top: 0px;" v-model="search" single-line hide-details flat solo></v-text-field>
+        </v-card-title>
 
-          <!-- <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="1" :rows-per-page-items="[1, 200]"> -->
-          <v-data-table style="width: 100%; height: 80px" must-sort hide-actions :headers="headerss" :items="dessertss" :search="search" :pagination.sync="pagination" >
-            
+        <!-- <v-data-table hide-headers hide-actions style="width: 100%; height: 50px" :headers="headerss" :items="dessertss" :search="search" :rows-per-page="1" :rows-per-page-items="[1, 200]"> -->
+        <v-data-table style="width: 100%; height: 120px" must-sort hide-actions :headers="headerss" :items="dessertss" :search="search" :pagination.sync="pagination" >
+          
 
 
-              <template  slot="items" slot-scope="props">
-                <!-- <tr style="height: 10px; padding: 0 5px"> -->
-                  <!-- <th style="padding: 0 5px"> -->
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-left">{{ props.item.name }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.ingeniero }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.localidad }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.distib }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.remito }}</td>
-                    <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.bellaco }}</td>
-                    <!-- <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td> -->
-                    
-                  <!-- </th> -->
-                <!-- </tr> -->
-              </template>
-              <!-- <v-alert slot="no-results" :value="true" color="error" icon="warning">
-                  Your search for "{{ search }}" found no results.
-              </v-alert> -->
-          </v-data-table>
-        </v-card>
+            <template  slot="items" slot-scope="props">
+              <!-- <tr style="height: 10px; padding: 0 5px"> -->
+                <!-- <th style="padding: 0 5px"> -->
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-left">{{ props.item.name }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.ingeniero }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.localidad }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.distib }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.remito }}</td>
+                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.bellaco }}</td>
+                  <!-- <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td> -->
+                  
+                <!-- </th> -->
+              <!-- </tr> -->
+            </template>
+            <!-- <v-alert slot="no-results" :value="true" color="error" icon="warning">
+                Your search for "{{ search }}" found no results.
+            </v-alert> -->
+        </v-data-table>
+      </v-card>
 
     </v-container>
 </template>
@@ -62,20 +88,130 @@ export default {
   data: () => {
       return {
         
+        paginationn: {
+            rowsPerPage: 4,
+            totalItems: 4,
+           
+        },
+       
+        searchh: '',
         headers: [
-          { text: 'Cultivo', value: 'name', align: 'left', width: '1'},
-          { text: 'Precio', value: 'precio', align: 'right', width: '1' },
-          { text: 'Bolsas T', value: 'cantidad', align: 'right', width: '1' },
-          { text: 'U$S T', value: 'factura', align: 'right', width: '1' },
-          { text: 'U$S R', value: 'detalle', align: 'right', width: '1' },
-          { text: 'CTA', value: 'cta', align: 'right', width: '1' },
-          { text: 'Razon Social', value: 'RS', align: 'right', width: '1' },
-          { text: 'Importe', value: 'importe', align: 'right', width: '1' },
+          { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: false },
+          { text: 'Original', value: 'ingeniero', align: 'center', width: '1', sortable: false, },
+          { text: 'Primera', value: 'localidad', align: 'center', width: '1', sortable: false, },
+          { text: 'Regalia C', value: 'distib', align: 'center', width: '1', sortable: false, },
+          { text: 'Regalia E', value: 'remito', align: 'center', width: '1', sortable: false, },
+          { text: 'Costo', value: 'bellaco', align: 'center', width: '1', sortable: false, },
+          { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: false, },
+         
+        ],
+        desserts: [
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            {
+                "value": "false",
+                "name": "Zafiro",
+                "ingeniero": "45",
+                "localidad": "15",
+                "distib": "1",
+                "remito": "7",
+                "bellaco": "5",
+                "destello": "35",
+                
+            },
+            
+                      
         ],
         
         pagination: {
-            rowsPerPage: 2,
-            totalItems: 2,
+            rowsPerPage: 5,
+            totalItems: 5,
            
         },
        
@@ -199,13 +335,13 @@ export default {
       return Math.ceil(this.pagination.totalItems / this.pagination.rowsPerPage)
     },
     
-    desserts: {
+    // desserts: {
       
-      get () {
-        return this.$store.state.loadedPosts
-        console.log('computed get loadedPosts')
-      },
-    },
+    //   get () {
+    //     return this.$store.state.loadedPosts
+    //     console.log('computed get loadedPosts')
+    //   },
+    // },
     // desserts() {
     //   return this.$store.getters.desserts
     //   console.log('computed desserts')
