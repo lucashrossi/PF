@@ -1,20 +1,22 @@
 <template>
-  <v-tabs centered color="#542a25" dark height="25">
+
+  <div style="text-align:center">
+  <!-- <v-tabs centered color="#542a25" dark height="25">
       
     <v-tabs-slider color="green"></v-tabs-slider>
 
     <v-tab href="#tab-1" class="caption">
-      <!-- <v-icon class="mr-1">note</v-icon> -->
+      
       Principal
     </v-tab>
 
     <v-tab href="#tab-2" class="caption">
-      <!-- <v-icon class="mr-1">schedule</v-icon> -->
-      Tabla Dinamica
+      
+      RET
     </v-tab>
 
 
-    <v-tab-item id='tab-1'>
+    <v-tab-item id='tab-1'> -->
 
       <v-container fluid grid-list-md>
         
@@ -173,7 +175,10 @@
 
       </v-container>
 
-       
+      <br>
+      <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">RET</h1>
+      <br>
+      <embed src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="840" >
       <!-- <v-btn elevation-25 @click="enviar">
         Cargar
       </v-btn> -->
@@ -464,23 +469,29 @@
         </v-layout>
       </v-container>
 
-    </v-tab-item>
+    <!-- </v-tab-item>
 
 
     <v-tab-item id='tab-2'>
       <PivotI/>
+      <embed src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="840" >
+
     </v-tab-item>
     
-  </v-tabs>
+  </v-tabs> -->
 
       
 
-
+  </div>
 </template>
 
 
 <script>
+
+
 export default {
+
+  
   layout: 'DBB',
   data: () => ({
       items: [
