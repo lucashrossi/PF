@@ -21,7 +21,7 @@
     "chartjs-plugin-datalabels": "^0.4.0",
     "chartjs-plugin-labels": "^1.1.0",
     "chartjs-plugin-streaming": "^1.7.0",
-    "firebase-tools": "^6.0.1",
+    "firebase-tools": "^6.1.2",
     "javascript-natural-sort": "^0.7.1",
     "jquery": "^3.3.1",
     "node-sass": "^4.9.3",
