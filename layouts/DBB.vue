@@ -120,7 +120,7 @@
         </v-footer> -->
 
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_variables.styl (tab y footer)-->
-        <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl $material-dark := {cards: #212121, -->
+        <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl $material-dark := {cards: #303030, -->
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl input-bottom-line: rgba(#FFFFFF), -->
 
         <v-footer height=20 color="blue-grey darken-1" app>
