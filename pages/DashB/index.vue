@@ -179,6 +179,13 @@
       <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">RET</h1>
       <br>
       <embed src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="840" >
+
+      <br>
+      <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">Ensayos Internos</h1>
+      <br>
+      <embed src="https://public.tableau.com/views/Enfermedades_1/Dashboard1?:showVizHome=no&:embed=true" width="1900" height="840" >
+
+
       <!-- <v-btn elevation-25 @click="enviar">
         Cargar
       </v-btn> -->
