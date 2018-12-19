@@ -11,6 +11,7 @@ export default {
             datasets: [
                 {
                 label: 'CostoT',
+                
                 // hidden: true,
                 backgroundColor: ['rgba(100, 100, 100, 0.4)','rgba(170, 150, 120, 0.4)', 'rgba(200, 88, 88, 0.4)', 'rgba(40, 150, 200, 0.4)'],
                 data: [0, 0, 146181, 296561],
