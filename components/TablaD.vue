@@ -2,7 +2,7 @@
     
     <v-container>
 
-        <v-card-title primary-title  justify-end style="padding-bottom: 28px;">
+        <v-card-title primary-title  justify-end style="padding-bottom: 28px; text-align:left">
                    
             <v-flex xs6>
                 <div style="font-size: 12px;">Dolar</div>
@@ -50,7 +50,7 @@
         <!-- <v-data-table :headers="headers" class="elevation-1" style="width: 100%"> -->
 
             <template slot="items" slot-scope="props">
-                <td style="height: 20px; font-size: 11px">{{ props.item.name }}</td>
+                <td style="height: 20px; font-size: 11px" class="text-xs-left">{{ props.item.name }}</td>
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.cantidad }}</td>
                 <!-- <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.precio }}</td> -->
                 <td style="height: 20px; font-size: 11px" class="text-xs-right">{{ props.item.factura }}</td>
