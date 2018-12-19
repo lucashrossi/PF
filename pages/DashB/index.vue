@@ -177,14 +177,24 @@
 
       <br>
       <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">RET</h1>
-      <br>
-      <embed src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="840" >
+      <v-container fluid text-xs-center>
+        <v-layout align-center justify-center row >
+          <v-flex xs12 class="embed-container2">
+            <embed class="embed-container-iframe2" src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="840" >
+          </v-flex>
+        </v-layout>
+      </v-container>
 
       <br>
       <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">Ensayos Internos</h1>
       <br>
-      <embed src="https://public.tableau.com/views/Enfermedades_1/Dashboard1?:showVizHome=no&:embed=true" width="1900" height="840" >
-
+      <v-container fluid text-xs-center>
+        <v-layout align-center justify-center row >
+          <v-flex xs12 class="embed-container1">
+            <embed class="embed-container-iframe1" src="https://public.tableau.com/views/Enfermedades_1/Dashboard1?:showVizHome=no&:embed=true" width="1900" height="840" >
+          </v-flex>
+        </v-layout>
+      </v-container>
 
       <!-- <v-btn elevation-25 @click="enviar">
         Cargar
@@ -591,9 +601,41 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 /* .twitter-timeline {
   elevation: 20
 } */
+
+
+.embed-container1 {
+    position: relative;
+    padding-bottom: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+.embed-container-iframe1 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid green */
+}
+
+.embed-container2 {
+    position: relative;
+    padding-bottom: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+.embed-container-iframe2 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid green */
+}
+
 </style>
