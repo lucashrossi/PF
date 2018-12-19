@@ -177,7 +177,7 @@
 
       <br>
       <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">RET</h1>
-      <v-container fluid text-xs-center>
+      <v-container fluid text-xs-center style="padding-top: 0px">
         <v-layout align-center justify-center row >
           <v-flex xs12 class="embed-container2">
             <embed class="embed-container-iframe2" src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="840" >
@@ -187,8 +187,7 @@
 
       <br>
       <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">Ensayos Internos</h1>
-      <br>
-      <v-container fluid text-xs-center>
+      <v-container fluid text-xs-center style="padding-top: 0px">
         <v-layout align-center justify-center row >
           <v-flex xs12 class="embed-container1">
             <embed class="embed-container-iframe1" src="https://public.tableau.com/views/Enfermedades_1/Dashboard1?:showVizHome=no&:embed=true" width="1900" height="840" >
@@ -200,7 +199,7 @@
         Cargar
       </v-btn> -->
 
-      <v-container grid-list-md text-xs-center>
+      <!-- <v-container grid-list-md text-xs-center>
         <v-layout row wrap>
           <v-flex xs12>
             <v-card dark color="primary">
@@ -233,12 +232,12 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
 
 
 
-      <v-container grid-list-xl text-xs-center>
+      <!-- <v-container grid-list-xl text-xs-center>
         <v-layout row wrap>
           <v-flex xs10 offset-xs1>
             <v-card dark color="purple">
@@ -261,12 +260,12 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
 
 
 
-      <v-container fluid>
+      <!-- <v-container fluid>
         <v-layout row>
           <v-flex xs6 order-lg2>
             <v-card dark tile flat color="error">
@@ -318,13 +317,13 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
 
 
 
 
-      <v-container fluid grid-list-xl>
+      <!-- <v-container fluid grid-list-xl>
         <v-layout row justify-space-between>
           <v-flex xs2>
             <v-card dark color="primary">
@@ -376,12 +375,12 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
 
 
 
-      <v-container fluid grid-list-md>
+      <!-- <v-container fluid grid-list-md>
         <v-layout row wrap>
           <v-flex d-flex xs12 sm6 md4>
             <v-card color="purple" dark>
@@ -426,12 +425,12 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
 
 
 
-      <v-container fluid grid-list-sm>
+      <!-- <v-container fluid grid-list-sm>
         <v-layout row wrap>
           <v-flex d-flex xs12 order-xs5>
             <v-layout column>
@@ -484,7 +483,7 @@
             </v-card>
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
     <!-- </v-tab-item>
 
