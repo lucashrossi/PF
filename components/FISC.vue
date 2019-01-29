@@ -10,6 +10,17 @@ export default {
             labels: ["2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
             datasets: [
             {
+            label: 'Totales',
+            data: [4492600, 5797526, 3894571, 3005632, 5032001, 3285038, 3965552, 4187626, 3863344],
+            type: 'line',
+            yAxisID: 'right-y-axis',
+            fill: false,
+            showLine: false,
+            pointRadius: 5,
+            // pointBackgroundColor: 'rgba(255, 255, 255, 1)',
+            borderColor: 'rgba(255, 0, 0, 1)'
+            },
+            {
             label: 'Nidera',
             backgroundColor: '#7979f8',
             data: [1864133, 2190943, 1097654, 878456, 1487360, 743713, 660973, 336322, 292911]
@@ -37,17 +48,20 @@ export default {
             {
             label: 'Sursem',
             backgroundColor: '#808050',
-            data: [339630, 594849, 582008, 253843, 348794, 164663, 139093, 148232, 135284]
+            data: [339630, 594849, 582008, 253843, 348794, 164663, 139093, 148232, 135284],
+            // hidden: true,
             },
             {
             label: 'Bioceres',
             backgroundColor: '#581383',
-            data: [265431, 465293, 298950, 175687, 380487, 224061, 161632, 162907, 252811]
+            data: [265431, 465293, 298950, 175687, 380487, 224061, 161632, 162907, 252811],
+            // hidden: true,
             },
             {
             label: 'Otros',
             backgroundColor: '#987979',
-            data: [39245, 58079, 47809, 47919, 106962, 121544, 145511, 165823, 197830]
+            data: [39245, 58079, 47809, 47919, 106962, 121544, 145511, 165823, 197830],
+            // hidden: true,
             }
             ]
         },
@@ -69,8 +83,29 @@ export default {
                         display: true,
                         labelString: ""
                     },
-                    stacked: true
-                }]
+                    stacked: true,
+                    ticks: {
+                        beginAtZero: true,
+                        // steps: 10,
+                        // stepValue: 5,
+                        max: 6000000,
+                        min: 0
+                    },
+                },
+                {
+                    id: 'right-y-axis',
+                    type: 'linear',
+                    position: 'right',
+                    display: false,
+                    ticks: {
+                        beginAtZero: true,
+                        // steps: 10,
+                        // stepValue: 5,
+                        max: 6000000,
+                        min: 0
+                    },
+                }
+                ]
             },
             legend: {
                 labels: {
@@ -81,13 +116,13 @@ export default {
                     //         return legendItem.index < 5 
                     // }
                     // filter: function(item, chart) {
-                    filter: function(label) {
+                    // filter: function(label) {
                         
                         // return (!item.text.includes('Otros') && !item.text.includes('Bioceres'))
-                        if (label.text != 'Otros') return true
+                        // if (label.text != 'Otros') return true
                         // if (label.text !== 'Bioceres') return true
                 
-                    }
+                    // }
                 }
             },
             layout: {
@@ -100,7 +135,21 @@ export default {
             },
             plugins: {
                 labels: {
-                    render: () => {}
+                    // render: () => {}
+                    // render: 'label',
+                    // render: 'value',
+                    render: function (args) {
+                        // args will be something like:
+                        // { label: 'Label', value: 123, percentage: 50, index: 0, dataset: {...} }
+                        return (args.percentage != 50 ) ? args.percentage + '%' : ''
+                    },
+                    precision: 0,
+                    // showActualPercentages: true,
+                    fontSize: 10,
+                    fontColor: '#abc',
+                    // position: 'outside',
+                    // outsidePadding: 4,
+                    overlap: false,
                 },
                 datalabels: {
                     display: false
