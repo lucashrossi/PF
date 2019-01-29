@@ -135,14 +135,14 @@ export default {
             },
             plugins: {
                 labels: {
-                    // render: () => {}
+                    render: () => {},
                     // render: 'label',
                     // render: 'value',
-                    render: function (args) {
+                    // render: function (args) {
                         // args will be something like:
                         // { label: 'Label', value: 123, percentage: 50, index: 0, dataset: {...} }
-                        return (args.percentage != 50 ) ? args.percentage + '%' : ''
-                    },
+                        // return (args.percentage != 50 ) ? args.percentage + '%' : ''
+                    // },
                     precision: 0,
                     // showActualPercentages: true,
                     fontSize: 10,
@@ -152,7 +152,52 @@ export default {
                     overlap: false,
                 },
                 datalabels: {
-                    display: false
+                    // display: false
+                    formatter: (value, ctx) => {
+                        
+                        let percentage = 0
+                        
+                        let datasets = ctx.chart.data.datasets
+                        // let datasets = ctx.chart.data.labels;
+
+                        if (datasets.indexOf(ctx.dataset) == 0) {
+                            percentage = ''
+                   
+                        } else {
+                    
+                            if (datasets.indexOf(ctx.dataset) == 1) {
+          
+
+                                if (ctx.chart.data.labels[0] == "2010") {
+                                    
+                                    let sum0 = 4492600
+                                    percentage = (value*100 / sum0).toFixed(0)+"%"
+                                    
+                                }
+                            } else {
+                                if (datasets.indexOf(ctx.dataset) == 2) {
+                                    let sum1 = 5797526
+                                    percentage = (value*100 / sum1).toFixed(0)+"%"
+                                }
+                            }
+                        }
+                        
+                        return percentage
+                    },
+
+
+                    // formatter: (value, ctx) => {
+
+                    //     let datasets = ctx.chart.data.datasets;
+                        
+                    //     if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
+                    //         let sum = datasets[0].data.reduce((a, b) => a + b, 0);
+                    //         let percentage = Math.round((value / sum) * 100) + '%';
+                    //         return percentage;
+                    //     } else {
+                    //         return percentage;
+                    //     }
+                    // },
                 }
             } 
             // responsive: true,
