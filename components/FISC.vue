@@ -166,14 +166,14 @@ export default {
                         } else {
                     
                             if (datasets.indexOf(ctx.dataset) == 1) {
-          
 
-                                if (ctx.chart.data.labels[0] == "2010") {
+                            // if (ctx.chart.data.labels[0] == "2010") {
                                     
                                     let sum0 = 4492600
+                            
                                     percentage = (value*100 / sum0).toFixed(0)+"%"
                                     
-                                }
+                                
                             } else {
                                 if (datasets.indexOf(ctx.dataset) == 2) {
                                     let sum1 = 5797526
