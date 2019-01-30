@@ -152,7 +152,7 @@ export default {
                     overlap: false,
                 },
                 datalabels: {
-                    // display: false
+                    display: false,
                     formatter: (value, ctx) => {
                         
                         let percentage = 0
