@@ -152,34 +152,41 @@ export default {
                     overlap: false,
                 },
                 datalabels: {
-                    display: false,
+                    // display: false,
                     formatter: (value, ctx) => {
+
+                        
                         
                         let percentage = 0
                         
                         let datasets = ctx.chart.data.datasets
+                        // console.log(ctx.chart.data.datasets[1].data[1])
                         // let datasets = ctx.chart.data.labels;
 
                         if (datasets.indexOf(ctx.dataset) == 0) {
                             percentage = ''
+                            
                    
                         } else {
                     
-                            if (datasets.indexOf(ctx.dataset) == 1) {
+                            if (datasets.indexOf(ctx.dataset) > 0) {
 
-                            // if (ctx.chart.data.labels[0] == "2010") {
+                                // if (datasets[1].data.indexOf(ctx.datasets.data[1]) == 1) {
+                                // if (dataset[1].data[1].value == 2190943) {
+                                //     console.log(value)
+                                // }
+
+                                // console.log(value)
+                                if (ctx.chart.data.labels[0] == "2010") {
                                     
                                     let sum0 = 4492600
                             
                                     percentage = (value*100 / sum0).toFixed(0)+"%"
-                                    
-                                
-                            } else {
-                                if (datasets.indexOf(ctx.dataset) == 2) {
-                                    let sum1 = 5797526
-                                    percentage = (value*100 / sum1).toFixed(0)+"%"
+                                    // console.log(value)
+                                    // console.log(typeof(percentage))
                                 }
-                            }
+                                
+                            } 
                         }
                         
                         return percentage
