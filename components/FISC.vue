@@ -152,16 +152,14 @@ export default {
                     overlap: false,
                 },
                 datalabels: {
-                    // display: false,
+                     //display: false,
+
+                  
                     formatter: (value, ctx) => {
 
-                        
-                        
                         let percentage = 0
                         
                         let datasets = ctx.chart.data.datasets
-                        // console.log(ctx.chart.data.datasets[1].data[1])
-                        // let datasets = ctx.chart.data.labels;
 
                         if (datasets.indexOf(ctx.dataset) == 0) {
                             percentage = ''
@@ -170,26 +168,36 @@ export default {
                         } else {
                     
                             if (datasets.indexOf(ctx.dataset) > 0) {
-
-                                // if (datasets[1].data.indexOf(ctx.datasets.data[1]) == 1) {
-                                // if (dataset[1].data[1].value == 2190943) {
-                                //     console.log(value)
-                                // }
-
-                                // console.log(value)
-                                if (ctx.chart.data.labels[0] == "2010") {
                                     
-                                    let sum0 = 4492600
-                            
-                                    percentage = (value*100 / sum0).toFixed(0)+"%"
-                                    // console.log(value)
-                                    // console.log(typeof(percentage))
-                                }
+                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex];
+
+
+                                    let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex];
+                                    let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex];
+                                    let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex];
+                                    let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex];
+                                    let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex];
+                                    let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex];
+                                    let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex];
+                                    let parcial8 = ctx.chart.data.datasets[8].data[ctx.dataIndex];
+                                   
+                         
+                                    if (!ctx.chart.isDatasetVisible(1))  sum0 = sum0 - parcial1;
+                                    if (!ctx.chart.isDatasetVisible(2))  sum0 = sum0 - parcial2;
+                                    if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial3;
+                                    if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial4;
+                                    if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial5;
+                                    if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial6;
+                                    if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
+                                    if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial8;
+                        
+
+                                    percentage = (value*100 / sum0).toFixed(0)+"%";
                                 
                             } 
                         }
                         
-                        return percentage
+                        return percentage;
                     },
 
 
@@ -222,4 +230,6 @@ export default {
 
 
 }
+
+
 </script>
