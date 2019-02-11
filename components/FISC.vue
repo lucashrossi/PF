@@ -111,6 +111,7 @@ export default {
                 labels: {
                     fontSize: 10,
                     boxWidth: 15,
+                    // fontColor: 'blue',
                     // filter: function(legendItem, data) {
                     //         // return legendItem.index != 1
                     //         return legendItem.index < 5 
@@ -154,6 +155,17 @@ export default {
                 datalabels: {
                      //display: false,
 
+                    color: [
+                        'black',    // color for data at index 0
+                        'black',   // color for data at index 1
+                        'black',  // color for data at index 2
+                        'black',  // color for data at index 3
+                        'black',
+                        'black',
+                        'black',
+                        'black',
+                        'black',
+                    ],
                   
                     formatter: (value, ctx) => {
 
@@ -201,18 +213,7 @@ export default {
                     },
 
 
-                    // formatter: (value, ctx) => {
-
-                    //     let datasets = ctx.chart.data.datasets;
-                        
-                    //     if (datasets.indexOf(ctx.dataset) === datasets.length - 1) {
-                    //         let sum = datasets[0].data.reduce((a, b) => a + b, 0);
-                    //         let percentage = Math.round((value / sum) * 100) + '%';
-                    //         return percentage;
-                    //     } else {
-                    //         return percentage;
-                    //     }
-                    // },
+                    
                 }
             } 
             // responsive: true,
