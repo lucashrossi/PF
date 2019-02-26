@@ -1,0 +1,242 @@
+<script>
+import { Bar } from 'vue-chartjs'
+
+export default {
+    extends: Bar,
+
+    data () {
+        return {
+        datacollection: {
+            // labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
+            // labels: [newDate(-3), newDate(-2), newDate(-1), newDate(0)],
+            datasets: [
+                          
+                {
+                label: 'Venta',
+                // hidden: true,
+                // data: [10000, 12789, 155790, 280827],
+                data: [
+                    {
+                        x:  'Aug 2019', y: 10000
+                    }, {
+                        x:  'Sep 2019', y: 12789
+                    }, {
+                        x:  'Oct 2019', y: 155790
+                    }, {
+                        x:  'Nov 2019', y: 280827
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: 'start',
+                showLine: true,
+                pointRadius: 5,
+                borderColor: 'rgba(100, 100, 100, 1)'
+                }, 
+                {
+                label: 'Rent',
+                
+                // data: [100, 108789, 105790, 180827],
+                data: [
+                    {
+                        x: 'Aug 2019', y: 1000
+                    }, {
+                        x: 'Sep 2019', y: 108789
+                    }, {
+                        x: 'Oct 2019', y: 105790
+                    }, {
+                        x: 'Nov 2019', y: 180827
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
+                {
+                label: 'RentT',
+                
+                // data: [180000, 100789, 195790, 80827],
+                data: [
+                    {
+                        x: 'Aug 2019', y: 180000
+                    }, {
+                        x: 'Sep 2019', y: 100789
+                    }, {
+                        x: 'Oct 2019', y: 195790
+                    }, {
+                        x: 'Nov 2019', y: 80827
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                }, 
+                
+                ],
+            // labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA']
+        },
+        options: {
+            title: {
+                display: true,
+                text: 'Area'
+            },
+            scales: {
+                yAxes: [{
+                    stacked: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
+                    id: 'left-y-axis',
+                    type: 'linear',
+                    position: 'left',
+                    ticks: {
+                        beginAtZero: true,
+                        // steps: 10,
+                        // stepValue: 5,
+                        max: 1000000,
+                        min: 0
+                    },
+                   
+                }, 
+                // {   
+                //     stacked: true,
+                //     id: 'right-y-axis',
+                //     type: 'linear',
+                //     position: 'right',
+                //     ticks: {
+                //         beginAtZero: true,
+                //         // steps: 10,
+                //         // stepValue: 5,
+                //         max: 100,
+                //         min: -100
+                //     },
+                //     gridLines: {
+                //         display: false,
+                //         // offsetGridLines: true
+                //     }
+                // }
+                ],
+                xAxes: [{
+                    type: 'time',
+                    // distribution: 'series',
+                    time: {
+                        unit: 'month',
+                        
+                        // unit: 'day',
+                        // round: 'month',
+                        displayFormats: {
+                            month: 'MMM YYYY'
+                        }
+                    },
+                    stacked: true,
+                    scaleLabel: {
+                        display: true,
+                        labelString: ""
+                    },
+                    ticks: {
+                        autoSkip: false
+                        // source: 'data'
+                    }
+                }]
+            },
+            legend: {
+                labels: {
+                    fontSize: 10,
+                    boxWidth: 15,
+                    // filter: function(legendItem, data) {
+                            // return legendItem.index != 1
+                            // return legendItem.index < 5 
+                    // }
+                }
+            },
+            layout: {
+                padding: {
+                    left: 0,
+                    right: 0,
+                    top: 0,
+                    bottom: 0
+                }
+            },
+            plugins: {
+                labels: {
+                    render: () => {}
+                },
+                datalabels: {
+                    // display: false
+                    formatter: (value, ctx) => {
+
+                        let percentage = 0
+                        
+                        let datasets = ctx.chart.data.datasets
+
+                        // if (datasets.indexOf(ctx.dataset) == 0) {
+                        //     percentage = ''
+                            
+                   
+                        // } else {
+                    
+                        //     if (datasets.indexOf(ctx.dataset) > 0) {
+                                    // let aaa = ctx.chart.data.datasets[0].data[ctx.dataIndex.value]
+                                    // alert(aaa)
+                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex] + ctx.chart.data.datasets[1].data[ctx.dataIndex] + ctx.chart.data.datasets[2].data[ctx.dataIndex];
+
+                                    let parcial0 = ctx.chart.data.datasets[0].data[ctx.dataIndex];
+                                    let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex];
+                                    let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex];
+                                    // let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex];
+                                    // let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex];
+                                    // let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex];
+                                    // let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex];
+                                    // let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex];
+                                    // let parcial8 = ctx.chart.data.datasets[8].data[ctx.dataIndex];
+                                   
+                                    if (!ctx.chart.isDatasetVisible(0))  sum0 = sum0 - parcial0;
+                                    if (!ctx.chart.isDatasetVisible(1))  sum0 = sum0 - parcial1;
+                                    if (!ctx.chart.isDatasetVisible(2))  sum0 = sum0 - parcial2;
+                                    // if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial3;
+                                    // if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial4;
+                                    // if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial5;
+                                    // if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial6;
+                                    // if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
+                                    // if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial8;
+                        
+
+                                    percentage = (value*100 / sum0).toFixed(0)+"%";
+                                
+                        //     } 
+                        // }
+                        
+                        return percentage;
+                    },
+                }
+            },
+            responsive: true,
+            maintainAspectRatio: false
+        }
+        }
+    },
+    mounted () {
+        // this.renderChart(data, options)  
+        // this.renderChart(this.datacollection, {responsive: true, maintainAspectRatio: false})
+        this.renderChart(this.datacollection, this.options)
+    }
+
+
+
+}
+</script>

@@ -56,6 +56,7 @@ import PivotTable from '~/components/PivotTable'
 import PivotI from '~/components/PivotI'
 import Mult18 from '~/components/Mult18'
 import TX from '~/components/TX'
+import Area from '~/components/Area'
 
 
 Vue.component('NC', NC)
@@ -114,3 +115,4 @@ Vue.component('pivot-table', PivotTable)
 Vue.component('PivotI', PivotI)
 Vue.component('Mult18', Mult18)
 Vue.component('TX', TX)
+Vue.component('Area', Area)
