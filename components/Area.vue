@@ -33,7 +33,9 @@ export default {
                 fill: 'start',
                 showLine: true,
                 pointRadius: 5,
-                borderColor: 'rgba(100, 100, 100, 1)'
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(50, 205,250, 1)',
+                borderWidth: 0.1
                 }, 
                 {
                 label: 'Rent',
@@ -58,7 +60,9 @@ export default {
                 showLine: true,
                 pointRadius: 5,
                 // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
-                borderColor: 'rgba(0, 255, 0, 1)'
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(150, 5,20, 1)',
+                borderWidth: 0.1
                 },
                 {
                 label: 'RentT',
@@ -83,13 +87,80 @@ export default {
                 showLine: true,
                 pointRadius: 5,
                 // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
-                borderColor: 'rgba(0, 255, 0, 1)'
-                }, 
+                
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(100, 20,200, 1)',
+                borderWidth: 0.1,
+                
+                },
+                {
+                label: 'T',
+                
+                // data: [180000, 100789, 195790, 80827],
+                data: [
+                    {
+                        x: 'Aug 2019', y: 380000
+                    }, {
+                        x: 'Sep 2019', y: 50789
+                    }, {
+                        x: 'Oct 2019', y: 105790
+                    }, {
+                        x: 'Nov 2019', y: 300827
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(60, 70, 60, 1)',
+                borderWidth: 0.1,
+                
+                },
+                {
+                label: 'Re',
+                
+                // data: [180000, 100789, 195790, 80827],
+                data: [
+                    {
+                        x: 'Aug 2019', y: 30000
+                    }, {
+                        x: 'Sep 2019', y: 400789
+                    }, {
+                        x: 'Oct 2019', y: 125790
+                    }, {
+                        x: 'Nov 2019', y: 20827
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(80, 90, 220, 1)',
+                borderWidth: 0.1,
+                
+                },
                 
                 ],
             // labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA']
         },
         options: {
+            // elements: {
+            //     line: {
+            //         tension: 0, // disables bezier curves
+            //     }
+            // },
             title: {
                 display: true,
                 text: 'Area'
