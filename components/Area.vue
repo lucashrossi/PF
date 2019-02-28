@@ -357,7 +357,7 @@ export default {
                         // } else {
                     
                         //     if (datasets.indexOf(ctx.dataset) > 0) {
-                                    // let aaa = ctx.chart.data.datasets[0].data[ctx.dataIndex.value]
+                                    // let aaa = ctx.chart.data.datasets[0].data[ctx.data.y]
                                     // alert(aaa)
                                     let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex] + ctx.chart.data.datasets[1].data[ctx.dataIndex] + ctx.chart.data.datasets[2].data[ctx.dataIndex] + ctx.chart.data.datasets[3].data[ctx.dataIndex] + ctx.chart.data.datasets[4].data[ctx.dataIndex];
 
