@@ -17,22 +17,42 @@ export default {
                 // data: [10000, 12789, 155790, 280827],
                 data: [
                     {
-                        x:  'Aug 2019', y: 10000
+                        x: '1 Jan 2019', y: 0
                     }, {
-                        x:  'Sep 2019', y: 12789
+                        x: '1 Feb 2019', y: 0
                     }, {
-                        x:  'Oct 2019', y: 155790
+                        x: '1 Mar 2019', y: 0
                     }, {
-                        x:  'Nov 2019', y: 280827
+                        x: '1 Apr 2019', y: 0
+                    }, {
+                        x: '1 May 2019', y: 0
+                    }, {
+                        x: '1 Jun 2019', y: 0
+                    }, {
+                        x: '1 Jul 2019', y: 10000
+                    }, {
+                        x: '1 Aug 2019', y: 10000
+                    }, {
+                        x: '1 Sep 2019', y: 12789
+                    }, {
+                        x: '1 Oct 2019', y: 155790
+                    }, {
+                        x: '1 Nov 2019', y: 280827
+                    }, {
+                        x: '1 Dec 2019', y: 80827
                     }
                 ],
 
                 // Changes this dataset to become a line
                 type: 'line',
                 // yAxisID: 'right-y-axis',
-                fill: 'start',
+                fill: true,
                 showLine: true,
-                pointRadius: 5,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(50, 205,250, 0)',
+                pointBorderColor: 'rgba(50, 205,250, 0)',
+                pointHoverBackgroundColor: 'rgba(50, 205,250, 1)',
+                pointHoverRadius: 7,
                 borderColor: 'rgba(0, 0, 0, 1)',
                 backgroundColor: 'rgba(50, 205,250, 1)',
                 borderWidth: 0.1
@@ -43,13 +63,29 @@ export default {
                 // data: [100, 108789, 105790, 180827],
                 data: [
                     {
-                        x: 'Aug 2019', y: 1000
+                        x: '1 Jan 2019', y: 0
                     }, {
-                        x: 'Sep 2019', y: 108789
+                        x: '1 Feb 2019', y: 0
                     }, {
-                        x: 'Oct 2019', y: 105790
+                        x: '1 Mar 2019', y: 0
                     }, {
-                        x: 'Nov 2019', y: 180827
+                        x: '1 Apr 2019', y: 1000
+                    }, {
+                        x: '1 May 2019', y: 108789
+                    }, {
+                        x: '1 Jun 2019', y: 105790
+                    }, {
+                        x: '1 Jul 2019', y: 105790
+                    }, {
+                        x: '1 Aug 2019', y: 180827
+                    }, {
+                        x: '1 Sep 2019', y: 80827
+                    }, {
+                        x: '1 Oct 2019', y: 80827
+                    }, {
+                        x: '1 Nov 2019', y: 80827
+                    }, {
+                        x: '1 Dec 2019', y: 80827
                     }
                 ],
 
@@ -58,8 +94,11 @@ export default {
                 // yAxisID: 'right-y-axis',
                 fill: true,
                 showLine: true,
-                pointRadius: 5,
-                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(150, 5,20, 0)',
+                pointBorderColor: 'rgba(150, 5,20, 0)',
+                pointHoverBackgroundColor: 'rgba(150, 5,20, 1)',
+                pointHoverRadius: 7,
                 borderColor: 'rgba(0, 0, 0, 1)',
                 backgroundColor: 'rgba(150, 5,20, 1)',
                 borderWidth: 0.1
@@ -70,13 +109,30 @@ export default {
                 // data: [180000, 100789, 195790, 80827],
                 data: [
                     {
-                        x: 'Aug 2019', y: 180000
+                        x: '1 Jan 2019', y: 180000
                     }, {
-                        x: 'Sep 2019', y: 100789
+                        x: '1 Feb 2019', y: 100789
                     }, {
-                        x: 'Oct 2019', y: 195790
+                        x: '1 Mar 2019', y: 100789
                     }, {
-                        x: 'Nov 2019', y: 80827
+                        x: '1 Apr 2019', y: 100789
+                    }, {
+                        x: '1 May 2019', y: 100789
+                    }, {
+                        x: '1 Jun 2019', y: 100789
+                    }, {
+                        x: '1 Jul 2019', y: 100789
+                    }, {
+                        x: '1 Aug 2019', y: 100789
+                    }, {
+                        x: '1 Sep 2019', y: 100789
+                    }, {
+                        x: '1 Oct 2019', y: 195790
+                    }, {
+                        x: '1 Nov 2019', y: 80827
+                    }, {
+                        // x: '31 Dec 2019', y: 827
+                        x: '1 Dec 2019', y: 1
                     }
                 ],
 
@@ -85,9 +141,11 @@ export default {
                 // yAxisID: 'right-y-axis',
                 fill: true,
                 showLine: true,
-                pointRadius: 5,
-                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
-                
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(100, 20,200, 0)',
+                pointBorderColor: 'rgba(100, 20,200, 0)',
+                pointHoverBackgroundColor: 'rgba(100, 20,200, 1)',
+                pointHoverRadius: 7,
                 borderColor: 'rgba(0, 0, 0, 1)',
                 backgroundColor: 'rgba(100, 20,200, 1)',
                 borderWidth: 0.1,
@@ -99,13 +157,29 @@ export default {
                 // data: [180000, 100789, 195790, 80827],
                 data: [
                     {
-                        x: 'Aug 2019', y: 380000
+                        x: '1 Jan 2019', y: 380000
                     }, {
-                        x: 'Sep 2019', y: 50789
+                        x: '1 Feb 2019', y: 100789
                     }, {
-                        x: 'Oct 2019', y: 105790
+                        x: '1 Mar 2019', y: 100789
                     }, {
-                        x: 'Nov 2019', y: 300827
+                        x: '1 Apr 2019', y: 100789
+                    }, {
+                        x: '1 May 2019', y: 100789
+                    }, {
+                        x: '1 Jun 2019', y: 50789
+                    }, {
+                        x: '1 Jul 2019', y: 50789
+                    }, {
+                        x: '1 Aug 2019', y: 50789
+                    }, {
+                        x: '1 Sep 2019', y: 50789
+                    }, {
+                        x: '1 Oct 2019', y: 105790
+                    }, {
+                        x: '1 Nov 2019', y: 300827
+                    }, {
+                        x: '1 Dec 2019', y: 827
                     }
                 ],
 
@@ -114,9 +188,11 @@ export default {
                 // yAxisID: 'right-y-axis',
                 fill: true,
                 showLine: true,
-                pointRadius: 5,
-                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
-                
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(60, 70, 60, 0)',
+                pointBorderColor: 'rgba(60, 70, 60, 0)',
+                pointHoverBackgroundColor: 'rgba(60, 70, 60, 1)',
+                pointHoverRadius: 7,
                 borderColor: 'rgba(0, 0, 0, 1)',
                 backgroundColor: 'rgba(60, 70, 60, 1)',
                 borderWidth: 0.1,
@@ -128,13 +204,29 @@ export default {
                 // data: [180000, 100789, 195790, 80827],
                 data: [
                     {
-                        x: 'Aug 2019', y: 30000
+                        x: '1 Jan 2019', y: 30000
                     }, {
-                        x: 'Sep 2019', y: 400789
+                        x: '1 Feb 2019', y: 100789
                     }, {
-                        x: 'Oct 2019', y: 125790
+                        x: '1 Mar 2019', y: 100789
                     }, {
-                        x: 'Nov 2019', y: 20827
+                        x: '1 Apr 2019', y: 100789
+                    }, {
+                        x: '1 May 2019', y: 100789
+                    }, {
+                        x: '1 Jun 2019', y: 400789
+                    }, {
+                        x: '1 Jul 2019', y: 400789
+                    }, {
+                        x: '1 Aug 2019', y: 400789
+                    }, {
+                        x: '1 Sep 2019', y: 400789
+                    }, {
+                        x: '1 Oct 2019', y: 125790
+                    }, {
+                        x: '1 Nov 2019', y: 20827
+                    }, {
+                        x: '1 Dec 2019', y: 40827
                     }
                 ],
 
@@ -143,9 +235,11 @@ export default {
                 // yAxisID: 'right-y-axis',
                 fill: true,
                 showLine: true,
-                pointRadius: 5,
-                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
-                
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(80, 90, 220, 0)',
+                pointBorderColor: 'rgba(80, 90, 220, 0)',
+                pointHoverBackgroundColor: 'rgba(80, 90, 220, 1)',
+                pointHoverRadius: 7,
                 borderColor: 'rgba(0, 0, 0, 1)',
                 backgroundColor: 'rgba(80, 90, 220, 1)',
                 borderWidth: 0.1,
@@ -207,12 +301,13 @@ export default {
                     // distribution: 'series',
                     time: {
                         unit: 'month',
-                        
                         // unit: 'day',
-                        // round: 'month',
+                        // round: 'day',
                         displayFormats: {
-                            month: 'MMM YYYY'
-                        }
+                            month: 'MMM'
+                            // day: 'DD MMM'
+                        },
+                        stepSize: 1
                     },
                     stacked: true,
                     scaleLabel: {
@@ -264,13 +359,13 @@ export default {
                         //     if (datasets.indexOf(ctx.dataset) > 0) {
                                     // let aaa = ctx.chart.data.datasets[0].data[ctx.dataIndex.value]
                                     // alert(aaa)
-                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex] + ctx.chart.data.datasets[1].data[ctx.dataIndex] + ctx.chart.data.datasets[2].data[ctx.dataIndex];
+                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex] + ctx.chart.data.datasets[1].data[ctx.dataIndex] + ctx.chart.data.datasets[2].data[ctx.dataIndex] + ctx.chart.data.datasets[3].data[ctx.dataIndex] + ctx.chart.data.datasets[4].data[ctx.dataIndex];
 
                                     let parcial0 = ctx.chart.data.datasets[0].data[ctx.dataIndex];
                                     let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex];
                                     let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex];
-                                    // let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex];
-                                    // let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex];
+                                    let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex];
+                                    let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex];
                                     // let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex];
                                     // let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex];
                                     // let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex];
@@ -279,8 +374,8 @@ export default {
                                     if (!ctx.chart.isDatasetVisible(0))  sum0 = sum0 - parcial0;
                                     if (!ctx.chart.isDatasetVisible(1))  sum0 = sum0 - parcial1;
                                     if (!ctx.chart.isDatasetVisible(2))  sum0 = sum0 - parcial2;
-                                    // if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial3;
-                                    // if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial4;
+                                    if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial3;
+                                    if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial4;
                                     // if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial5;
                                     // if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial6;
                                     // if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
