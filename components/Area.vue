@@ -321,7 +321,9 @@ export default {
                 }]
             },
             legend: {
+                
                 labels: {
+                    
                     fontSize: 10,
                     boxWidth: 15,
                     // filter: function(legendItem, data) {
@@ -343,6 +345,9 @@ export default {
                     render: () => {}
                 },
                 datalabels: {
+                    font: {
+                        size: 10    
+                    },
                     // color: 'green',
                     color: 'rgba(0, 0, 0, 0.5)',
                     // anchor: 'start',
