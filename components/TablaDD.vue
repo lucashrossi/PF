@@ -96,13 +96,13 @@ export default {
        
         searchh: '',
         headers: [
-          { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: false },
-          { text: 'Original', value: 'ingeniero', align: 'center', width: '1', sortable: false, },
-          { text: 'Primera', value: 'localidad', align: 'center', width: '1', sortable: false, },
-          { text: 'Regalia C', value: 'distib', align: 'center', width: '1', sortable: false, },
-          { text: 'Regalia E', value: 'remito', align: 'center', width: '1', sortable: false, },
-          { text: 'Costo', value: 'bellaco', align: 'center', width: '1', sortable: false, },
-          { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: false, },
+          { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: true },
+          { text: 'Original', value: 'ingeniero', align: 'center', width: '1', sortable: true, },
+          { text: 'Primera', value: 'localidad', align: 'center', width: '1', sortable: true, },
+          { text: 'Regalia C', value: 'distib', align: 'center', width: '1', sortable: true, },
+          { text: 'Regalia E', value: 'remito', align: 'center', width: '1', sortable: true, },
+          { text: 'Costo', value: 'bellaco', align: 'center', width: '1', sortable: true, },
+          { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: true, },
          
         ],
         desserts: [
@@ -217,12 +217,12 @@ export default {
        
         search: '',
         headerss: [
-          { text: 'Grafico', value: 'name', align: 'left', width: '1', sortable: false },
-          { text: 'Actualizacion', value: 'ingeniero', align: 'center', width: '1', sortable: false, },
-          { text: 'Seccion', value: 'localidad', align: 'center', width: '1', sortable: false, },
-          { text: 'Tab', value: 'distib', align: 'center', width: '1', sortable: false, },
-          { text: 'Persona', value: 'remito', align: 'center', width: '1', sortable: false, },
-          { text: 'RC', value: 'bellaco', align: 'center', width: '1', sortable: false, },
+          { text: 'Grafico', value: 'name', align: 'left', width: '1', sortable: true },
+          { text: 'Actualizacion', value: 'ingeniero', align: 'center', width: '1', sortable: true, },
+          { text: 'Seccion', value: 'localidad', align: 'center', width: '1', sortable: true, },
+          { text: 'Tab', value: 'distib', align: 'center', width: '1', sortable: true, },
+          { text: 'Persona', value: 'remito', align: 'center', width: '1', sortable: true, },
+          { text: 'RC', value: 'bellaco', align: 'center', width: '1', sortable: true, },
         //   { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: false, },
          
         ],

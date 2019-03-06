@@ -74,12 +74,12 @@ export default {
       return {
         
         headers: [
-          { text: 'Cultivo', value: 'name', align: 'left', width: '1'},
+          { text: 'Cultivo', value: 'name', align: 'left', width: '1', sortable: true },
           // { text: 'Precio', value: 'precio', align: 'right', width: '1' },
-          { text: 'Bolsas T', value: 'cantidad', align: 'right', width: '1' },
-          { text: 'U$S T', value: 'factura', align: 'right', width: '1' },
-          { text: 'U$S C', value: 'cta', align: 'right', width: '1' },
-          { text: 'U$S N', value: 'detalle', align: 'right', width: '1' },
+          { text: 'Bolsas T', value: 'cantidad', align: 'right', width: '1', sortable: true },
+          { text: 'U$S T', value: 'factura', align: 'right', width: '1', sortable: true },
+          { text: 'U$S C', value: 'cta', align: 'right', width: '1', sortable: true },
+          { text: 'U$S N', value: 'detalle', align: 'right', width: '1', sortable: true },
           
           // { text: 'Total', value: 'RS', align: 'right', width: '1' },
           // { text: 'Importe', value: 'importe', align: 'right', width: '1' },
