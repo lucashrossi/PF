@@ -24,7 +24,7 @@
                   <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.distib }}</td>
                   <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.remito }}</td>
                   <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.bellaco }}</td>
-                  <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td>
+                  <!-- <td style="height: 20px; font-size: 11px; padding: 0 5px" class="text-xs-center">{{ props.item.destello }}</td> -->
                   
                 <!-- </th> -->
               <!-- </tr> -->
@@ -99,10 +99,10 @@ export default {
           { text: 'Variedad', value: 'name', align: 'left', width: '1', sortable: true },
           { text: 'Original', value: 'ingeniero', align: 'center', width: '1', sortable: true, },
           { text: 'Primera', value: 'localidad', align: 'center', width: '1', sortable: true, },
-          { text: 'Regalia C', value: 'distib', align: 'center', width: '1', sortable: true, },
-          { text: 'Regalia E', value: 'remito', align: 'center', width: '1', sortable: true, },
+          { text: 'Reg C', value: 'distib', align: 'center', width: '1', sortable: true, },
+          { text: 'Reg E', value: 'remito', align: 'center', width: '1', sortable: true, },
           { text: 'Costo', value: 'bellaco', align: 'center', width: '1', sortable: true, },
-          { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: true, },
+          // { text: 'CostoT', value: 'destello', align: 'center', width: '1', sortable: true, },
          
         ],
         desserts: [
@@ -114,7 +114,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -125,7 +125,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -136,7 +136,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -147,7 +147,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -158,7 +158,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -169,7 +169,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -180,7 +180,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -191,7 +191,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             {
@@ -202,7 +202,7 @@ export default {
                 "distib": "1",
                 "remito": "7",
                 "bellaco": "5",
-                "destello": "35",
+                // "destello": "35",
                 
             },
             
