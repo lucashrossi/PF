@@ -14,7 +14,7 @@ export default {
                 {
                 label: 'Venta',
                 // hidden: true,
-                // data: [10000, 12789, 155790, 280827],
+               
                 data: [
                     {
                         x: '1 Jan 2019', y: 0
@@ -359,13 +359,13 @@ export default {
                         //     if (datasets.indexOf(ctx.dataset) > 0) {
                                     // let aaa = ctx.chart.data.datasets[0].data[ctx.data.y]
                                     // alert(aaa)
-                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex] + ctx.chart.data.datasets[1].data[ctx.dataIndex] + ctx.chart.data.datasets[2].data[ctx.dataIndex] + ctx.chart.data.datasets[3].data[ctx.dataIndex] + ctx.chart.data.datasets[4].data[ctx.dataIndex];
+                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y + ctx.chart.data.datasets[1].data[ctx.dataIndex].y + ctx.chart.data.datasets[2].data[ctx.dataIndex].y + ctx.chart.data.datasets[3].data[ctx.dataIndex].y + ctx.chart.data.datasets[4].data[ctx.dataIndex].y;
 
-                                    let parcial0 = ctx.chart.data.datasets[0].data[ctx.dataIndex];
-                                    let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex];
-                                    let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex];
-                                    let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex];
-                                    let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex];
+                                    let parcial0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y;
+                                    let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex].y;
+                                    let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex].y;
+                                    let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex].y;
+                                    let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex].y;
                                     // let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex];
                                     // let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex];
                                     // let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex];
@@ -381,8 +381,11 @@ export default {
                                     // if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
                                     // if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial8;
                         
-
-                                    percentage = (value*100 / sum0).toFixed(0)+"%";
+                                    
+                                    if (sum0 == 0)
+                                        percentage = 0;
+                                    else
+                                    percentage = (value.y * 100 / sum0).toFixed(0)+"%";
                                 
                         //     } 
                         // }
