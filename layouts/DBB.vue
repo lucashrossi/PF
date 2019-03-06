@@ -125,11 +125,11 @@
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl input-bottom-line: rgba(#FFFFFF), -->
 
         <v-footer height=20 color="blue-grey darken-1" app>
-          <span class="white--text caption" >&copy; 2019</span>
+          <span class="white--text caption" style="padding: 0px 0px 0px 5px;" >&copy; &nbsp;2019</span>
           <v-divider></v-divider>
-          <span class="yellow--text caption" >Updated:    March 6</span>
+          <span class="yellow--text caption" >Updated: &nbsp;March 6</span>
           <v-divider></v-divider>
-          <span class="red--text caption" >Buck Semillas S.A.</span> 
+          <span class="red--text caption" style="padding: 0px 5px 0px 0px;" >Buck Semillas S.A.</span> 
         </v-footer>
         
       </v-app>
