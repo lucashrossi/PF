@@ -27,7 +27,7 @@ export default {
                     }, {
                         x: '1 May 2019', y: 0
                     }, {
-                        x: '1 Jun 2019', y: 0
+                        x: '1 Jun 2019', y: 100
                     }, {
                         x: '1 Jul 2019', y: 10000
                     }, {
@@ -343,7 +343,18 @@ export default {
                     render: () => {}
                 },
                 datalabels: {
+                    // color: 'green',
+                    color: 'rgba(0, 0, 0, 0.5)',
+                    // anchor: 'start',
+                    // clamp: true,
+                    // align: 'bottom',
+                    align: 'start',
                     // display: false
+                    // display: function(context) {
+                    //     return context.dataIndex % 2
+                        
+                    // },
+                    offset: -1,
                     formatter: (value, ctx) => {
 
                         let percentage = 0
@@ -383,9 +394,11 @@ export default {
                         
                                     
                                     if (sum0 == 0)
-                                        percentage = 0;
+                                        percentage = 0
                                     else
-                                    percentage = (value.y * 100 / sum0).toFixed(0)+"%";
+                                        percentage = (value.y * 100 / sum0).toFixed(0)+"%"
+                                        if (percentage == '0%')
+                                            percentage = ""
                                 
                         //     } 
                         // }
