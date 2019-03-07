@@ -126,9 +126,11 @@
 
         <v-footer height=20 color="blue-grey darken-1" app>
           <span class="white--text caption" style="padding: 0px 0px 0px 5px;" >&copy; &nbsp;2019</span>
-          <v-divider></v-divider>
+          <!-- <v-divider></v-divider> -->
+          <v-spacer></v-spacer>
           <span class="yellow--text caption" >Updated: &nbsp;March 6</span>
-          <v-divider></v-divider>
+          <!-- <v-divider></v-divider> -->
+          <v-spacer></v-spacer>
           <span class="red--text caption" style="padding: 0px 5px 0px 0px;" >Buck Semillas S.A.</span> 
         </v-footer>
         
