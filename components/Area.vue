@@ -10,7 +10,46 @@ export default {
             // labels: ['Girasol', 'Avena', 'Fideo', 'Pan'],
             // labels: [newDate(-3), newDate(-2), newDate(-1), newDate(0)],
             datasets: [
-                          
+                {
+                label: 'U$S',
+                
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 50000
+                    }, {
+                        x: '1 Apr 2019', y: 150000
+                    }, {
+                        x: '1 May 2019', y: 200000
+                    }, {
+                        x: '1 Jun 2019', y: 175000
+                    }, {
+                        x: '1 Jul 2019', y: 75000
+                    }, {
+                        x: '1 Aug 2019', y: 50000
+                    }, {
+                        x: '1 Sep 2019', y: 25000
+                    }, {
+                        x: '1 Oct 2019', y: 20000
+                    }, {
+                        x: '1 Nov 2019', y: 5000
+                    }, {
+                        x: '1 Dec 2019', y: 1000
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                yAxisID: 'right-y-axis',
+                fill: false,
+                showLine: true,
+                pointRadius: 5,
+                // pointBackgroundColor: 'rgba(0, 0, 0, 1)',
+                borderColor: 'rgba(0, 255, 0, 1)'
+                },
                 {
                 label: 'OrigT',
                 // hidden: true,
@@ -488,7 +527,7 @@ export default {
             // },
             title: {
                 display: true,
-                text: 'Bls'
+                text: 'Bls y U$S'
             },
             scales: {
                 yAxes: [{
@@ -508,7 +547,19 @@ export default {
                         min: 0
                     },
                    
-                }, 
+                },
+                {
+                    id: 'right-y-axis',
+                    type: 'linear',
+                    position: 'right',
+                    ticks: {
+                        beginAtZero: true,
+                        // steps: 10,
+                        // stepValue: 5,
+                        max: 220000,
+                        min: 0
+                    },
+                }
                 // {   
                 //     stacked: true,
                 //     id: 'right-y-axis',
@@ -597,38 +648,38 @@ export default {
                         
                         let datasets = ctx.chart.data.datasets
 
-                        // if (datasets.indexOf(ctx.dataset) == 0) {
-                        //     percentage = ''
+                        if (datasets.indexOf(ctx.dataset) == 0) {
+                            percentage = ''
                             
                    
-                        // } else {
+                        } else {
                     
-                        //     if (datasets.indexOf(ctx.dataset) > 0) {
+                            if (datasets.indexOf(ctx.dataset) > 0) {
                                     // let aaa = ctx.chart.data.datasets[0].data[ctx.data.y]
                                     // alert(aaa)
-                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y + ctx.chart.data.datasets[1].data[ctx.dataIndex].y + ctx.chart.data.datasets[2].data[ctx.dataIndex].y + ctx.chart.data.datasets[3].data[ctx.dataIndex].y + ctx.chart.data.datasets[4].data[ctx.dataIndex].y + ctx.chart.data.datasets[5].data[ctx.dataIndex].y + ctx.chart.data.datasets[6].data[ctx.dataIndex].y + ctx.chart.data.datasets[7].data[ctx.dataIndex].y + ctx.chart.data.datasets[8].data[ctx.dataIndex].y + ctx.chart.data.datasets[9].data[ctx.dataIndex].y;
+                                    let sum0 = ctx.chart.data.datasets[1].data[ctx.dataIndex].y + ctx.chart.data.datasets[2].data[ctx.dataIndex].y + ctx.chart.data.datasets[3].data[ctx.dataIndex].y + ctx.chart.data.datasets[4].data[ctx.dataIndex].y + ctx.chart.data.datasets[5].data[ctx.dataIndex].y + ctx.chart.data.datasets[6].data[ctx.dataIndex].y + ctx.chart.data.datasets[7].data[ctx.dataIndex].y + ctx.chart.data.datasets[8].data[ctx.dataIndex].y + ctx.chart.data.datasets[9].data[ctx.dataIndex].y + ctx.chart.data.datasets[10].data[ctx.dataIndex].y;
 
-                                    let parcial0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y;
-                                    let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex].y;
-                                    let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex].y;
-                                    let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex].y;
-                                    let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex].y;
-                                    let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex].y;
-                                    let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex].y;
-                                    let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex].y;
-                                    let parcial8 = ctx.chart.data.datasets[8].data[ctx.dataIndex].y;
-                                    let parcial9 = ctx.chart.data.datasets[9].data[ctx.dataIndex].y;
+                                    let parcial0 = ctx.chart.data.datasets[1].data[ctx.dataIndex].y;
+                                    let parcial1 = ctx.chart.data.datasets[2].data[ctx.dataIndex].y;
+                                    let parcial2 = ctx.chart.data.datasets[3].data[ctx.dataIndex].y;
+                                    let parcial3 = ctx.chart.data.datasets[4].data[ctx.dataIndex].y;
+                                    let parcial4 = ctx.chart.data.datasets[5].data[ctx.dataIndex].y;
+                                    let parcial5 = ctx.chart.data.datasets[6].data[ctx.dataIndex].y;
+                                    let parcial6 = ctx.chart.data.datasets[7].data[ctx.dataIndex].y;
+                                    let parcial7 = ctx.chart.data.datasets[8].data[ctx.dataIndex].y;
+                                    let parcial8 = ctx.chart.data.datasets[9].data[ctx.dataIndex].y;
+                                    let parcial9 = ctx.chart.data.datasets[10].data[ctx.dataIndex].y;
                                    
-                                    if (!ctx.chart.isDatasetVisible(0))  sum0 = sum0 - parcial0;
-                                    if (!ctx.chart.isDatasetVisible(1))  sum0 = sum0 - parcial1;
-                                    if (!ctx.chart.isDatasetVisible(2))  sum0 = sum0 - parcial2;
-                                    if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial3;
-                                    if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial4;
-                                    if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial5;
-                                    if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial6;
-                                    if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
-                                    if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial8;
-                                    if (!ctx.chart.isDatasetVisible(9))  sum0 = sum0 - parcial9;
+                                    if (!ctx.chart.isDatasetVisible(1))  sum0 = sum0 - parcial0;
+                                    if (!ctx.chart.isDatasetVisible(2))  sum0 = sum0 - parcial1;
+                                    if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial2;
+                                    if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial3;
+                                    if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial4;
+                                    if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial5;
+                                    if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial6;
+                                    if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial7;
+                                    if (!ctx.chart.isDatasetVisible(9))  sum0 = sum0 - parcial8;
+                                    if (!ctx.chart.isDatasetVisible(10))  sum0 = sum0 - parcial9;
                                     
                                     if (sum0 == 0)
                                         percentage = 0
@@ -638,8 +689,8 @@ export default {
                                         if (percentage == '0%' || percentage == '0')
                                             percentage = ""
                                 
-                        //     } 
-                        // }
+                            } 
+                        }
                         
                         return percentage;
                     },
