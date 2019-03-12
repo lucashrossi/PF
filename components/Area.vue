@@ -12,9 +12,426 @@ export default {
             datasets: [
                           
                 {
-                label: 'Venta',
+                label: 'OrigT',
                 // hidden: true,
                
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 12000
+                    }, {
+                        x: '1 Apr 2019', y: 20790
+                    }, {
+                        x: '1 May 2019', y: 25827
+                    }, {
+                        x: '1 Jun 2019', y: 10827
+                    }, {
+                        x: '1 Jul 2019', y: 0
+                    }, {
+                        x: '1 Aug 2019', y: 0
+                    }, {
+                        x: '1 Sep 2019', y: 0
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(40, 150, 200, 0)',
+                pointBorderColor: 'rgba(40, 150, 200, 0)',
+                pointHoverBackgroundColor: 'rgba(40, 150, 200, 1)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(40, 150, 200, 1)',
+                borderWidth: 0.1
+                },
+                {
+                label: 'PrimT',
+                // hidden: true,
+               
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 0
+                    }, {
+                        x: '1 Apr 2019', y: 15000
+                    }, {
+                        x: '1 May 2019', y: 25000
+                    }, {
+                        x: '1 Jun 2019', y: 30000
+                    }, {
+                        x: '1 Jul 2019', y: 20000
+                    }, {
+                        x: '1 Aug 2019', y: 5000
+                    }, {
+                        x: '1 Sep 2019', y: 0
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(40, 150, 200, 0)',
+                pointBorderColor: 'rgba(40, 150, 200, 0)',
+                pointHoverBackgroundColor: 'rgba(40, 150, 200, 0.7)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(40, 150, 200, 0.7)',
+                borderWidth: 0.1
+                },
+                {
+                label: 'FiscT',
+                // hidden: true,
+               
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 0
+                    }, {
+                        x: '1 Apr 2019', y: 25000
+                    }, {
+                        x: '1 May 2019', y: 35000
+                    }, {
+                        x: '1 Jun 2019', y: 45000
+                    }, {
+                        x: '1 Jul 2019', y: 30000
+                    }, {
+                        x: '1 Aug 2019', y: 20000
+                    }, {
+                        x: '1 Sep 2019', y: 5000
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(40, 150, 200, 0)',
+                pointBorderColor: 'rgba(40, 150, 200, 0)',
+                pointHoverBackgroundColor: 'rgba(40, 150, 200, 0.6)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(40, 150, 200, 0.6)',
+                borderWidth: 0.1
+                },
+                {
+                label: 'OrigF',
+                
+                // data: [100, 108789, 105790, 180827],
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 2000
+                    }, {
+                        x: '1 Apr 2019', y: 5790
+                    }, {
+                        x: '1 May 2019', y: 827
+                    }, {
+                        x: '1 Jun 2019', y: 827
+                    }, {
+                        x: '1 Jul 2019', y: 0
+                    }, {
+                        x: '1 Aug 2019', y: 0
+                    }, {
+                        x: '1 Sep 2019', y: 0
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(200, 88, 88, 0)',
+                pointBorderColor: 'rgba(200, 88, 88, 0)',
+                pointHoverBackgroundColor: 'rgba(200, 88, 88, 1)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(200, 88, 88, 1)',
+                borderWidth: 0.1
+                },
+                {
+                label: 'PrimF',
+                
+                // data: [100, 108789, 105790, 180827],
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 0
+                    }, {
+                        x: '1 Apr 2019', y: 5000
+                    }, {
+                        x: '1 May 2019', y: 5000
+                    }, {
+                        x: '1 Jun 2019', y: 3000
+                    }, {
+                        x: '1 Jul 2019', y: 2000
+                    }, {
+                        x: '1 Aug 2019', y: 500
+                    }, {
+                        x: '1 Sep 2019', y: 0
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(200, 88, 88, 0)',
+                pointBorderColor: 'rgba(200, 88, 88, 0)',
+                pointHoverBackgroundColor: 'rgba(200, 88, 88, 0.7)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(200, 88, 88, 0.7)',
+                borderWidth: 0.1
+                },
+                {
+                label: 'FiscF',
+                
+                // data: [100, 108789, 105790, 180827],
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 0
+                    }, {
+                        x: '1 Apr 2019', y: 5000
+                    }, {
+                        x: '1 May 2019', y: 5000
+                    }, {
+                        x: '1 Jun 2019', y: 5000
+                    }, {
+                        x: '1 Jul 2019', y: 7000
+                    }, {
+                        x: '1 Aug 2019', y: 2000
+                    }, {
+                        x: '1 Sep 2019', y: 500
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(200, 88, 88, 0)',
+                pointBorderColor: 'rgba(200, 88, 88, 0)',
+                pointHoverBackgroundColor: 'rgba(200, 88, 88, 0.4)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(200, 88, 88, 0.4)',
+                borderWidth: 0.1
+                },
+                {
+                label: 'OrigA',
+                
+                // data: [180000, 100789, 195790, 80827],
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 1000
+                    }, {
+                        x: '1 Apr 2019', y: 2790
+                    }, {
+                        x: '1 May 2019', y: 527
+                    }, {
+                        x: '1 Jun 2019', y: 527
+                    }, {
+                        x: '1 Jul 2019', y: 0
+                    }, {
+                        x: '1 Aug 2019', y: 0
+                    }, {
+                        x: '1 Sep 2019', y: 0
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(170, 150, 120, 0)',
+                pointBorderColor: 'rgba(170, 150, 120, 0)',
+                pointHoverBackgroundColor: 'rgba(170, 150, 120, 1)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(170, 150, 120, 1)',
+                borderWidth: 0.1,
+                
+                },
+                {
+                label: 'PrimA',
+                
+                // data: [180000, 100789, 195790, 80827],
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 0
+                    }, {
+                        x: '1 Apr 2019', y: 2000
+                    }, {
+                        x: '1 May 2019', y: 3000
+                    }, {
+                        x: '1 Jun 2019', y: 2000
+                    }, {
+                        x: '1 Jul 2019', y: 1000
+                    }, {
+                        x: '1 Aug 2019', y: 500
+                    }, {
+                        x: '1 Sep 2019', y: 0
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(170, 150, 120, 0)',
+                pointBorderColor: 'rgba(170, 150, 120, 0)',
+                pointHoverBackgroundColor: 'rgba(170, 150, 120, 0.7)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(170, 150, 120, 0.7)',
+                borderWidth: 0.1,
+                
+                },
+                {
+                label: 'FiscA',
+                
+                // data: [180000, 100789, 195790, 80827],
+                data: [
+                    {
+                        x: '1 Jan 2019', y: 0
+                    }, {
+                        x: '1 Feb 2019', y: 0
+                    }, {
+                        x: '1 Mar 2019', y: 0
+                    }, {
+                        x: '1 Apr 2019', y: 2000
+                    }, {
+                        x: '1 May 2019', y: 2000
+                    }, {
+                        x: '1 Jun 2019', y: 3000
+                    }, {
+                        x: '1 Jul 2019', y: 4000
+                    }, {
+                        x: '1 Aug 2019', y: 1000
+                    }, {
+                        x: '1 Sep 2019', y: 500
+                    }, {
+                        x: '1 Oct 2019', y: 0
+                    }, {
+                        x: '1 Nov 2019', y: 0
+                    }, {
+                        x: '1 Dec 2019', y: 0
+                    }
+                ],
+
+                // Changes this dataset to become a line
+                type: 'line',
+                // yAxisID: 'right-y-axis',
+                fill: true,
+                showLine: true,
+                pointRadius: 7,
+                pointBackgroundColor: 'rgba(170, 150, 120, 0)',
+                pointBorderColor: 'rgba(170, 150, 120, 0)',
+                pointHoverBackgroundColor: 'rgba(170, 150, 120, 0.4)',
+                pointHoverRadius: 7,
+                borderColor: 'rgba(0, 0, 0, 1)',
+                backgroundColor: 'rgba(170, 150, 120, 0.4)',
+                borderWidth: 0.1,
+                
+                },
+                {
+                label: 'HibG',
+                
+                // data: [180000, 100789, 195790, 80827],
                 data: [
                     {
                         x: '1 Jan 2019', y: 0
@@ -27,19 +444,19 @@ export default {
                     }, {
                         x: '1 May 2019', y: 0
                     }, {
-                        x: '1 Jun 2019', y: 100
+                        x: '1 Jun 2019', y: 0
                     }, {
-                        x: '1 Jul 2019', y: 10000
+                        x: '1 Jul 2019', y: 0
                     }, {
-                        x: '1 Aug 2019', y: 10000
+                        x: '1 Aug 2019', y: 500
                     }, {
-                        x: '1 Sep 2019', y: 12789
+                        x: '1 Sep 2019', y: 2500
                     }, {
-                        x: '1 Oct 2019', y: 155790
+                        x: '1 Oct 2019', y: 5000
                     }, {
-                        x: '1 Nov 2019', y: 280827
+                        x: '1 Nov 2019', y: 1000
                     }, {
-                        x: '1 Dec 2019', y: 80827
+                        x: '1 Dec 2019', y: 200
                     }
                 ],
 
@@ -49,202 +466,16 @@ export default {
                 fill: true,
                 showLine: true,
                 pointRadius: 7,
-                pointBackgroundColor: 'rgba(50, 205,250, 0)',
-                pointBorderColor: 'rgba(50, 205,250, 0)',
-                pointHoverBackgroundColor: 'rgba(50, 205,250, 1)',
+                pointBackgroundColor: 'rgba(180, 180, 180, 0)',
+                pointBorderColor: 'rgba(180, 180, 180, 0)',
+                pointHoverBackgroundColor: 'rgba(180, 180, 180, 1)',
                 pointHoverRadius: 7,
                 borderColor: 'rgba(0, 0, 0, 1)',
-                backgroundColor: 'rgba(50, 205,250, 1)',
-                borderWidth: 0.1
-                }, 
-                {
-                label: 'Rent',
-                
-                // data: [100, 108789, 105790, 180827],
-                data: [
-                    {
-                        x: '1 Jan 2019', y: 0
-                    }, {
-                        x: '1 Feb 2019', y: 0
-                    }, {
-                        x: '1 Mar 2019', y: 0
-                    }, {
-                        x: '1 Apr 2019', y: 1000
-                    }, {
-                        x: '1 May 2019', y: 108789
-                    }, {
-                        x: '1 Jun 2019', y: 105790
-                    }, {
-                        x: '1 Jul 2019', y: 105790
-                    }, {
-                        x: '1 Aug 2019', y: 180827
-                    }, {
-                        x: '1 Sep 2019', y: 80827
-                    }, {
-                        x: '1 Oct 2019', y: 80827
-                    }, {
-                        x: '1 Nov 2019', y: 80827
-                    }, {
-                        x: '1 Dec 2019', y: 80827
-                    }
-                ],
-
-                // Changes this dataset to become a line
-                type: 'line',
-                // yAxisID: 'right-y-axis',
-                fill: true,
-                showLine: true,
-                pointRadius: 7,
-                pointBackgroundColor: 'rgba(150, 5,20, 0)',
-                pointBorderColor: 'rgba(150, 5,20, 0)',
-                pointHoverBackgroundColor: 'rgba(150, 5,20, 1)',
-                pointHoverRadius: 7,
-                borderColor: 'rgba(0, 0, 0, 1)',
-                backgroundColor: 'rgba(150, 5,20, 1)',
-                borderWidth: 0.1
-                },
-                {
-                label: 'RentT',
-                
-                // data: [180000, 100789, 195790, 80827],
-                data: [
-                    {
-                        x: '1 Jan 2019', y: 180000
-                    }, {
-                        x: '1 Feb 2019', y: 100789
-                    }, {
-                        x: '1 Mar 2019', y: 100789
-                    }, {
-                        x: '1 Apr 2019', y: 100789
-                    }, {
-                        x: '1 May 2019', y: 100789
-                    }, {
-                        x: '1 Jun 2019', y: 100789
-                    }, {
-                        x: '1 Jul 2019', y: 100789
-                    }, {
-                        x: '1 Aug 2019', y: 100789
-                    }, {
-                        x: '1 Sep 2019', y: 100789
-                    }, {
-                        x: '1 Oct 2019', y: 195790
-                    }, {
-                        x: '1 Nov 2019', y: 80827
-                    }, {
-                        // x: '31 Dec 2019', y: 827
-                        x: '1 Dec 2019', y: 1
-                    }
-                ],
-
-                // Changes this dataset to become a line
-                type: 'line',
-                // yAxisID: 'right-y-axis',
-                fill: true,
-                showLine: true,
-                pointRadius: 7,
-                pointBackgroundColor: 'rgba(100, 20,200, 0)',
-                pointBorderColor: 'rgba(100, 20,200, 0)',
-                pointHoverBackgroundColor: 'rgba(100, 20,200, 1)',
-                pointHoverRadius: 7,
-                borderColor: 'rgba(0, 0, 0, 1)',
-                backgroundColor: 'rgba(100, 20,200, 1)',
+                backgroundColor: 'rgba(180, 180, 180, 1)',
                 borderWidth: 0.1,
                 
                 },
-                {
-                label: 'T',
                 
-                // data: [180000, 100789, 195790, 80827],
-                data: [
-                    {
-                        x: '1 Jan 2019', y: 380000
-                    }, {
-                        x: '1 Feb 2019', y: 100789
-                    }, {
-                        x: '1 Mar 2019', y: 100789
-                    }, {
-                        x: '1 Apr 2019', y: 100789
-                    }, {
-                        x: '1 May 2019', y: 100789
-                    }, {
-                        x: '1 Jun 2019', y: 50789
-                    }, {
-                        x: '1 Jul 2019', y: 50789
-                    }, {
-                        x: '1 Aug 2019', y: 50789
-                    }, {
-                        x: '1 Sep 2019', y: 50789
-                    }, {
-                        x: '1 Oct 2019', y: 105790
-                    }, {
-                        x: '1 Nov 2019', y: 300827
-                    }, {
-                        x: '1 Dec 2019', y: 827
-                    }
-                ],
-
-                // Changes this dataset to become a line
-                type: 'line',
-                // yAxisID: 'right-y-axis',
-                fill: true,
-                showLine: true,
-                pointRadius: 7,
-                pointBackgroundColor: 'rgba(60, 70, 60, 0)',
-                pointBorderColor: 'rgba(60, 70, 60, 0)',
-                pointHoverBackgroundColor: 'rgba(60, 70, 60, 1)',
-                pointHoverRadius: 7,
-                borderColor: 'rgba(0, 0, 0, 1)',
-                backgroundColor: 'rgba(60, 70, 60, 1)',
-                borderWidth: 0.1,
-                
-                },
-                {
-                label: 'Re',
-                
-                // data: [180000, 100789, 195790, 80827],
-                data: [
-                    {
-                        x: '1 Jan 2019', y: 30000
-                    }, {
-                        x: '1 Feb 2019', y: 100789
-                    }, {
-                        x: '1 Mar 2019', y: 100789
-                    }, {
-                        x: '1 Apr 2019', y: 100789
-                    }, {
-                        x: '1 May 2019', y: 100789
-                    }, {
-                        x: '1 Jun 2019', y: 400789
-                    }, {
-                        x: '1 Jul 2019', y: 400789
-                    }, {
-                        x: '1 Aug 2019', y: 400789
-                    }, {
-                        x: '1 Sep 2019', y: 400789
-                    }, {
-                        x: '1 Oct 2019', y: 125790
-                    }, {
-                        x: '1 Nov 2019', y: 20827
-                    }, {
-                        x: '1 Dec 2019', y: 40827
-                    }
-                ],
-
-                // Changes this dataset to become a line
-                type: 'line',
-                // yAxisID: 'right-y-axis',
-                fill: true,
-                showLine: true,
-                pointRadius: 7,
-                pointBackgroundColor: 'rgba(80, 90, 220, 0)',
-                pointBorderColor: 'rgba(80, 90, 220, 0)',
-                pointHoverBackgroundColor: 'rgba(80, 90, 220, 1)',
-                pointHoverRadius: 7,
-                borderColor: 'rgba(0, 0, 0, 1)',
-                backgroundColor: 'rgba(80, 90, 220, 1)',
-                borderWidth: 0.1,
-                
-                },
                 
                 ],
             // labels: ['I', 'IIN', 'IIS', 'III', 'IV', 'VN', 'VS', 'NOA']
@@ -257,7 +488,7 @@ export default {
             // },
             title: {
                 display: true,
-                text: 'Area'
+                text: 'Bls'
             },
             scales: {
                 yAxes: [{
@@ -273,7 +504,7 @@ export default {
                         beginAtZero: true,
                         // steps: 10,
                         // stepValue: 5,
-                        max: 1000000,
+                        max: 120000,
                         min: 0
                     },
                    
@@ -375,34 +606,36 @@ export default {
                         //     if (datasets.indexOf(ctx.dataset) > 0) {
                                     // let aaa = ctx.chart.data.datasets[0].data[ctx.data.y]
                                     // alert(aaa)
-                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y + ctx.chart.data.datasets[1].data[ctx.dataIndex].y + ctx.chart.data.datasets[2].data[ctx.dataIndex].y + ctx.chart.data.datasets[3].data[ctx.dataIndex].y + ctx.chart.data.datasets[4].data[ctx.dataIndex].y;
+                                    let sum0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y + ctx.chart.data.datasets[1].data[ctx.dataIndex].y + ctx.chart.data.datasets[2].data[ctx.dataIndex].y + ctx.chart.data.datasets[3].data[ctx.dataIndex].y + ctx.chart.data.datasets[4].data[ctx.dataIndex].y + ctx.chart.data.datasets[5].data[ctx.dataIndex].y + ctx.chart.data.datasets[6].data[ctx.dataIndex].y + ctx.chart.data.datasets[7].data[ctx.dataIndex].y + ctx.chart.data.datasets[8].data[ctx.dataIndex].y + ctx.chart.data.datasets[9].data[ctx.dataIndex].y;
 
                                     let parcial0 = ctx.chart.data.datasets[0].data[ctx.dataIndex].y;
                                     let parcial1 = ctx.chart.data.datasets[1].data[ctx.dataIndex].y;
                                     let parcial2 = ctx.chart.data.datasets[2].data[ctx.dataIndex].y;
                                     let parcial3 = ctx.chart.data.datasets[3].data[ctx.dataIndex].y;
                                     let parcial4 = ctx.chart.data.datasets[4].data[ctx.dataIndex].y;
-                                    // let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex];
-                                    // let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex];
-                                    // let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex];
-                                    // let parcial8 = ctx.chart.data.datasets[8].data[ctx.dataIndex];
+                                    let parcial5 = ctx.chart.data.datasets[5].data[ctx.dataIndex].y;
+                                    let parcial6 = ctx.chart.data.datasets[6].data[ctx.dataIndex].y;
+                                    let parcial7 = ctx.chart.data.datasets[7].data[ctx.dataIndex].y;
+                                    let parcial8 = ctx.chart.data.datasets[8].data[ctx.dataIndex].y;
+                                    let parcial9 = ctx.chart.data.datasets[9].data[ctx.dataIndex].y;
                                    
                                     if (!ctx.chart.isDatasetVisible(0))  sum0 = sum0 - parcial0;
                                     if (!ctx.chart.isDatasetVisible(1))  sum0 = sum0 - parcial1;
                                     if (!ctx.chart.isDatasetVisible(2))  sum0 = sum0 - parcial2;
                                     if (!ctx.chart.isDatasetVisible(3))  sum0 = sum0 - parcial3;
                                     if (!ctx.chart.isDatasetVisible(4))  sum0 = sum0 - parcial4;
-                                    // if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial5;
-                                    // if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial6;
-                                    // if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
-                                    // if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial8;
-                        
+                                    if (!ctx.chart.isDatasetVisible(5))  sum0 = sum0 - parcial5;
+                                    if (!ctx.chart.isDatasetVisible(6))  sum0 = sum0 - parcial6;
+                                    if (!ctx.chart.isDatasetVisible(7))  sum0 = sum0 - parcial7;
+                                    if (!ctx.chart.isDatasetVisible(8))  sum0 = sum0 - parcial8;
+                                    if (!ctx.chart.isDatasetVisible(9))  sum0 = sum0 - parcial9;
                                     
                                     if (sum0 == 0)
                                         percentage = 0
+
                                     else
                                         percentage = (value.y * 100 / sum0).toFixed(0)+"%"
-                                        if (percentage == '0%')
+                                        if (percentage == '0%' || percentage == '0')
                                             percentage = ""
                                 
                         //     } 
