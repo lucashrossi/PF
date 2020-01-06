@@ -175,7 +175,7 @@
 
       </v-container>
 
-      <br>
+      <!-- <br>
       <h1 style="border-top: 5px solid green; border-bottom: 2px solid green">RET</h1>
       <v-container fluid text-xs-center style="padding-top: 0px">
         <v-layout align-center justify-center row >
@@ -193,7 +193,7 @@
             <embed class="embed-container-iframe1" src="https://public.tableau.com/views/Enfermedades_1/Dashboard1?:showVizHome=no&:embed=true" width="1900" height="840" >
           </v-flex>
         </v-layout>
-      </v-container>
+      </v-container> -->
 
       <!-- <v-btn elevation-25 @click="enviar">
         Cargar
