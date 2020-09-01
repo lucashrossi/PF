@@ -158,7 +158,7 @@
 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
            
-            <a data-chrome="nofooter noborders noheader" class="twitter-timeline" data-height="400" href="https://twitter.com/buck_semillas?ref_src=twsrc%5Etfw">Tweets by buck_semillas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a data-chrome="nofooter noborders noheader" class="twitter-timeline" data-height="400" href="https://twitter.com/bucksemillas?ref_src=twsrc%5Etfw">Tweets by buck_semillas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <!-- <a class="twitter-timeline" data-height="350px" data-theme="dark" href="https://twitter.com/buck_semillas?ref_src=twsrc%5Etfw">Tweets by buck_semillas</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             <!-- <a href="https://twitter.com/intent/tweet?screen_name=buck_semillas&ref_src=twsrc%5Etfw" class="twitter-mention-button" data-show-count="false">Tweet to @buck_semillas</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             
