@@ -51,9 +51,9 @@ import MIXCODDDD from '~/components/MIXCODDDD.vue'
 import MIXCP from '~/components/MIXCP.vue'
 import DEJ from '~/components/DEJ.vue'
 import HOR from '~/components/HOR.vue'
-import Pivot from '~/components/Pivot'
-import PivotTable from '~/components/PivotTable'
-import PivotI from '~/components/PivotI'
+// import Pivot from '~/components/Pivot'
+// import PivotTable from '~/components/PivotTable'
+// import PivotI from '~/components/PivotI'
 import Mult18 from '~/components/Mult18'
 import TX from '~/components/TX'
 import Area from '~/components/Area'
@@ -110,9 +110,9 @@ Vue.component('MIXCODDDD', MIXCODDDD)
 Vue.component('MIXCP', MIXCP )
 Vue.component('DEJ', DEJ)
 Vue.component('HOR', HOR)
-Vue.component('pivot', Pivot)
-Vue.component('pivot-table', PivotTable)
-Vue.component('PivotI', PivotI)
+// Vue.component('pivot', Pivot)
+// Vue.component('pivot-table', PivotTable)
+// Vue.component('PivotI', PivotI)
 Vue.component('Mult18', Mult18)
 Vue.component('TX', TX)
 Vue.component('Area', Area)
