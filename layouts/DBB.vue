@@ -9,7 +9,7 @@
           fixed
           app
           temporary
-          width=170
+          width=180
         >
           <v-list >
             <v-list-tile v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar">
@@ -55,15 +55,15 @@
           <v-toolbar-side-icon @click.stop="drawer = !drawer" ></v-toolbar-side-icon> <!--class="hidden-sm-and-up"></v-toolbar-side-icon>-->
           <v-toolbar-title>
             <v-btn flat router to='/DashB'>
-                <v-icon left>dashboard</v-icon>
+                <v-icon left style="margin-right: 3px;">dashboard</v-icon>
                 DashBoard
             </v-btn>
           </v-toolbar-title>
           <v-spacer></v-spacer>
           <v-toolbar-items class="hidden-md-and-down">
             <!-- <v-tooltip bottom> -->
-              <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar" slot="activator">
-                  <v-icon class="mr-1">{{D.icon}}</v-icon>
+              <v-btn flat v-for="D in DD" :key="D.title" :to="D.link" :href="D.ref" :target="D.tar" slot="activator" style="padding: 0 10px; font-size: 13px">
+                  <v-icon style="margin-right: 3px;">{{D.icon}}</v-icon>
                   {{D.title}}
                   <!-- <span>{{D.tool}}</span> -->
               </v-btn>
@@ -76,7 +76,7 @@
                 {{DD.title}}
             </v-btn> -->
             <!-- <v-btn flat @click.prevent="playSound('http://soundbible.com/mp3/Air Plane Ding-SoundBible.com-496729130.mp3')"> -->
-            <v-btn flat v-on:click="play">
+            <v-btn flat v-on:click="play" style="font-size: 12px">
             <!-- <audio ref="audioElm" src="http://www.noiseaddicts.com/samples_1w72b820/290.mp3" loop></audio> -->
             <!-- <audio ref="audioElm" src="Yael Naim - Intr.mp3" loop></audio> -->
             <audio ref="audioElm" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Yael%20Naim%20-%20Intr.mp3?alt=media&token=2758de44-05c3-4c1a-8bd1-661da9dfa84e" loop></audio>
@@ -86,12 +86,12 @@
                 <!-- <v-icon left >volume_up</v-icon> -->
                 Music
             </v-btn>
-            <v-btn flat @click="dark = !dark; colorr()" >
+            <v-btn flat @click="dark = !dark; colorr()" style="font-size: 12px">
                 <v-icon class="mr-1">invert_colors</v-icon>
                 {{button.text}}
             </v-btn>
             <!-- <v-btn flat href="/"> -->
-            <v-btn flat @click="Salir">
+            <v-btn flat @click="Salir" style="font-size: 12px">
                 <v-icon class="mr-1">exit_to_app</v-icon>
                 Exit
             </v-btn>
@@ -125,10 +125,10 @@
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl input-bottom-line: rgba(#FFFFFF), -->
 
         <v-footer height=20 color="blue-grey darken-1" app>
-          <span class="white--text caption" style="padding: 0px 0px 0px 5px;" >&copy; &nbsp;2019</span>
+          <span class="white--text caption" style="padding: 0px 0px 0px 5px;" >&copy; &nbsp;2020</span>
           <!-- <v-divider></v-divider> -->
           <v-spacer></v-spacer>
-          <span class="yellow--text caption" >Updated: &nbsp;March 6</span>
+          <span class="yellow--text caption" >Updated: &nbsp;Sept 21</span>
           <!-- <v-divider></v-divider> -->
           <v-spacer></v-spacer>
           <span class="red--text caption" style="padding: 0px 5px 0px 0px;" >Buck Semillas S.A.</span> 
@@ -164,6 +164,7 @@
       },
       seen: true,
       DD: [
+          {icon: 'calculate', title: 'Presupuesto', link: '/Presupuesto', tool: '', ref:''},
           {icon: 'trending_up', title: 'Ventas', link: '/Ventas', tool: '', ref:''},
           {icon: 'book', title: 'Fiscalizacion', link: '/Fiscalizacion', tool: '', ref:''},
           {icon: 'check', title: 'Regalias', link: '/Regalias', tool: '', ref:''},
