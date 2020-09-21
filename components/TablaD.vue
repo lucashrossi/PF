@@ -8,7 +8,7 @@
                 <div style="font-size: 12px;">Dolar</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div style="font-size: 12px;">$ 38</div>
+                <div style="font-size: 12px;">$ 140</div>
             </v-flex>
             
             <v-flex xs6>
@@ -29,14 +29,14 @@
                 <div style="font-size: 12px;">Avena</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div style="font-size: 12px;">U$S 190</div>
+                <div style="font-size: 12px;">U$S 180</div>
             </v-flex>
 
             <v-flex xs6>
                 <div style="font-size: 12px;">Girasol</div>
             </v-flex>
             <v-flex xs6 text-xs-right>
-                <div style="font-size: 12px;">U$S 230</div>
+                <div style="font-size: 12px;">U$S 270</div>
             </v-flex>
 
             <!-- <iframe width="500" height="300" style="border:none;" src="http://www.bcp.org.ar/informes.asp?id_inf=24/embed/183032105700513423896"></iframe> -->
