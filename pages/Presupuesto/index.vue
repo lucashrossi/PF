@@ -14,10 +14,14 @@
 
         <v-container fluid grid-list-md text-xs-center>
           <v-layout row wrap>
-            <img src="/Tabla1.jpg" title="" alt="">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tabla1.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
           </v-layout>
-          <v-layout row wrap>
-            <img src="/Tabla2.jpg" title="" alt="">
+          <v-layout row wrap style="margin-top: 40px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tabla2.jpg" title="" alt="" class="responsivee">
+            <!-- <v-spacer></v-spacer> -->
           </v-layout>
         </v-container>
 
@@ -32,3 +36,20 @@ export default {
   layout: 'DBB'
 }
 </script>
+
+<style>
+
+.responsive {
+  width: 100%;
+  max-width: 1900px;
+  height: auto;
+  margin:auto;
+}
+.responsivee {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+  margin:auto;
+}
+
+</style>
