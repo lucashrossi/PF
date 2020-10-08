@@ -14,7 +14,10 @@
 
         <v-container fluid grid-list-md text-xs-center>
           <v-layout row wrap>
-            <h1>sdfsd</h1>
+            <img src="/Tabla1.jpg" title="" alt="">
+          </v-layout>
+          <v-layout row wrap>
+            <img src="/Tabla2.jpg" title="" alt="">
           </v-layout>
         </v-container>
 
