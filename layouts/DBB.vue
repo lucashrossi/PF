@@ -123,6 +123,7 @@
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl $material-dark := {cards: #303030, -->
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl $material-light := {cards: #FAFAFA, -->
         <!-- C:\Users\hernan\Desktop\PF\node_modules\vuetify\src\stylus\settings\_theme.styl input-bottom-line: rgba(#FFFFFF), -->
+        <!-- Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass -->
 
         <v-footer height=20 color="blue-grey darken-1" app>
           <span class="white--text caption" style="padding: 0px 0px 0px 5px;" >&copy; &nbsp;2020</span>

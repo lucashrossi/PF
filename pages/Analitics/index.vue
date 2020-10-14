@@ -14,6 +14,11 @@
       Newsletter
     </v-tab>
 
+    <v-tab href="#tab-3" class="caption">
+      <!-- <v-icon class="mr-1">schedule</v-icon> -->
+      Pagina Nueva
+    </v-tab>
+
     <v-tab-item id='tab-1'>
       <v-container fluid text-xs-center >
         <v-layout align-center justify-center row >
@@ -32,6 +37,14 @@
 
     <v-tab-item id='tab-2'>
 
+      
+
+    </v-tab-item>
+
+    <v-tab-item id='tab-3'>
+      <div style="text-align: center; margin-top: 50px">
+        <a href="https://buck-semillas.appspot.com" target="_blank">Nueva Pagina Buck</a>
+      </div>
       
 
     </v-tab-item>
