@@ -40,6 +40,9 @@ import Pivv from '~/components/Pivv.vue'
 import Pivvv from '~/components/Pivvv.vue'
 import Pivi from '~/components/Pivi.vue'
 import MIX from '~/components/MIX.vue'
+import MIXSI from '~/components/MIXSI.vue'
+import MIXSII from '~/components/MIXSII.vue'
+import MIXSIII from '~/components/MIXSIII.vue'
 import MIXX from '~/components/MIXX.vue'
 import MIXXX from '~/components/MIXXX.vue'
 import MIXC from '~/components/MIXC.vue'
@@ -99,6 +102,9 @@ Vue.component('Pivv', Pivv)
 Vue.component('Pivvv', Pivvv)
 Vue.component('Pivi', Pivi)
 Vue.component('MIX', MIX)
+Vue.component('MIXSI', MIXSI)
+Vue.component('MIXSII', MIXSII)
+Vue.component('MIXSIII', MIXSIII)
 Vue.component('MIXX', MIXX)
 Vue.component('MIXXX', MIXXX)
 Vue.component('MIXC', MIXC )
