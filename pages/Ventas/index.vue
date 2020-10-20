@@ -52,7 +52,7 @@
                 <MIXSI/>
               </v-flex>
               <v-flex xs12 sm12 lg11 xl11>
-                <MIXSII/>
+                <MIXSV/>
               </v-flex>
               <!-- <v-flex xs12 sm12 lg11 xl11>
                 <MIX/>
@@ -74,7 +74,7 @@
                 <MIXSIII/>
               </v-flex>
               <v-flex xs12 sm12 lg11 xl11>
-                <MIXSII/>
+                <MIXSVV/>
               </v-flex>
               <!-- <v-flex xs12 sm10 offset-sm1 lg8 offset-lg2 xl6 offset-xl3>
                 <MIXCO/>
@@ -102,7 +102,7 @@
                 <MIXSII/>
               </v-flex>
               <v-flex xs12 sm12 lg11 xl11>
-                <MIXSII/>
+                <MIXSVVV/>
               </v-flex>
               <!-- <v-flex xs12 sm10 offset-sm1 lg8 offset-lg2 xl6 offset-xl3>
                 <MIXCP/>

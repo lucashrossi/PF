@@ -42,6 +42,7 @@ export default {
 .responsive {
   width: 100%;
   max-width: 1900px;
+  height: 500px;
   height: auto;
   margin:auto;
 }

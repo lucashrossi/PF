@@ -1,6 +1,8 @@
 import Vue from 'vue'
 
 import NC from '~/components/NC.vue'
+import NCS from '~/components/NCS.vue'
+import NCSS from '~/components/NCSS.vue'
 import NCC from '~/components/NCC.vue'
 // import pdf from 'vue-pdf'
 import Tabla from '~/components/Tabla.vue'
@@ -41,6 +43,9 @@ import Pivvv from '~/components/Pivvv.vue'
 import Pivi from '~/components/Pivi.vue'
 import MIX from '~/components/MIX.vue'
 import MIXSI from '~/components/MIXSI.vue'
+import MIXSV from '~/components/MIXSV.vue'
+import MIXSVV from '~/components/MIXSVV.vue'
+import MIXSVVV from '~/components/MIXSVVV.vue'
 import MIXSII from '~/components/MIXSII.vue'
 import MIXSIII from '~/components/MIXSIII.vue'
 import MIXX from '~/components/MIXX.vue'
@@ -63,6 +68,8 @@ import Area from '~/components/Area'
 
 
 Vue.component('NC', NC)
+Vue.component('NCS', NCS)
+Vue.component('NCSS', NCSS)
 Vue.component('NCC', NCC)
 // Vue.component('pdf', pdf)
 Vue.component('Tabla', Tabla)
@@ -103,6 +110,9 @@ Vue.component('Pivvv', Pivvv)
 Vue.component('Pivi', Pivi)
 Vue.component('MIX', MIX)
 Vue.component('MIXSI', MIXSI)
+Vue.component('MIXSV', MIXSV)
+Vue.component('MIXSVV', MIXSVV)
+Vue.component('MIXSVVV', MIXSVVV)
 Vue.component('MIXSII', MIXSII)
 Vue.component('MIXSIII', MIXSIII)
 Vue.component('MIXX', MIXX)

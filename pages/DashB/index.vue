@@ -93,21 +93,21 @@
           </v-flex>
           <v-spacer></v-spacer> -->
 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
       
             <TablaD height="350px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer>
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
             <TablaDD height="350px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
-            <DNND height="350px" style="border-radius: 10px" class="elevation-20" />
+            <NCS height="350px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer> 
           <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
-            <DNNDD height="350px" style="border-radius: 10px" class="elevation-20" />
+            <NCSS height="350px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           
         </v-layout>
@@ -115,19 +115,19 @@
 
       <v-container fluid grid-list-md>
         <v-layout row wrap>
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
             <MIXCOD height="400px" style="border-radius: 10px" class="elevation-20"/>
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
             <MIXCODD height="400px" style="border-radius: 10px" class="elevation-20"/>
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
             <MIXCODDD height="400px" style="border-radius: 10px" class="elevation-20"/>
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3>
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
             <Area height="400px" style="border-radius: 10px" class="elevation-20"/>
           </v-flex>
         </v-layout>
