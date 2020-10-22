@@ -64,7 +64,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls'
+                text: 'Ventas Bls Original Nº1'
             },
             scales: {
                 yAxes: [{ 

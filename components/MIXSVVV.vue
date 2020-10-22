@@ -160,7 +160,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls 2020'
+                text: 'Venta Bls 1º Mult 2020 Nº6'
             },
             scales: {
                 yAxes: [{ 

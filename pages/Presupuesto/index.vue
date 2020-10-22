@@ -13,7 +13,17 @@
       <v-tab-item id='tab-1'>
 
         <v-container fluid grid-list-md text-xs-center>
-          <v-layout row wrap>
+           <v-layout row wrap>
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tabla3.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 40px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tabla4.jpg" title="" alt="" class="responsivee">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 40px">
             <!-- <v-spacer></v-spacer> -->
             <img src="/Tabla1.jpg" title="" alt="" class="responsive">
             <!-- <v-spacer></v-spacer> -->
@@ -49,6 +59,7 @@ export default {
 .responsivee {
   width: 100%;
   max-width: 1000px;
+  height: 500px;
   height: auto;
   margin:auto;
 }

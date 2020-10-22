@@ -10,26 +10,31 @@
       </v-tab>
 
       <v-tab href="#tab-2" class="caption">
+        <!-- <v-icon class="mr-1">note</v-icon> -->
+        Pan Tablas
+      </v-tab>
+
+      <v-tab href="#tab-3" class="caption">
         <!-- <v-icon class="mr-1">schedule</v-icon> -->
         Fideo
       </v-tab>
 
-      <v-tab href="#tab-3" class="caption">
+      <v-tab href="#tab-4" class="caption">
         <!-- <v-icon class="mr-1">location_city</v-icon> -->
         Avena
       </v-tab>
 
-      <v-tab href="#tab-4" class="caption">
+      <v-tab href="#tab-5" class="caption">
         <!-- <v-icon class="mr-1">location_city</v-icon> -->
         Girasol
       </v-tab>
 
-      <v-tab href="#tab-5" class="caption">
+      <v-tab href="#tab-6" class="caption">
         <!-- <v-icon class="mr-1">map</v-icon> -->
         Vendedores
       </v-tab>
 
-      <v-tab href="#tab-6" class="caption">
+      <v-tab href="#tab-7" class="caption">
         <!-- <v-icon class="mr-1">table_chart</v-icon> -->
         Ensayos
       </v-tab>
@@ -97,7 +102,7 @@
             </v-flex>
 
             <v-flex xs12 md12 lg4 style="border-left: 2px solid green">
-              <h1 style="border-bottom: 2px solid green">Primera multiplicacion</h1>
+              <h1 style="border-bottom: 2px solid green">Primera Multiplicacion</h1>
               <v-flex xs12 sm12 lg11 xl11>
                 <MIXSII/>
               </v-flex>
@@ -129,7 +134,40 @@
       </v-tab-item>
 
       <v-tab-item id='tab-2'>
-        <h1>oooOooo</h1>
+        
+        <v-container fluid grid-list-md text-xs-center>
+          <v-layout row wrap>
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tablav1.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 50px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tablav2.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 50px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tablav3.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 50px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tablav4.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 50px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tablav5.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+          <v-layout row wrap style="margin-top: 50px">
+            <!-- <v-spacer></v-spacer> -->
+            <img src="/Tablav6.jpg" title="" alt="" class="responsive">
+            <!-- <v-spacer></v-spacer> -->
+          </v-layout>
+        </v-container>
+
       </v-tab-item>
 
       <v-tab-item id='tab-3'>
@@ -141,6 +179,10 @@
       </v-tab-item>
 
       <v-tab-item id='tab-5'>
+        <h1>oooOooo</h1>
+      </v-tab-item>
+
+      <v-tab-item id='tab-6'>
 
         <v-container fluid>
           <v-layout row wrap >
@@ -160,7 +202,7 @@
 
       </v-tab-item>
 
-      <v-tab-item id='tab-6'>
+      <v-tab-item id='tab-7'>
 
         <Tablaa/>
 
@@ -175,3 +217,16 @@ export default {
   layout: 'DBB'
 }
 </script>
+
+<style>
+
+.responsive {
+  width: 100%;
+  max-width: 1900px;
+  height: 500px;
+  height: auto;
+  margin:auto;
+}
+
+
+</style>

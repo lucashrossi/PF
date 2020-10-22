@@ -6,7 +6,7 @@
 
     <v-tab href="#tab-1" class="caption">
       <!-- <v-icon class="mr-1">note</v-icon> -->
-       Catalogo
+       Fotos
     </v-tab>
 
     <v-tab href="#tab-2" class="caption">
@@ -31,10 +31,25 @@
 
     <v-tab href="#tab-6" class="caption">
       <!-- <v-icon class="mr-1">table_chart</v-icon> -->
-      Fotos
+      Catalogo
     </v-tab>
 
-      <v-tab-item id='tab-1'>
+    <v-tab href="#tab-7" class="caption">
+      <!-- <v-icon class="mr-1">note</v-icon> -->
+      Pagina
+    </v-tab>
+
+    <v-tab href="#tab-8" class="caption">
+      <!-- <v-icon class="mr-1">schedule</v-icon> -->
+      Newsletter
+    </v-tab>
+
+    <v-tab href="#tab-9" class="caption">
+      <!-- <v-icon class="mr-1">schedule</v-icon> -->
+      Pagina Nueva
+    </v-tab>
+
+      <v-tab-item id='tab-6'>
         <!-- <embed src="https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c" width="100%" height="600px"> -->
         <!-- <embed src="https://docs.google.com/viewer?url=https://documentcloud.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3Ac78f5dd2-723a-465f-b1de-0e2a39c7599c" width="100%" height="600px"> -->
         <!-- <embed src="https://docs.google.com/viewer?url=https://drive.google.com/open?id=1OoCNry6bjUGVvwpD4IFdyUZIzKqrlupG" width="100%" height="600px"> -->
@@ -149,7 +164,7 @@
 
 
     <!-- <v-tab-item id='tab-8' style="background-size: contain; background-position: left top; background-repeat: repeat; background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975)"> -->
-    <v-tab-item id='tab-6' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=13db82f9-27f1-4421-9081-d6afd5c7e202)">
+    <v-tab-item id='tab-1' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=13db82f9-27f1-4421-9081-d6afd5c7e202)">
     <!-- <v-tab-item id='tab-8'> -->
         <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
       
@@ -218,6 +233,36 @@
             </v-flex>
           </v-layout>
          </v-container>
+
+      </v-tab-item>
+
+      <v-tab-item id='tab-7'>
+        <v-container fluid text-xs-center >
+          <v-layout align-center justify-center row >
+            <v-flex xs12>
+              <v-img contain src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Estadist.jpg?alt=media&token=d1ea010b-699e-4aed-a29c-51d382f1edb7"></v-img>
+            </v-flex>
+            
+          </v-layout>
+          <v-layout align-center justify-center row >
+            <v-flex xs8>
+              <v-img contain src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Estadi.jpg?alt=media&token=2a15f493-5ae4-4741-9c0b-0f0aa2601c68"></v-img>
+            </v-flex>
+          </v-layout>
+        </v-container>
+      </v-tab-item>
+
+      <v-tab-item id='tab-8'>
+
+      
+
+      </v-tab-item>
+
+      <v-tab-item id='tab-9'>
+        <div style="text-align: center; margin-top: 50px">
+          <a href="https://buck-semillas.appspot.com" target="_blank">Nueva Pagina Buck</a>
+        </div>
+        
 
       </v-tab-item>
 
