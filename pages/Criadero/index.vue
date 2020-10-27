@@ -170,9 +170,9 @@
       
           <!-- <v-parallax height="800" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975"> -->
 
-                <v-parallax height="600" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
+                <!-- <v-parallax height="350" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
 
-                </v-parallax>
+                </v-parallax> -->
             
           <!-- </v-parallax> -->
         </v-parallax>
