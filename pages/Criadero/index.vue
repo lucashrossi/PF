@@ -164,9 +164,9 @@
 
 
     <!-- <v-tab-item id='tab-8' style="background-size: contain; background-position: left top; background-repeat: repeat; background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975)"> -->
-    <v-tab-item id='tab-1' style="background-size: cover; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17b.jpg?alt=media&token=13db82f9-27f1-4421-9081-d6afd5c7e202)">
+    <v-tab-item id='tab-1' style="background-size: 100% 100%; background-repeat: no-repeat;  background-attachment: fixed; background-image: url(https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/CaminoEntra.jpg?alt=media&token=c72edd89-cba1-4867-abcb-c67b1fc5d3fb">
     <!-- <v-tab-item id='tab-8'> -->
-        <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17c.jpg?alt=media&token=c4c46960-7a3d-4da6-a0cc-0719fefc5bf7">
+        <v-parallax height="1000" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/CaminoEntra.jpg?alt=media&token=c72edd89-cba1-4867-abcb-c67b1fc5d3fb">
       
           <!-- <v-parallax height="800" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/17.jpg?alt=media&token=5e587594-9a85-4299-a0d2-4385d0d75975"> -->
 
