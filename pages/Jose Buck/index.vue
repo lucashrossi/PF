@@ -12,7 +12,8 @@
     <v-container fluid text-xs-center>
       <v-layout align-center justify-center row>
         <v-flex xs12 class="embed-container5">
-          <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_15917207203860/CultivosHasyCostosha?:showVizHome=no&:embed=true">
+          <!-- <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_15917207203860/CultivosHasyCostosha?:showVizHome=no&:embed=true"> -->
+           <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_16039066395190/CultivosHasyCostosha?:showVizHome=no&:embed=true">
           <!-- <iframe class="embed-container-iframe5" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" ></iframe> -->
         </v-flex>
       </v-layout>
