@@ -11,8 +11,8 @@ export default {
             datasets: [{
                 label: '2020',
                 // backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)', 'rgba(30, 80, 100, 0.4)'],
-                backgroundColor: 'rgba(200, 150, 100, 1)',
-                borderColor: 'rgba(200, 150, 100, 1)',
+                backgroundColor: 'rgba(150, 200, 50, 1)',
+                borderColor: 'rgba(150, 200, 50, 1)',
                 data: [1330, 5635, 10373, 50, 19674, 0, 15674, 750, 2220],
                 yAxisID: 'left-y-axis',
                 fill: false,
@@ -41,8 +41,8 @@ export default {
                 {
                 label: '2017',
                 // backgroundColor: ['rgba(255, 0, 0, 0.4)', 'rgba(100, 255, 0, 0.4)', 'rgba(200, 50, 255, 0.4)', 'rgba(0, 100, 255, 0.4)', 'rgba(50, 150, 200, 0.4)', 'rgba(75, 25, 50, 0.4)', 'rgba(150, 50, 100, 0.4)', 'rgba(10, 50, 70, 0.4)', 'rgba(30, 80, 100, 0.4)'],
-                backgroundColor: 'rgba(150, 200, 50, 1)',
-                borderColor: 'rgba(150, 200, 50, 1)',
+                backgroundColor: 'rgba(200, 150, 100, 1)',
+                borderColor: 'rgba(200, 150, 100, 1)',
                 data: [728, 390, 5443, 437, 4660, 320, 2019, 0, 0],
                 yAxisID: 'left-y-axis',
                 fill: false,
