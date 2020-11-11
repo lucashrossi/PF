@@ -116,24 +116,29 @@
 
       <v-container fluid grid-list-md>
         <v-layout row wrap>
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
             <!-- <MIXCOD height="400px" style="border-radius: 10px" class="elevation-20"/> -->
-            <div style="height:400px; border-radius: 10px" class="elevation-20"></div>
+            <!-- <div style="height:400px; border-radius: 10px" class="elevation-20"></div> -->
+            <NCSSS height="400px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
             <!-- <MIXCODD height="400px" style="border-radius: 10px" class="elevation-20"/> -->
-            <div style="height:400px; border-radius: 10px" class="elevation-20"></div>
+            <!-- <div style="height:400px; border-radius: 10px" class="elevation-20"></div> -->
+            <NCSSSS height="400px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
             <!-- <MIXCODDD height="400px" style="border-radius: 10px" class="elevation-20"/> -->
-            <div style="height:400px; border-radius: 10px" class="elevation-20"></div>
+            <!-- <div style="height:400px; border-radius: 10px" class="elevation-20"></div> -->
+            <NCSM height="400px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
           <v-spacer></v-spacer> 
-          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);">
+          <!-- <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 style="filter: blur(2px);"> -->
+          <v-flex xs12 sm10 offset-sm1 md6 offset-md0 lg3 >
             <!-- <Area height="400px" style="border-radius: 10px" class="elevation-20"/> -->
-            <div style="height:400px; border-radius: 10px" class="elevation-20"></div>
+            <!-- <div style="height:400px; border-radius: 10px" class="elevation-20"></div> -->
+            <NCSMM height="400px" style="border-radius: 10px" class="elevation-20" />
           </v-flex>
         </v-layout>
         

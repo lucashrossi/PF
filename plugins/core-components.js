@@ -2,7 +2,11 @@ import Vue from 'vue'
 
 import NC from '~/components/NC.vue'
 import NCS from '~/components/NCS.vue'
+import NCSM from '~/components/NCSM.vue'
+import NCSMM from '~/components/NCSMM.vue'
 import NCSS from '~/components/NCSS.vue'
+import NCSSS from '~/components/NCSSS.vue'
+import NCSSSS from '~/components/NCSSSS.vue'
 import NCC from '~/components/NCC.vue'
 // import pdf from 'vue-pdf'
 import Tabla from '~/components/Tabla.vue'
@@ -69,7 +73,11 @@ import Area from '~/components/Area'
 
 Vue.component('NC', NC)
 Vue.component('NCS', NCS)
+Vue.component('NCSM', NCSM)
+Vue.component('NCSMM', NCSMM)
 Vue.component('NCSS', NCSS)
+Vue.component('NCSSS', NCSSS)
+Vue.component('NCSSSS', NCSSSS)
 Vue.component('NCC', NCC)
 // Vue.component('pdf', pdf)
 Vue.component('Tabla', Tabla)
