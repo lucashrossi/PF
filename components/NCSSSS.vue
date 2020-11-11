@@ -25,17 +25,19 @@ export default {
             //     borderColor: 'rgba(0, 0, 0, 1)'
             // }, 
             {
-                label: 'Facturacion',
+                label: '',
                 backgroundColor: ['rgba(130, 120, 80, 1)', 'rgba(190, 110, 60, 1)', 'rgba(90, 180, 120, 1)', 'rgba(180, 170, 80, 1)', 'rgba(250, 200, 10, 1)', 'rgba(100, 150, 150, 1)', 'rgba(150, 150, 80, 1)', 'rgba(250, 120, 80, 1)'],
                 data: [38.8, 16.1, 36.2, 31.5, 15.7, 95.1, 1.2, 4.3],
-                yAxisID: 'left-y-axis'
+                yAxisID: 'left-y-axis',
+                fill: false,
+                borderColor: 'rgba(0, 0, 0, 1)',
             }
             ]
         },
         options: {
             title: {
                 display: true,
-                text: 'U$S'
+                text: 'Ingreso por Unidad U$S'
             },
             scales: {
                 yAxes: [{ 
@@ -87,7 +89,7 @@ export default {
             legend: {
                 labels: {
                     fontSize: 10,
-                    boxWidth: 15,
+                    boxWidth: 0,
                     // filter: function(legendItem, data) {
                             // return legendItem.index != 1
                             // return legendItem.index < 5 

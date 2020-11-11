@@ -23,14 +23,15 @@ export default {
                 yAxisID: 'left-y-axis',
                 fill: false,
                 borderColor: 'rgba(0, 0, 0, 1)',
-                order: 2,
+                // order: 2,
             },
             {
                 label: 'Facturacion',
                 backgroundColor: ['rgba(130, 120, 80, 1)', 'rgba(190, 110, 60, 1)', 'rgba(90, 180, 120, 1)', 'rgba(180, 170, 80, 1)', 'rgba(250, 200, 10, 1)', 'rgba(100, 150, 150, 1)', 'rgba(150, 150, 80, 1)', 'rgba(250, 120, 80, 1)'],
                 data: [807286, 899328, 438757, 120195, 54927, 71276, 749753, 640998],
                 yAxisID: 'right-y-axis',
-                order: 1
+                // order: 1,
+                borderColor: 'rgba(0, 0, 0, 0)'
             },
             ]
         },
