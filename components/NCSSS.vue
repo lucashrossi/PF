@@ -38,7 +38,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Bls / U$S'
+                text: 'Mil Bls / Miles U$S'
             },
             scales: {
                 yAxes: [{ 
@@ -57,7 +57,10 @@ export default {
                         // steps: 10,
                         // stepValue: 5,
                         max: 1000000,
-                        min: 0
+                        min: 0,
+                        callback: function(value, index, values) {
+                        return '$' + value/1000;
+                    }
                     }
                 },
                 
@@ -74,7 +77,10 @@ export default {
                         // steps: 10,
                         // stepValue: 5,
                         max: 700000,
-                        min: 0
+                        min: 0,
+                        callback: function(value, index, values) {
+                        return value/1000;
+                    }
                     },
                 }
                 ],
