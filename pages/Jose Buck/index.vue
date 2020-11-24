@@ -1,24 +1,45 @@
 <template>
-  <v-container style="margin-top: 0px;">
-    <!-- <h2 class="fss" style="text-align: center; font-family: 'Times New Roman'; font-size: 1.6vw; color: rgba(180, 0, 0, 1);">
-      RET
-    </h2> -->
-    <!-- <v-flex class="mit" style="margin-left: -50px;">
-      <embed src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" width="1900" height="800">
-    </v-flex> -->
-    <!-- <div class="iframe-container">
-      <iframe src="https://public.tableau.com/views/RET_2/Dashboard2?:showVizHome=no&:embed=true" style="width: 1900px; height: 1000px;" />
-    </div> -->
-    <v-container fluid text-xs-center>
-      <v-layout align-center justify-center row>
-        <v-flex xs12 class="embed-container5">
-          <!-- <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_15917207203860/CultivosHasyCostosha?:showVizHome=no&:embed=true"> -->
-           <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_16039066395190/CultivosHasyCostosha?:showVizHome=no&:embed=true">
-          <!-- <iframe class="embed-container-iframe5" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" ></iframe> -->
-        </v-flex>
-      </v-layout>
-    </v-container>
-  </v-container>
+
+  <v-tabs centered color="#542a25" dark height="25">
+      
+    <v-tabs-slider color="green"></v-tabs-slider>
+
+    <v-tab href="#tab-1" class="caption">
+      <!-- <v-icon class="mr-1">note</v-icon> -->
+      Santiago
+    </v-tab>
+
+    <v-tab href="#tab-2" class="caption">
+      <!-- <v-icon class="mr-1">schedule</v-icon> -->
+      Martin
+    </v-tab>
+
+    <v-tab-item id='tab-1'>
+      <v-container fluid text-xs-center>
+        <v-layout align-center justify-center row>
+          <v-flex xs12 class="embed-container5">
+            <!-- <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_15917207203860/CultivosHasyCostosha?:showVizHome=no&:embed=true"> -->
+            <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_16039066395190/CultivosHasyCostosha?:showVizHome=no&:embed=true">
+            <!-- <iframe class="embed-container-iframe5" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" ></iframe> -->
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-tab-item>
+
+    <v-tab-item id='tab-2'>
+      <v-container fluid text-xs-center>
+        <v-layout align-center justify-center row>
+          <v-flex xs12 class="embed-container5">
+            <!-- <embed class="embed-container-iframe5" src="https://public.tableau.com/views/Trabajos_15917207203860/CultivosHasyCostosha?:showVizHome=no&:embed=true"> -->
+            <embed class="embed-container-iframe5" src="https://public.tableau.com/views/TrabajosMartin/CultivosHasyCostosha?:showVizHome=no&:embed=true">
+            <!-- <iframe class="embed-container-iframe5" frameborder="0" src="https://firebasestorage.googleapis.com/v0/b/pfdbb-dc48b.appspot.com/o/Catalogo%20Buck%202018.pdf?alt=media&token=cf795851-99aa-4803-b82c-d03f0f65ae4b#page=3&zoom=100&view=fitH" ></iframe> -->
+          </v-flex>
+        </v-layout>
+      </v-container>
+    </v-tab-item>
+    
+  </v-tabs>
+
 </template>
 
 

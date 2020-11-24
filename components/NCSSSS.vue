@@ -37,7 +37,7 @@ export default {
         options: {
             title: {
                 display: true,
-                text: 'Ingreso por Unidad U$S'
+                text: 'Ingreso en U$S por Bolsa'
             },
             scales: {
                 yAxes: [{ 
@@ -56,7 +56,9 @@ export default {
                         // steps: 10,
                         // stepValue: 5,
                         max: 100,
-                        min: 0
+                        min: 0,
+                        callback: function(value, index, values) {
+                        return '$' + value;
                     }
                 },
                 
