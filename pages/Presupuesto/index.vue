@@ -9,6 +9,11 @@
         Resumen
       </v-tab>
 
+      <v-tab href="#tab-2" class="caption">
+        <!-- <v-icon class="mr-1">note</v-icon> -->
+        Rosana
+      </v-tab>
+
       <!-- <v-tab-item v-for="i in 6" :id="'tab-' + i" :key="i"> -->
       <v-tab-item id='tab-1'>
 
@@ -34,6 +39,19 @@
             <!-- <v-spacer></v-spacer> -->
           </v-layout>
         </v-container>
+
+      </v-tab-item>
+
+
+      <v-tab-item id='tab-2'>
+
+        <v-container fluid text-xs-center>
+        <v-layout align-center justify-center row>
+          <v-flex xs12 class="embed-container5">
+            <embed class="embed-container-iframe5" src="https://public.tableau.com/views/ControlPresupuestoRosana/DashboardResumen?:showVizHome=no&:embed=true">
+          </v-flex>
+        </v-layout>
+      </v-container>
 
       </v-tab-item>
     
@@ -62,6 +80,20 @@ export default {
   height: 500px;
   height: auto;
   margin:auto;
+}
+.embed-container5 {
+    position: relative;
+    padding-bottom: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+.embed-container-iframe5 {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    /* border: 5px solid green */
 }
 
 </style>
